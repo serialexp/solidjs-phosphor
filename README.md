@@ -1,17 +1,17 @@
-# @aeolun/phosphor-solid
+# solidjs-phosphor
 
 [Phosphor Icons](https://phosphoricons.com/) as SolidJS components. Auto-generated from [phosphor-icons/core](https://github.com/phosphor-icons/core).
 
 ## Install
 
 ```bash
-pnpm add @aeolun/phosphor-solid
+pnpm add solidjs-phosphor
 ```
 
 ## Usage
 
 ```tsx
-import { PhGearIcon, PhArrowClockwiseIcon, PhGearBoldIcon } from "@aeolun/phosphor-solid";
+import { PhGearIcon, PhArrowClockwiseIcon, PhGearBoldIcon } from "solidjs-phosphor";
 
 function App() {
   return (
