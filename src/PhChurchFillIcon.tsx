@@ -1,0 +1,26 @@
+import { JSX, splitProps, mergeProps } from "solid-js";
+
+export interface PhChurchFillIconProps extends JSX.SvgSVGAttributes<SVGSVGElement> {
+  size?: number | string;
+  color?: string;
+}
+
+/**
+ * ![img](data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIyMCIgaGVpZ2h0PSIyMCIgdmlld0JveD0iMCAwIDI1NiAyNTYiIGZpbGw9IiMwMDAiPjxyZWN0IHdpZHRoPSIyNTYiIGhlaWdodD0iMjU2IiBmaWxsPSIjRkZGIiByeD0iNDAiIHJ5PSI0MCIvPjxwYXRoIGQ9Ik0yMjguMTIsMTQ1LjE0LDE5MiwxMjMuNDdWMTA0YTgsOCwwLDAsMC00LTdMMTM2LDY3LjM2VjQ4aDE2YTgsOCwwLDAsMCwwLTE2SDEzNlYxNmE4LDgsMCwwLDAtMTYsMFYzMkgxMDRhOCw4LDAsMCwwLDAsMTZoMTZWNjcuMzZMNjgsOTcuMDVhOCw4LDAsMCwwLTQsN3YxOS40N0wyNy44OCwxNDUuMTRBOCw4LDAsMCwwLDI0LDE1MnY2NGE4LDgsMCwwLDAsOCw4aDcyYTgsOCwwLDAsMCw4LThWMTY4YTE2LDE2LDAsMCwxLDMyLDB2NDhhOCw4LDAsMCwwLDgsOGg3MmE4LDgsMCwwLDAsOC04VjE1MkE4LDgsMCwwLDAsMjI4LjEyLDE0NS4xNFpNNjQsMjA4SDQwVjE1Ni41M2wyNC0xNC40Wm0xNTIsMEgxOTJWMTQyLjEzbDI0LDE0LjRaIi8+PC9zdmc+)
+ */
+export function PhChurchFillIcon(props: PhChurchFillIconProps) {
+  const merged = mergeProps({ size: "1em", color: "currentColor" }, props);
+  const [local, svgProps] = splitProps(merged, ["size", "color"]);
+  return (
+    <svg
+      xmlns="http://www.w3.org/2000/svg"
+      viewBox="0 0 256 256"
+      fill={local.color}
+      width={local.size}
+      height={local.size}
+      {...svgProps}
+    >
+      <path d="M228.12,145.14,192,123.47V104a8,8,0,0,0-4-7L136,67.36V48h16a8,8,0,0,0,0-16H136V16a8,8,0,0,0-16,0V32H104a8,8,0,0,0,0,16h16V67.36L68,97.05a8,8,0,0,0-4,7v19.47L27.88,145.14A8,8,0,0,0,24,152v64a8,8,0,0,0,8,8h72a8,8,0,0,0,8-8V168a16,16,0,0,1,32,0v48a8,8,0,0,0,8,8h72a8,8,0,0,0,8-8V152A8,8,0,0,0,228.12,145.14ZM64,208H40V156.53l24-14.4Zm152,0H192V142.13l24,14.4Z"/>
+    </svg>
+  );
+}

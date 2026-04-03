@@ -1,0 +1,26 @@
+import { JSX, splitProps, mergeProps } from "solid-js";
+
+export interface PhFlagBoldIconProps extends JSX.SvgSVGAttributes<SVGSVGElement> {
+  size?: number | string;
+  color?: string;
+}
+
+/**
+ * ![img](data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIyMCIgaGVpZ2h0PSIyMCIgdmlld0JveD0iMCAwIDI1NiAyNTYiIGZpbGw9IiMwMDAiPjxyZWN0IHdpZHRoPSIyNTYiIGhlaWdodD0iMjU2IiBmaWxsPSIjRkZGIiByeD0iNDAiIHJ5PSI0MCIvPjxwYXRoIGQ9Ik00MC4xNCw0Ni44OEExMiwxMiwwLDAsMCwzNiw1NlYyMjRhMTIsMTIsMCwwLDAsMjQsMFYxODEuNzJjMjIuODQtMTcuMTIsNDIuMS05LjEyLDcwLjY4LDUsMTYuMjMsOCwzNC43NCwxNy4yLDU0LjgsMTcuMiwxNC43MiwwLDMwLjI4LTQuOTQsNDYuMzgtMTguODhBMTIsMTIsMCwwLDAsMjM2LDE3NlY1NmExMiwxMiwwLDAsMC0xOS44Ni05LjA3Yy0yNC43MSwyMS40MS00NC41MywxMy4zMS03NC44Mi0xLjY4QzExMy4xOSwzMS4yNyw3OC4xNywxMy45NCw0MC4xNCw0Ni44OFpNMjEyLDE3MC4yNmMtMjIuODQsMTcuMTMtNDIuMSw5LjExLTcwLjY4LTVDMTE4LjE2LDE1My43Niw5MC4zMywxNDAsNjAsMTUzLjg3VjYxLjY5YzIyLjg0LTE3LjEyLDQyLjEtOS4xMiw3MC42OCw1LDE2LjIzLDgsMzQuNzQsMTcuMiw1NC44LDE3LjJBNjMsNjMsMCwwLDAsMjEyLDc4LjA4WiIvPjwvc3ZnPg==)
+ */
+export function PhFlagBoldIcon(props: PhFlagBoldIconProps) {
+  const merged = mergeProps({ size: "1em", color: "currentColor" }, props);
+  const [local, svgProps] = splitProps(merged, ["size", "color"]);
+  return (
+    <svg
+      xmlns="http://www.w3.org/2000/svg"
+      viewBox="0 0 256 256"
+      fill={local.color}
+      width={local.size}
+      height={local.size}
+      {...svgProps}
+    >
+      <path d="M40.14,46.88A12,12,0,0,0,36,56V224a12,12,0,0,0,24,0V181.72c22.84-17.12,42.1-9.12,70.68,5,16.23,8,34.74,17.2,54.8,17.2,14.72,0,30.28-4.94,46.38-18.88A12,12,0,0,0,236,176V56a12,12,0,0,0-19.86-9.07c-24.71,21.41-44.53,13.31-74.82-1.68C113.19,31.27,78.17,13.94,40.14,46.88ZM212,170.26c-22.84,17.13-42.1,9.11-70.68-5C118.16,153.76,90.33,140,60,153.87V61.69c22.84-17.12,42.1-9.12,70.68,5,16.23,8,34.74,17.2,54.8,17.2A63,63,0,0,0,212,78.08Z"/>
+    </svg>
+  );
+}

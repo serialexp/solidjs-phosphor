@@ -1,0 +1,26 @@
+import { JSX, splitProps, mergeProps } from "solid-js";
+
+export interface PhBluetoothXBoldIconProps extends JSX.SvgSVGAttributes<SVGSVGElement> {
+  size?: number | string;
+  color?: string;
+}
+
+/**
+ * ![img](data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIyMCIgaGVpZ2h0PSIyMCIgdmlld0JveD0iMCAwIDI1NiAyNTYiIGZpbGw9IiMwMDAiPjxyZWN0IHdpZHRoPSIyNTYiIGhlaWdodD0iMjU2IiBmaWxsPSIjRkZGIiByeD0iNDAiIHJ5PSI0MCIvPjxwYXRoIGQ9Ik0xODMuMiwxNjYuNCwxMzIsMTI4bDExLjYxLTguNzFhMTIsMTIsMCwxLDAtMTQuNC0xOS4yTDEyNCwxMDRWNTZsNS4yMSwzLjkxYTEyLDEyLDAsMSwwLDE0LjQtMTkuMkwxMTkuMiwyMi40QTEyLDEyLDAsMCwwLDEwMCwzMnY3Mkw1NS4yLDcwLjRBMTIsMTIsMCwwLDAsNDAuOCw4OS42TDkyLDEyOCw0MC44LDE2Ni40YTEyLDEyLDAsMSwwLDE0LjQsMTkuMkwxMDAsMTUydjcyYTEyLDEyLDAsMCwwLDE5LjIsOS42bDY0LTQ4YTEyLDEyLDAsMCwwLDAtMTkuMlpNMTI0LDIwMFYxNTJsMzIsMjRaTTI0MC40OSw5NS41MWExMiwxMiwwLDAsMS0xNywxN0wyMDgsOTdsLTE1LjUxLDE1LjUyYTEyLDEyLDAsMSwxLTE3LTE3TDE5MSw4MCwxNzUuNTIsNjQuNDlhMTIsMTIsMCwxLDEsMTctMTdMMjA4LDYzbDE1LjUxLTE1LjUyYTEyLDEyLDAsMCwxLDE3LDE3TDIyNSw4MFoiLz48L3N2Zz4=)
+ */
+export function PhBluetoothXBoldIcon(props: PhBluetoothXBoldIconProps) {
+  const merged = mergeProps({ size: "1em", color: "currentColor" }, props);
+  const [local, svgProps] = splitProps(merged, ["size", "color"]);
+  return (
+    <svg
+      xmlns="http://www.w3.org/2000/svg"
+      viewBox="0 0 256 256"
+      fill={local.color}
+      width={local.size}
+      height={local.size}
+      {...svgProps}
+    >
+      <path d="M183.2,166.4,132,128l11.61-8.71a12,12,0,1,0-14.4-19.2L124,104V56l5.21,3.91a12,12,0,1,0,14.4-19.2L119.2,22.4A12,12,0,0,0,100,32v72L55.2,70.4A12,12,0,0,0,40.8,89.6L92,128,40.8,166.4a12,12,0,1,0,14.4,19.2L100,152v72a12,12,0,0,0,19.2,9.6l64-48a12,12,0,0,0,0-19.2ZM124,200V152l32,24ZM240.49,95.51a12,12,0,0,1-17,17L208,97l-15.51,15.52a12,12,0,1,1-17-17L191,80,175.52,64.49a12,12,0,1,1,17-17L208,63l15.51-15.52a12,12,0,0,1,17,17L225,80Z"/>
+    </svg>
+  );
+}

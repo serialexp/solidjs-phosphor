@@ -1,0 +1,26 @@
+import { JSX, splitProps, mergeProps } from "solid-js";
+
+export interface PhDotsSixDuotoneIconProps extends JSX.SvgSVGAttributes<SVGSVGElement> {
+  size?: number | string;
+  color?: string;
+}
+
+/**
+ * ![img](data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIyMCIgaGVpZ2h0PSIyMCIgdmlld0JveD0iMCAwIDI1NiAyNTYiIGZpbGw9IiMwMDAiPjxyZWN0IHdpZHRoPSIyNTYiIGhlaWdodD0iMjU2IiBmaWxsPSIjRkZGIiByeD0iNDAiIHJ5PSI0MCIvPjxwYXRoIGQ9Ik0yNDAsNjRWMTkyYTE2LDE2LDAsMCwxLTE2LDE2SDMyYTE2LDE2LDAsMCwxLTE2LTE2VjY0QTE2LDE2LDAsMCwxLDMyLDQ4SDIyNEExNiwxNiwwLDAsMSwyNDAsNjRaIiBvcGFjaXR5PSIwLjIiLz48cGF0aCBkPSJNNzIsOTJBMTIsMTIsMCwxLDEsNjAsODAsMTIsMTIsMCwwLDEsNzIsOTJabTU2LTEyYTEyLDEyLDAsMSwwLDEyLDEyQTEyLDEyLDAsMCwwLDEyOCw4MFptNjgsMjRhMTIsMTIsMCwxLDAtMTItMTJBMTIsMTIsMCwwLDAsMTk2LDEwNFpNNjAsMTUyYTEyLDEyLDAsMSwwLDEyLDEyQTEyLDEyLDAsMCwwLDYwLDE1MlptNjgsMGExMiwxMiwwLDEsMCwxMiwxMkExMiwxMiwwLDAsMCwxMjgsMTUyWm02OCwwYTEyLDEyLDAsMSwwLDEyLDEyQTEyLDEyLDAsMCwwLDE5NiwxNTJaIi8+PC9zdmc+)
+ */
+export function PhDotsSixDuotoneIcon(props: PhDotsSixDuotoneIconProps) {
+  const merged = mergeProps({ size: "1em", color: "currentColor" }, props);
+  const [local, svgProps] = splitProps(merged, ["size", "color"]);
+  return (
+    <svg
+      xmlns="http://www.w3.org/2000/svg"
+      viewBox="0 0 256 256"
+      fill={local.color}
+      width={local.size}
+      height={local.size}
+      {...svgProps}
+    >
+      <path d="M240,64V192a16,16,0,0,1-16,16H32a16,16,0,0,1-16-16V64A16,16,0,0,1,32,48H224A16,16,0,0,1,240,64Z" opacity="0.2"/><path d="M72,92A12,12,0,1,1,60,80,12,12,0,0,1,72,92Zm56-12a12,12,0,1,0,12,12A12,12,0,0,0,128,80Zm68,24a12,12,0,1,0-12-12A12,12,0,0,0,196,104ZM60,152a12,12,0,1,0,12,12A12,12,0,0,0,60,152Zm68,0a12,12,0,1,0,12,12A12,12,0,0,0,128,152Zm68,0a12,12,0,1,0,12,12A12,12,0,0,0,196,152Z"/>
+    </svg>
+  );
+}

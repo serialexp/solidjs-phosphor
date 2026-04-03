@@ -1,0 +1,26 @@
+import { JSX, splitProps, mergeProps } from "solid-js";
+
+export interface PhPintGlassIconProps extends JSX.SvgSVGAttributes<SVGSVGElement> {
+  size?: number | string;
+  color?: string;
+}
+
+/**
+ * ![img](data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIyMCIgaGVpZ2h0PSIyMCIgdmlld0JveD0iMCAwIDI1NiAyNTYiIGZpbGw9IiMwMDAiPjxyZWN0IHdpZHRoPSIyNTYiIGhlaWdodD0iMjU2IiBmaWxsPSIjRkZGIiByeD0iNDAiIHJ5PSI0MCIvPjxwYXRoIGQ9Ik0yMDYsMjYuNjlBOCw4LDAsMCwwLDIwMCwyNEg1NmE4LDgsMCwwLDAtNy45NCw5bDIzLjE1LDE5M0ExNiwxNiwwLDAsMCw4Ny4xLDI0MGg4MS44YTE2LDE2LDAsMCwwLDE1Ljg5LTE0LjA5TDIwNy45NCwzM0E4LDgsMCwwLDAsMjA2LDI2LjY5Wk0xOTEsNDAsMTg4LjEsNjRINjcuOUw2NSw0MFpNMTY4LjksMjI0SDg3LjFMNjkuODIsODBIMTg2LjE4WiIvPjwvc3ZnPg==)
+ */
+export function PhPintGlassIcon(props: PhPintGlassIconProps) {
+  const merged = mergeProps({ size: "1em", color: "currentColor" }, props);
+  const [local, svgProps] = splitProps(merged, ["size", "color"]);
+  return (
+    <svg
+      xmlns="http://www.w3.org/2000/svg"
+      viewBox="0 0 256 256"
+      fill={local.color}
+      width={local.size}
+      height={local.size}
+      {...svgProps}
+    >
+      <path d="M206,26.69A8,8,0,0,0,200,24H56a8,8,0,0,0-7.94,9l23.15,193A16,16,0,0,0,87.1,240h81.8a16,16,0,0,0,15.89-14.09L207.94,33A8,8,0,0,0,206,26.69ZM191,40,188.1,64H67.9L65,40ZM168.9,224H87.1L69.82,80H186.18Z"/>
+    </svg>
+  );
+}

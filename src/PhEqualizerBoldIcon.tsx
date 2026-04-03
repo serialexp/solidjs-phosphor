@@ -1,0 +1,26 @@
+import { JSX, splitProps, mergeProps } from "solid-js";
+
+export interface PhEqualizerBoldIconProps extends JSX.SvgSVGAttributes<SVGSVGElement> {
+  size?: number | string;
+  color?: string;
+}
+
+/**
+ * ![img](data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIyMCIgaGVpZ2h0PSIyMCIgdmlld0JveD0iMCAwIDI1NiAyNTYiIGZpbGw9IiMwMDAiPjxyZWN0IHdpZHRoPSIyNTYiIGhlaWdodD0iMjU2IiBmaWxsPSIjRkZGIiByeD0iNDAiIHJ5PSI0MCIvPjxwYXRoIGQ9Ik04MCwxMDhhMTIsMTIsMCwwLDEtMTIsMTJIMjhhMTIsMTIsMCwwLDEsMC0yNEg2OEExMiwxMiwwLDAsMSw4MCwxMDhaTTY4LDEzNkgyOGExMiwxMiwwLDAsMCwwLDI0SDY4YTEyLDEyLDAsMCwwLDAtMjRabTAsNDBIMjhhMTIsMTIsMCwwLDAsMCwyNEg2OGExMiwxMiwwLDAsMCwwLTI0Wm04MC00MEgxMDhhMTIsMTIsMCwwLDAsMCwyNGg0MGExMiwxMiwwLDAsMCwwLTI0Wm0wLDQwSDEwOGExMiwxMiwwLDAsMCwwLDI0aDQwYTEyLDEyLDAsMCwwLDAtMjRabTQwLTk2aDQwYTEyLDEyLDAsMCwwLDAtMjRIMTg4YTEyLDEyLDAsMCwwLDAsMjRabTQwLDE2SDE4OGExMiwxMiwwLDAsMCwwLDI0aDQwYTEyLDEyLDAsMCwwLDAtMjRabTAsNDBIMTg4YTEyLDEyLDAsMCwwLDAsMjRoNDBhMTIsMTIsMCwwLDAsMC0yNFptMCw0MEgxODhhMTIsMTIsMCwwLDAsMCwyNGg0MGExMiwxMiwwLDAsMCwwLTI0WiIvPjwvc3ZnPg==)
+ */
+export function PhEqualizerBoldIcon(props: PhEqualizerBoldIconProps) {
+  const merged = mergeProps({ size: "1em", color: "currentColor" }, props);
+  const [local, svgProps] = splitProps(merged, ["size", "color"]);
+  return (
+    <svg
+      xmlns="http://www.w3.org/2000/svg"
+      viewBox="0 0 256 256"
+      fill={local.color}
+      width={local.size}
+      height={local.size}
+      {...svgProps}
+    >
+      <path d="M80,108a12,12,0,0,1-12,12H28a12,12,0,0,1,0-24H68A12,12,0,0,1,80,108ZM68,136H28a12,12,0,0,0,0,24H68a12,12,0,0,0,0-24Zm0,40H28a12,12,0,0,0,0,24H68a12,12,0,0,0,0-24Zm80-40H108a12,12,0,0,0,0,24h40a12,12,0,0,0,0-24Zm0,40H108a12,12,0,0,0,0,24h40a12,12,0,0,0,0-24Zm40-96h40a12,12,0,0,0,0-24H188a12,12,0,0,0,0,24Zm40,16H188a12,12,0,0,0,0,24h40a12,12,0,0,0,0-24Zm0,40H188a12,12,0,0,0,0,24h40a12,12,0,0,0,0-24Zm0,40H188a12,12,0,0,0,0,24h40a12,12,0,0,0,0-24Z"/>
+    </svg>
+  );
+}

@@ -1,0 +1,26 @@
+import { JSX, splitProps, mergeProps } from "solid-js";
+
+export interface PhFolderSimpleIconProps extends JSX.SvgSVGAttributes<SVGSVGElement> {
+  size?: number | string;
+  color?: string;
+}
+
+/**
+ * ![img](data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIyMCIgaGVpZ2h0PSIyMCIgdmlld0JveD0iMCAwIDI1NiAyNTYiIGZpbGw9IiMwMDAiPjxyZWN0IHdpZHRoPSIyNTYiIGhlaWdodD0iMjU2IiBmaWxsPSIjRkZGIiByeD0iNDAiIHJ5PSI0MCIvPjxwYXRoIGQ9Ik0yMTYsNzJIMTMwLjY3TDEwMi45Myw1MS4yYTE2LjEyLDE2LjEyLDAsMCwwLTkuNi0zLjJINDBBMTYsMTYsMCwwLDAsMjQsNjRWMjAwYTE2LDE2LDAsMCwwLDE2LDE2SDIxNi44OUExNS4xMywxNS4xMywwLDAsMCwyMzIsMjAwLjg5Vjg4QTE2LDE2LDAsMCwwLDIxNiw3MlptMCwxMjhINDBWNjRIOTMuMzNMMTIzLjIsODYuNEE4LDgsMCwwLDAsMTI4LDg4aDg4WiIvPjwvc3ZnPg==)
+ */
+export function PhFolderSimpleIcon(props: PhFolderSimpleIconProps) {
+  const merged = mergeProps({ size: "1em", color: "currentColor" }, props);
+  const [local, svgProps] = splitProps(merged, ["size", "color"]);
+  return (
+    <svg
+      xmlns="http://www.w3.org/2000/svg"
+      viewBox="0 0 256 256"
+      fill={local.color}
+      width={local.size}
+      height={local.size}
+      {...svgProps}
+    >
+      <path d="M216,72H130.67L102.93,51.2a16.12,16.12,0,0,0-9.6-3.2H40A16,16,0,0,0,24,64V200a16,16,0,0,0,16,16H216.89A15.13,15.13,0,0,0,232,200.89V88A16,16,0,0,0,216,72Zm0,128H40V64H93.33L123.2,86.4A8,8,0,0,0,128,88h88Z"/>
+    </svg>
+  );
+}

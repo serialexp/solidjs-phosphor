@@ -1,0 +1,26 @@
+import { JSX, splitProps, mergeProps } from "solid-js";
+
+export interface PhWheelchairMotionBoldIconProps extends JSX.SvgSVGAttributes<SVGSVGElement> {
+  size?: number | string;
+  color?: string;
+}
+
+/**
+ * ![img](data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIyMCIgaGVpZ2h0PSIyMCIgdmlld0JveD0iMCAwIDI1NiAyNTYiIGZpbGw9IiMwMDAiPjxyZWN0IHdpZHRoPSIyNTYiIGhlaWdodD0iMjU2IiBmaWxsPSIjRkZGIiByeD0iNDAiIHJ5PSI0MCIvPjxwYXRoIGQ9Ik0xNzYsODRhMzYsMzYsMCwxLDAtMzYtMzZBMzYsMzYsMCwwLDAsMTc2LDg0Wm0wLTQ4YTEyLDEyLDAsMSwxLTEyLDEyQTEyLDEyLDAsMCwxLDE3NiwzNlptMjkuMjgsOTYuMzlhMTIsMTIsMCwwLDEsMi40OSwxMGwtMTYsODBBMTIsMTIsMCwwLDEsMTgwLDIzMmExMS44NywxMS44NywwLDAsMS0yLjM2LS4yMywxMiwxMiwwLDAsMS05LjQyLTE0LjEyTDE4MS4zNiwxNTJIMTI0YTEyLDEyLDAsMCwxLTEwLjQtMThsMTcuOTItMzEuMmE3Ni4xLDc2LjEsMCwwLDAtNzkuODgsMTAuNTVBMTIsMTIsMCwwLDEsMzYuMzYsOTQuODZhMTAwLDEwMCwwLDAsMSwxMTguMTktNi42OCwxMiwxMiwwLDAsMSwzLjg1LDE2TDE0NC43NCwxMjhIMTk2QTEyLDEyLDAsMCwxLDIwNS4yOCwxMzIuMzlabS00MS40Nyw0NC41MmE2NCw2NCwwLDEsMS03My42NC02OC4xNiwxMiwxMiwwLDAsMSwzLjY2LDIzLjcyLDQwLDQwLDAsMSwwLDQ2LjA1LDQyLjYyLDEyLDEyLDAsMSwxLDIzLjkzLDEuODJaIi8+PC9zdmc+)
+ */
+export function PhWheelchairMotionBoldIcon(props: PhWheelchairMotionBoldIconProps) {
+  const merged = mergeProps({ size: "1em", color: "currentColor" }, props);
+  const [local, svgProps] = splitProps(merged, ["size", "color"]);
+  return (
+    <svg
+      xmlns="http://www.w3.org/2000/svg"
+      viewBox="0 0 256 256"
+      fill={local.color}
+      width={local.size}
+      height={local.size}
+      {...svgProps}
+    >
+      <path d="M176,84a36,36,0,1,0-36-36A36,36,0,0,0,176,84Zm0-48a12,12,0,1,1-12,12A12,12,0,0,1,176,36Zm29.28,96.39a12,12,0,0,1,2.49,10l-16,80A12,12,0,0,1,180,232a11.87,11.87,0,0,1-2.36-.23,12,12,0,0,1-9.42-14.12L181.36,152H124a12,12,0,0,1-10.4-18l17.92-31.2a76.1,76.1,0,0,0-79.88,10.55A12,12,0,0,1,36.36,94.86a100,100,0,0,1,118.19-6.68,12,12,0,0,1,3.85,16L144.74,128H196A12,12,0,0,1,205.28,132.39Zm-41.47,44.52a64,64,0,1,1-73.64-68.16,12,12,0,0,1,3.66,23.72,40,40,0,1,0,46.05,42.62,12,12,0,1,1,23.93,1.82Z"/>
+    </svg>
+  );
+}

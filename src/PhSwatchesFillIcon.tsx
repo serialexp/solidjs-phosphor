@@ -1,0 +1,26 @@
+import { JSX, splitProps, mergeProps } from "solid-js";
+
+export interface PhSwatchesFillIconProps extends JSX.SvgSVGAttributes<SVGSVGElement> {
+  size?: number | string;
+  color?: string;
+}
+
+/**
+ * ![img](data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIyMCIgaGVpZ2h0PSIyMCIgdmlld0JveD0iMCAwIDI1NiAyNTYiIGZpbGw9IiMwMDAiPjxyZWN0IHdpZHRoPSIyNTYiIGhlaWdodD0iMjU2IiBmaWxsPSIjRkZGIiByeD0iNDAiIHJ5PSI0MCIvPjxwYXRoIGQ9Ik0yNDAsMTU1LjkxYTE2LDE2LDAsMCwwLTEtNS4yMkwyMTkuOTQsOTguNDhBMTYsMTYsMCwwLDAsMTk5LjQ5LDg5bC02Ny44MSwyNC41NywxMi4wOC02OUExNiwxNiwwLDAsMCwxMzAuODQsMjZMNzYuMTcsMTYuMjVhMTUuOTQsMTUuOTQsMCwwLDAtMTguNDcsMTNsLTI1LDE0My4xMkE0My44Miw0My44MiwwLDAsMCw3NS43OCwyMjRIMjI0YTE2LDE2LDAsMCwwLDE2LTE2Wk03NiwxOTZhMTYsMTYsMCwxLDEsMTYtMTZBMTYsMTYsMCwwLDEsNzYsMTk2Wm00Mi43Mi04LjM4LDkuNzgtNTUuOTJMMjA0LjkyLDEwNCwyMjQsMTU2LjExLDExNi43OCwxOTVBNDQuODksNDQuODksMCwwLDAsMTE4LjcyLDE4Ny42MlpNMjI0LDIwOEgxMjcuNzRMMjI0LDE3My4xMVoiLz48L3N2Zz4=)
+ */
+export function PhSwatchesFillIcon(props: PhSwatchesFillIconProps) {
+  const merged = mergeProps({ size: "1em", color: "currentColor" }, props);
+  const [local, svgProps] = splitProps(merged, ["size", "color"]);
+  return (
+    <svg
+      xmlns="http://www.w3.org/2000/svg"
+      viewBox="0 0 256 256"
+      fill={local.color}
+      width={local.size}
+      height={local.size}
+      {...svgProps}
+    >
+      <path d="M240,155.91a16,16,0,0,0-1-5.22L219.94,98.48A16,16,0,0,0,199.49,89l-67.81,24.57,12.08-69A16,16,0,0,0,130.84,26L76.17,16.25a15.94,15.94,0,0,0-18.47,13l-25,143.12A43.82,43.82,0,0,0,75.78,224H224a16,16,0,0,0,16-16ZM76,196a16,16,0,1,1,16-16A16,16,0,0,1,76,196Zm42.72-8.38,9.78-55.92L204.92,104,224,156.11,116.78,195A44.89,44.89,0,0,0,118.72,187.62ZM224,208H127.74L224,173.11Z"/>
+    </svg>
+  );
+}

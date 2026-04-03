@@ -1,0 +1,26 @@
+import { JSX, splitProps, mergeProps } from "solid-js";
+
+export interface PhSyringeLightIconProps extends JSX.SvgSVGAttributes<SVGSVGElement> {
+  size?: number | string;
+  color?: string;
+}
+
+/**
+ * ![img](data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIyMCIgaGVpZ2h0PSIyMCIgdmlld0JveD0iMCAwIDI1NiAyNTYiIGZpbGw9IiMwMDAiPjxyZWN0IHdpZHRoPSIyNTYiIGhlaWdodD0iMjU2IiBmaWxsPSIjRkZGIiByeD0iNDAiIHJ5PSI0MCIvPjxwYXRoIGQ9Ik0yMzYuMjQsNjcuNzZsLTQ4LTQ4YTYsNiwwLDAsMC04LjQ4LDguNDhMMTk5LjUxLDQ4LDE2OCw3OS41MSwxMzIuMjQsNDMuNzZhNiw2LDAsMSwwLTguNDgsOC40OEwxMzEuNTEsNjAsNDYuMSwxNDUuNDFhMTMuOTQsMTMuOTQsMCwwLDAtNC4xLDkuOXY1MC4yTDE5Ljc2LDIyNy43NmE2LDYsMCwxLDAsOC40OCw4LjQ4TDUwLjQ5LDIxNGg1MC4yYTEzLjk0LDEzLjk0LDAsMCwwLDkuOS00LjFMMTk2LDEyNC40OWw3Ljc2LDcuNzVhNiw2LDAsMCwwLDguNDgtOC40OEwxNzYuNDksODgsMjA4LDU2LjQ5bDE5Ljc2LDE5Ljc1YTYsNiwwLDAsMCw4LjQ4LTguNDhaTTEwMi4xLDIwMS40MWEyLDIsMCwwLDEtMS40MS41OUg1NFYxNTUuMzFhMiwyLDAsMCwxLC41OS0xLjQxTDc0LDEzNC40OWwyMS43NiwyMS43NWE2LDYsMCwxLDAsOC40OC04LjQ4TDgyLjQ5LDEyNiw5OCwxMTAuNDlsMjEuNzYsMjEuNzVhNiw2LDAsMCwwLDguNDgtOC40OEwxMDYuNDksMTAyLDE0MCw2OC40OSwxODcuNTEsMTE2WiIvPjwvc3ZnPg==)
+ */
+export function PhSyringeLightIcon(props: PhSyringeLightIconProps) {
+  const merged = mergeProps({ size: "1em", color: "currentColor" }, props);
+  const [local, svgProps] = splitProps(merged, ["size", "color"]);
+  return (
+    <svg
+      xmlns="http://www.w3.org/2000/svg"
+      viewBox="0 0 256 256"
+      fill={local.color}
+      width={local.size}
+      height={local.size}
+      {...svgProps}
+    >
+      <path d="M236.24,67.76l-48-48a6,6,0,0,0-8.48,8.48L199.51,48,168,79.51,132.24,43.76a6,6,0,1,0-8.48,8.48L131.51,60,46.1,145.41a13.94,13.94,0,0,0-4.1,9.9v50.2L19.76,227.76a6,6,0,1,0,8.48,8.48L50.49,214h50.2a13.94,13.94,0,0,0,9.9-4.1L196,124.49l7.76,7.75a6,6,0,0,0,8.48-8.48L176.49,88,208,56.49l19.76,19.75a6,6,0,0,0,8.48-8.48ZM102.1,201.41a2,2,0,0,1-1.41.59H54V155.31a2,2,0,0,1,.59-1.41L74,134.49l21.76,21.75a6,6,0,1,0,8.48-8.48L82.49,126,98,110.49l21.76,21.75a6,6,0,0,0,8.48-8.48L106.49,102,140,68.49,187.51,116Z"/>
+    </svg>
+  );
+}

@@ -1,0 +1,26 @@
+import { JSX, splitProps, mergeProps } from "solid-js";
+
+export interface PhCurrencyKrwBoldIconProps extends JSX.SvgSVGAttributes<SVGSVGElement> {
+  size?: number | string;
+  color?: string;
+}
+
+/**
+ * ![img](data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIyMCIgaGVpZ2h0PSIyMCIgdmlld0JveD0iMCAwIDI1NiAyNTYiIGZpbGw9IiMwMDAiPjxyZWN0IHdpZHRoPSIyNTYiIGhlaWdodD0iMjU2IiBmaWxsPSIjRkZGIiByeD0iNDAiIHJ5PSI0MCIvPjxwYXRoIGQ9Ik0yNDAsMTI0SDIyMy44M2wxOS4yOS00Ny40OGExMiwxMiwwLDAsMC0yMi4yNC05bC0yMyw1Ni41MUgxNjIuMDhsLTIzLTU2LjUxYTEyLDEyLDAsMCwwLTIyLjI0LDBMOTMuOTIsMTI0SDU4LjA4bC0yMy01Ni41MWExMiwxMiwwLDAsMC0yMi4yNCw5TDMyLjE3LDEyNEgxNmExMiwxMiwwLDAsMCwwLDI0SDQxLjkybDIzLDU2LjUyYTEyLDEyLDAsMCwwLDIyLjI0LDBsMjMtNTYuNTJoMzUuODRsMjMsNTYuNTJhMTIsMTIsMCwwLDAsMjIuMjQsMGwyMy01Ni41MkgyNDBhMTIsMTIsMCwwLDAsMC0yNFpNNzYsMTY4LjEyLDY3LjgzLDE0OEg4NC4xN1pNMTE5LjgzLDEyNCwxMjgsMTAzLjg5LDEzNi4xNywxMjRaTTE4MCwxNjguMTIsMTcxLjgzLDE0OGgxNi4zNFoiLz48L3N2Zz4=)
+ */
+export function PhCurrencyKrwBoldIcon(props: PhCurrencyKrwBoldIconProps) {
+  const merged = mergeProps({ size: "1em", color: "currentColor" }, props);
+  const [local, svgProps] = splitProps(merged, ["size", "color"]);
+  return (
+    <svg
+      xmlns="http://www.w3.org/2000/svg"
+      viewBox="0 0 256 256"
+      fill={local.color}
+      width={local.size}
+      height={local.size}
+      {...svgProps}
+    >
+      <path d="M240,124H223.83l19.29-47.48a12,12,0,0,0-22.24-9l-23,56.51H162.08l-23-56.51a12,12,0,0,0-22.24,0L93.92,124H58.08l-23-56.51a12,12,0,0,0-22.24,9L32.17,124H16a12,12,0,0,0,0,24H41.92l23,56.52a12,12,0,0,0,22.24,0l23-56.52h35.84l23,56.52a12,12,0,0,0,22.24,0l23-56.52H240a12,12,0,0,0,0-24ZM76,168.12,67.83,148H84.17ZM119.83,124,128,103.89,136.17,124ZM180,168.12,171.83,148h16.34Z"/>
+    </svg>
+  );
+}

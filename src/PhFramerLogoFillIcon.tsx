@@ -1,0 +1,26 @@
+import { JSX, splitProps, mergeProps } from "solid-js";
+
+export interface PhFramerLogoFillIconProps extends JSX.SvgSVGAttributes<SVGSVGElement> {
+  size?: number | string;
+  color?: string;
+}
+
+/**
+ * ![img](data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIyMCIgaGVpZ2h0PSIyMCIgdmlld0JveD0iMCAwIDI1NiAyNTYiIGZpbGw9IiMwMDAiPjxyZWN0IHdpZHRoPSIyNTYiIGhlaWdodD0iMjU2IiBmaWxsPSIjRkZGIiByeD0iNDAiIHJ5PSI0MCIvPjxwYXRoIGQ9Ik0yMDAsMTEySDE0OWw1Ni4yNyw1MEE4LDgsMCwwLDEsMjAwLDE3NkgxMzZ2NjRhOCw4LDAsMCwxLTEzLjY2LDUuNjZsLTcyLTcyQTgsOCwwLDAsMSw0OCwxNjhWMTA0YTgsOCwwLDAsMSw4LThoNTFMNTAuNjksNDZBOCw4LDAsMCwxLDU2LDMySDIwMGE4LDgsMCwwLDEsOCw4djY0QTgsOCwwLDAsMSwyMDAsMTEyWiIvPjwvc3ZnPg==)
+ */
+export function PhFramerLogoFillIcon(props: PhFramerLogoFillIconProps) {
+  const merged = mergeProps({ size: "1em", color: "currentColor" }, props);
+  const [local, svgProps] = splitProps(merged, ["size", "color"]);
+  return (
+    <svg
+      xmlns="http://www.w3.org/2000/svg"
+      viewBox="0 0 256 256"
+      fill={local.color}
+      width={local.size}
+      height={local.size}
+      {...svgProps}
+    >
+      <path d="M200,112H149l56.27,50A8,8,0,0,1,200,176H136v64a8,8,0,0,1-13.66,5.66l-72-72A8,8,0,0,1,48,168V104a8,8,0,0,1,8-8h51L50.69,46A8,8,0,0,1,56,32H200a8,8,0,0,1,8,8v64A8,8,0,0,1,200,112Z"/>
+    </svg>
+  );
+}

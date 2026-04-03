@@ -1,0 +1,26 @@
+import { JSX, splitProps, mergeProps } from "solid-js";
+
+export interface PhHospitalThinIconProps extends JSX.SvgSVGAttributes<SVGSVGElement> {
+  size?: number | string;
+  color?: string;
+}
+
+/**
+ * ![img](data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIyMCIgaGVpZ2h0PSIyMCIgdmlld0JveD0iMCAwIDI1NiAyNTYiIGZpbGw9IiMwMDAiPjxyZWN0IHdpZHRoPSIyNTYiIGhlaWdodD0iMjU2IiBmaWxsPSIjRkZGIiByeD0iNDAiIHJ5PSI0MCIvPjxwYXRoIGQ9Ik0yNDgsMjEySDIzNlYxMjhhMTIsMTIsMCwwLDAtMTItMTJIMTY0VjQ4YTEyLDEyLDAsMCwwLTEyLTEySDU2QTEyLDEyLDAsMCwwLDQ0LDQ4VjIxMkgzMmE0LDQsMCwwLDAsMCw4SDI0OGE0LDQsMCwwLDAsMC04Wm0tMjQtODhhNCw0LDAsMCwxLDQsNHY4NEgxNjRWMTI0Wk01Miw0OGE0LDQsMCwwLDEsNC00aDk2YTQsNCwwLDAsMSw0LDRWMjEySDEzMlYxNjBhNCw0LDAsMCwwLTQtNEg4MGE0LDQsMCwwLDAtNCw0djUySDUyWm03MiwxNjRIODRWMTY0aDQwWk03Niw5NmE0LDQsMCwwLDEsNC00aDIwVjcyYTQsNCwwLDAsMSw4LDBWOTJoMjBhNCw0LDAsMCwxLDAsOEgxMDh2MjBhNCw0LDAsMCwxLTgsMFYxMDBIODBBNCw0LDAsMCwxLDc2LDk2WiIvPjwvc3ZnPg==)
+ */
+export function PhHospitalThinIcon(props: PhHospitalThinIconProps) {
+  const merged = mergeProps({ size: "1em", color: "currentColor" }, props);
+  const [local, svgProps] = splitProps(merged, ["size", "color"]);
+  return (
+    <svg
+      xmlns="http://www.w3.org/2000/svg"
+      viewBox="0 0 256 256"
+      fill={local.color}
+      width={local.size}
+      height={local.size}
+      {...svgProps}
+    >
+      <path d="M248,212H236V128a12,12,0,0,0-12-12H164V48a12,12,0,0,0-12-12H56A12,12,0,0,0,44,48V212H32a4,4,0,0,0,0,8H248a4,4,0,0,0,0-8Zm-24-88a4,4,0,0,1,4,4v84H164V124ZM52,48a4,4,0,0,1,4-4h96a4,4,0,0,1,4,4V212H132V160a4,4,0,0,0-4-4H80a4,4,0,0,0-4,4v52H52Zm72,164H84V164h40ZM76,96a4,4,0,0,1,4-4h20V72a4,4,0,0,1,8,0V92h20a4,4,0,0,1,0,8H108v20a4,4,0,0,1-8,0V100H80A4,4,0,0,1,76,96Z"/>
+    </svg>
+  );
+}

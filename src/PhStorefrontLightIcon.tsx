@@ -1,0 +1,26 @@
+import { JSX, splitProps, mergeProps } from "solid-js";
+
+export interface PhStorefrontLightIconProps extends JSX.SvgSVGAttributes<SVGSVGElement> {
+  size?: number | string;
+  color?: string;
+}
+
+/**
+ * ![img](data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIyMCIgaGVpZ2h0PSIyMCIgdmlld0JveD0iMCAwIDI1NiAyNTYiIGZpbGw9IiMwMDAiPjxyZWN0IHdpZHRoPSIyNTYiIGhlaWdodD0iMjU2IiBmaWxsPSIjRkZGIiByeD0iNDAiIHJ5PSI0MCIvPjxwYXRoIGQ9Ik0yNi4yMiw5NC40MUE2LDYsMCwwLDAsMjYsOTZ2MTZBMzgsMzgsMCwwLDAsNDIsMTQzVjIxNmE2LDYsMCwwLDAsNiw2SDIwOGE2LDYsMCwwLDAsNi02VjE0M0EzOCwzOCwwLDAsMCwyMzAsMTEyVjk2YTUuOTEsNS45MSwwLDAsMC0uMjMtMS42NEwyMTUuNDMsNDQuMTVBMTQuMDcsMTQuMDcsMCwwLDAsMjAyLDM0SDU0QTE0LjA3LDE0LjA3LDAsMCwwLDQwLjU3LDQ0LjE1Wm0yNS44OS00N0EyLDIsMCwwLDEsNTQsNDZIMjAyYTIsMiwwLDAsMSwxLjkyLDEuNDVMMjE2LjA1LDkwSDQwWk0xMDIsMTAyaDUydjEwYTI2LDI2LDAsMCwxLTUyLDBabS02NCwwSDkwdjEwYTI2LDI2LDAsMCwxLTM4LjE4LDIzLDYsNiwwLDAsMC0xLjY1LTFBMjYsMjYsMCwwLDEsMzgsMTEyWk0yMDIsMjEwSDU0VjE0OC42NmEzOCwzOCwwLDAsMCw0Mi0xNi4yMSwzNy45NSwzNy45NSwwLDAsMCw2NCwwLDM4LDM4LDAsMCwwLDQyLDE2LjIxWm0zLjgzLTc2YTYsNiwwLDAsMC0xLjY1LDFBMjYsMjYsMCwwLDEsMTY2LDExMlYxMDJoNTJ2MTBBMjYsMjYsMCwwLDEsMjA1LjgzLDEzNFoiLz48L3N2Zz4=)
+ */
+export function PhStorefrontLightIcon(props: PhStorefrontLightIconProps) {
+  const merged = mergeProps({ size: "1em", color: "currentColor" }, props);
+  const [local, svgProps] = splitProps(merged, ["size", "color"]);
+  return (
+    <svg
+      xmlns="http://www.w3.org/2000/svg"
+      viewBox="0 0 256 256"
+      fill={local.color}
+      width={local.size}
+      height={local.size}
+      {...svgProps}
+    >
+      <path d="M26.22,94.41A6,6,0,0,0,26,96v16A38,38,0,0,0,42,143V216a6,6,0,0,0,6,6H208a6,6,0,0,0,6-6V143A38,38,0,0,0,230,112V96a5.91,5.91,0,0,0-.23-1.64L215.43,44.15A14.07,14.07,0,0,0,202,34H54A14.07,14.07,0,0,0,40.57,44.15Zm25.89-47A2,2,0,0,1,54,46H202a2,2,0,0,1,1.92,1.45L216.05,90H40ZM102,102h52v10a26,26,0,0,1-52,0Zm-64,0H90v10a26,26,0,0,1-38.18,23,6,6,0,0,0-1.65-1A26,26,0,0,1,38,112ZM202,210H54V148.66a38,38,0,0,0,42-16.21,37.95,37.95,0,0,0,64,0,38,38,0,0,0,42,16.21Zm3.83-76a6,6,0,0,0-1.65,1A26,26,0,0,1,166,112V102h52v10A26,26,0,0,1,205.83,134Z"/>
+    </svg>
+  );
+}

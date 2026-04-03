@@ -1,0 +1,26 @@
+import { JSX, splitProps, mergeProps } from "solid-js";
+
+export interface PhTrafficConeThinIconProps extends JSX.SvgSVGAttributes<SVGSVGElement> {
+  size?: number | string;
+  color?: string;
+}
+
+/**
+ * ![img](data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIyMCIgaGVpZ2h0PSIyMCIgdmlld0JveD0iMCAwIDI1NiAyNTYiIGZpbGw9IiMwMDAiPjxyZWN0IHdpZHRoPSIyNTYiIGhlaWdodD0iMjU2IiBmaWxsPSIjRkZGIiByeD0iNDAiIHJ5PSI0MCIvPjxwYXRoIGQ9Ik0yMzIsMjEySDIxMC44NEwxNDkuNjUsMzYuMDZBMTIsMTIsMCwwLDAsMTM4LjMxLDI4SDExNy42OWExMiwxMiwwLDAsMC0xMS4zNCw4LjA2TDQ1LjE2LDIxMkgyNGE0LDQsMCwwLDAsMCw4SDIzMmE0LDQsMCwwLDAsMC04Wk05Mi41OCwxMDBoNzAuODRsMTkuNDcsNTZINzMuMTFabTIxLjMzLTYxLjMxQTQsNCwwLDAsMSwxMTcuNjksMzZoMjAuNjJhNCw0LDAsMCwxLDMuNzgsMi42OUwxNjAuNjMsOTJIOTUuMzdaTTcwLjMyLDE2NEgxODUuNjhsMTYuNjksNDhINTMuNjNaIi8+PC9zdmc+)
+ */
+export function PhTrafficConeThinIcon(props: PhTrafficConeThinIconProps) {
+  const merged = mergeProps({ size: "1em", color: "currentColor" }, props);
+  const [local, svgProps] = splitProps(merged, ["size", "color"]);
+  return (
+    <svg
+      xmlns="http://www.w3.org/2000/svg"
+      viewBox="0 0 256 256"
+      fill={local.color}
+      width={local.size}
+      height={local.size}
+      {...svgProps}
+    >
+      <path d="M232,212H210.84L149.65,36.06A12,12,0,0,0,138.31,28H117.69a12,12,0,0,0-11.34,8.06L45.16,212H24a4,4,0,0,0,0,8H232a4,4,0,0,0,0-8ZM92.58,100h70.84l19.47,56H73.11Zm21.33-61.31A4,4,0,0,1,117.69,36h20.62a4,4,0,0,1,3.78,2.69L160.63,92H95.37ZM70.32,164H185.68l16.69,48H53.63Z"/>
+    </svg>
+  );
+}

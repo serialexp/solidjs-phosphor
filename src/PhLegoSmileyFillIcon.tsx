@@ -1,0 +1,26 @@
+import { JSX, splitProps, mergeProps } from "solid-js";
+
+export interface PhLegoSmileyFillIconProps extends JSX.SvgSVGAttributes<SVGSVGElement> {
+  size?: number | string;
+  color?: string;
+}
+
+/**
+ * ![img](data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIyMCIgaGVpZ2h0PSIyMCIgdmlld0JveD0iMCAwIDI1NiAyNTYiIGZpbGw9IiMwMDAiPjxyZWN0IHdpZHRoPSIyNTYiIGhlaWdodD0iMjU2IiBmaWxsPSIjRkZGIiByeD0iNDAiIHJ5PSI0MCIvPjxwYXRoIGQ9Ik0xODQsNDhIMTY4VjMyYTE2LDE2LDAsMCwwLTE2LTE2SDEwNEExNiwxNiwwLDAsMCw4OCwzMlY0OEg3MkEzMiwzMiwwLDAsMCw0MCw4MHY5NmEzMi4wNiwzMi4wNiwwLDAsMCwyNCwzMXYxN2ExNiwxNiwwLDAsMCwxNiwxNmg5NmExNiwxNiwwLDAsMCwxNi0xNlYyMDdhMzIuMDYsMzIuMDYsMCwwLDAsMjQtMzFWODBBMzIsMzIsMCwwLDAsMTg0LDQ4Wm0tMjgsNTJhMTIsMTIsMCwxLDEtMTIsMTJBMTIsMTIsMCwwLDEsMTU2LDEwMFptNC4yNyw1OC43N2E2MSw2MSwwLDAsMS02NC41NCwwLDgsOCwwLDAsMSw4LjU0LTEzLjU0LDQ1LDQ1LDAsMCwwLDQ3LjQ2LDAsOCw4LDAsMCwxLDguNTQsMTMuNTRaTTEwNCwzMmg0OFY0OEgxMDRabS00LDY4YTEyLDEyLDAsMSwxLTEyLDEyQTEyLDEyLDAsMCwxLDEwMCwxMDBabTc2LDEyNEg4MFYyMDhoOTZaIi8+PC9zdmc+)
+ */
+export function PhLegoSmileyFillIcon(props: PhLegoSmileyFillIconProps) {
+  const merged = mergeProps({ size: "1em", color: "currentColor" }, props);
+  const [local, svgProps] = splitProps(merged, ["size", "color"]);
+  return (
+    <svg
+      xmlns="http://www.w3.org/2000/svg"
+      viewBox="0 0 256 256"
+      fill={local.color}
+      width={local.size}
+      height={local.size}
+      {...svgProps}
+    >
+      <path d="M184,48H168V32a16,16,0,0,0-16-16H104A16,16,0,0,0,88,32V48H72A32,32,0,0,0,40,80v96a32.06,32.06,0,0,0,24,31v17a16,16,0,0,0,16,16h96a16,16,0,0,0,16-16V207a32.06,32.06,0,0,0,24-31V80A32,32,0,0,0,184,48Zm-28,52a12,12,0,1,1-12,12A12,12,0,0,1,156,100Zm4.27,58.77a61,61,0,0,1-64.54,0,8,8,0,0,1,8.54-13.54,45,45,0,0,0,47.46,0,8,8,0,0,1,8.54,13.54ZM104,32h48V48H104Zm-4,68a12,12,0,1,1-12,12A12,12,0,0,1,100,100Zm76,124H80V208h96Z"/>
+    </svg>
+  );
+}

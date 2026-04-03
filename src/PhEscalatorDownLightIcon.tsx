@@ -1,0 +1,26 @@
+import { JSX, splitProps, mergeProps } from "solid-js";
+
+export interface PhEscalatorDownLightIconProps extends JSX.SvgSVGAttributes<SVGSVGElement> {
+  size?: number | string;
+  color?: string;
+}
+
+/**
+ * ![img](data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIyMCIgaGVpZ2h0PSIyMCIgdmlld0JveD0iMCAwIDI1NiAyNTYiIGZpbGw9IiMwMDAiPjxyZWN0IHdpZHRoPSIyNTYiIGhlaWdodD0iMjU2IiBmaWxsPSIjRkZGIiByeD0iNDAiIHJ5PSI0MCIvPjxwYXRoIGQ9Ik0xNzEuNzYsODQuMjRhNiw2LDAsMCwxLDguNDgtOC40OEwxOTQsODkuNTFWNDhhNiw2LDAsMCwxLDEyLDBWODkuNTFsMTMuNzYtMTMuNzVhNiw2LDAsMCwxLDguNDgsOC40OGwtMjQsMjRhNiw2LDAsMCwxLTguNDgsMFpNMjM4LDE2MHY0MGExNCwxNCwwLDAsMS0xNCwxNEgxNjhhNiw2LDAsMCwxLTQuNDEtMS45M0w2OS4zNywxMTBIMzJBMTQsMTQsMCwwLDEsMTgsOTZWNTZBMTQsMTQsMCwwLDEsMzIsNDJIODhhNiw2LDAsMCwxLDQuNDEsMS45M0wxODYuNjMsMTQ2SDIyNEExNCwxNCwwLDAsMSwyMzgsMTYwWm0tMTIsMGEyLDIsMCwwLDAtMi0ySDE4NGE2LDYsMCwwLDEtNC40MS0xLjkzTDg1LjM3LDU0SDMyYTIsMiwwLDAsMC0yLDJWOTZhMiwyLDAsMCwwLDIsMkg3MmE2LDYsMCwwLDEsNC40MSwxLjkzTDE3MC42MywyMDJIMjI0YTIsMiwwLDAsMCwyLTJaIi8+PC9zdmc+)
+ */
+export function PhEscalatorDownLightIcon(props: PhEscalatorDownLightIconProps) {
+  const merged = mergeProps({ size: "1em", color: "currentColor" }, props);
+  const [local, svgProps] = splitProps(merged, ["size", "color"]);
+  return (
+    <svg
+      xmlns="http://www.w3.org/2000/svg"
+      viewBox="0 0 256 256"
+      fill={local.color}
+      width={local.size}
+      height={local.size}
+      {...svgProps}
+    >
+      <path d="M171.76,84.24a6,6,0,0,1,8.48-8.48L194,89.51V48a6,6,0,0,1,12,0V89.51l13.76-13.75a6,6,0,0,1,8.48,8.48l-24,24a6,6,0,0,1-8.48,0ZM238,160v40a14,14,0,0,1-14,14H168a6,6,0,0,1-4.41-1.93L69.37,110H32A14,14,0,0,1,18,96V56A14,14,0,0,1,32,42H88a6,6,0,0,1,4.41,1.93L186.63,146H224A14,14,0,0,1,238,160Zm-12,0a2,2,0,0,0-2-2H184a6,6,0,0,1-4.41-1.93L85.37,54H32a2,2,0,0,0-2,2V96a2,2,0,0,0,2,2H72a6,6,0,0,1,4.41,1.93L170.63,202H224a2,2,0,0,0,2-2Z"/>
+    </svg>
+  );
+}

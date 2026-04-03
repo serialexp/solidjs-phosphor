@@ -1,0 +1,26 @@
+import { JSX, splitProps, mergeProps } from "solid-js";
+
+export interface PhArrowsOutLineHorizontalDuotoneIconProps extends JSX.SvgSVGAttributes<SVGSVGElement> {
+  size?: number | string;
+  color?: string;
+}
+
+/**
+ * ![img](data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIyMCIgaGVpZ2h0PSIyMCIgdmlld0JveD0iMCAwIDI1NiAyNTYiIGZpbGw9IiMwMDAiPjxyZWN0IHdpZHRoPSIyNTYiIGhlaWdodD0iMjU2IiBmaWxsPSIjRkZGIiByeD0iNDAiIHJ5PSI0MCIvPjxwYXRoIGQ9Ik0yNDAsNTZWMjAwYTE2LDE2LDAsMCwxLTE2LDE2SDMyYTE2LDE2LDAsMCwxLTE2LTE2VjU2QTE2LDE2LDAsMCwxLDMyLDQwSDIyNEExNiwxNiwwLDAsMSwyNDAsNTZaIiBvcGFjaXR5PSIwLjIiLz48cGF0aCBkPSJNMTM2LDQwVjIxNmE4LDgsMCwwLDEtMTYsMFY0MGE4LDgsMCwwLDEsMTYsMFpNOTYsMTIwSDM1LjMxbDE4LjM1LTE4LjM0QTgsOCwwLDAsMCw0Mi4zNCw5MC4zNGwtMzIsMzJhOCw4LDAsMCwwLDAsMTEuMzJsMzIsMzJhOCw4LDAsMCwwLDExLjMyLTExLjMyTDM1LjMxLDEzNkg5NmE4LDgsMCwwLDAsMC0xNlptMTQ5LjY2LDIuMzQtMzItMzJhOCw4LDAsMCwwLTExLjMyLDExLjMyTDIyMC42OSwxMjBIMTYwYTgsOCwwLDAsMCwwLDE2aDYwLjY5bC0xOC4zNSwxOC4zNGE4LDgsMCwwLDAsMTEuMzIsMTEuMzJsMzItMzJBOCw4LDAsMCwwLDI0NS42NiwxMjIuMzRaIi8+PC9zdmc+)
+ */
+export function PhArrowsOutLineHorizontalDuotoneIcon(props: PhArrowsOutLineHorizontalDuotoneIconProps) {
+  const merged = mergeProps({ size: "1em", color: "currentColor" }, props);
+  const [local, svgProps] = splitProps(merged, ["size", "color"]);
+  return (
+    <svg
+      xmlns="http://www.w3.org/2000/svg"
+      viewBox="0 0 256 256"
+      fill={local.color}
+      width={local.size}
+      height={local.size}
+      {...svgProps}
+    >
+      <path d="M240,56V200a16,16,0,0,1-16,16H32a16,16,0,0,1-16-16V56A16,16,0,0,1,32,40H224A16,16,0,0,1,240,56Z" opacity="0.2"/><path d="M136,40V216a8,8,0,0,1-16,0V40a8,8,0,0,1,16,0ZM96,120H35.31l18.35-18.34A8,8,0,0,0,42.34,90.34l-32,32a8,8,0,0,0,0,11.32l32,32a8,8,0,0,0,11.32-11.32L35.31,136H96a8,8,0,0,0,0-16Zm149.66,2.34-32-32a8,8,0,0,0-11.32,11.32L220.69,120H160a8,8,0,0,0,0,16h60.69l-18.35,18.34a8,8,0,0,0,11.32,11.32l32-32A8,8,0,0,0,245.66,122.34Z"/>
+    </svg>
+  );
+}

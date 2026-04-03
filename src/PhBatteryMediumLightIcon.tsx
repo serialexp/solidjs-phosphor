@@ -1,0 +1,26 @@
+import { JSX, splitProps, mergeProps } from "solid-js";
+
+export interface PhBatteryMediumLightIconProps extends JSX.SvgSVGAttributes<SVGSVGElement> {
+  size?: number | string;
+  color?: string;
+}
+
+/**
+ * ![img](data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIyMCIgaGVpZ2h0PSIyMCIgdmlld0JveD0iMCAwIDI1NiAyNTYiIGZpbGw9IiMwMDAiPjxyZWN0IHdpZHRoPSIyNTYiIGhlaWdodD0iMjU2IiBmaWxsPSIjRkZGIiByeD0iNDAiIHJ5PSI0MCIvPjxwYXRoIGQ9Ik0yMDAsNThIMzJBMjIsMjIsMCwwLDAsMTAsODB2OTZhMjIsMjIsMCwwLDAsMjIsMjJIMjAwYTIyLDIyLDAsMCwwLDIyLTIyVjgwQTIyLDIyLDAsMCwwLDIwMCw1OFptMTAsMTE4YTEwLDEwLDAsMCwxLTEwLDEwSDMyYTEwLDEwLDAsMCwxLTEwLTEwVjgwQTEwLDEwLDAsMCwxLDMyLDcwSDIwMGExMCwxMCwwLDAsMSwxMCwxMFpNMTAyLDk2djY0YTYsNiwwLDAsMS0xMiwwVjk2YTYsNiwwLDAsMSwxMiwwWk02Miw5NnY2NGE2LDYsMCwwLDEtMTIsMFY5NmE2LDYsMCwwLDEsMTIsMFptMTkyLDB2NjRhNiw2LDAsMCwxLTEyLDBWOTZhNiw2LDAsMCwxLDEyLDBaIi8+PC9zdmc+)
+ */
+export function PhBatteryMediumLightIcon(props: PhBatteryMediumLightIconProps) {
+  const merged = mergeProps({ size: "1em", color: "currentColor" }, props);
+  const [local, svgProps] = splitProps(merged, ["size", "color"]);
+  return (
+    <svg
+      xmlns="http://www.w3.org/2000/svg"
+      viewBox="0 0 256 256"
+      fill={local.color}
+      width={local.size}
+      height={local.size}
+      {...svgProps}
+    >
+      <path d="M200,58H32A22,22,0,0,0,10,80v96a22,22,0,0,0,22,22H200a22,22,0,0,0,22-22V80A22,22,0,0,0,200,58Zm10,118a10,10,0,0,1-10,10H32a10,10,0,0,1-10-10V80A10,10,0,0,1,32,70H200a10,10,0,0,1,10,10ZM102,96v64a6,6,0,0,1-12,0V96a6,6,0,0,1,12,0ZM62,96v64a6,6,0,0,1-12,0V96a6,6,0,0,1,12,0Zm192,0v64a6,6,0,0,1-12,0V96a6,6,0,0,1,12,0Z"/>
+    </svg>
+  );
+}
