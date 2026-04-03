@@ -1,6 +1,6 @@
 {
   "name": "solidjs-phosphor",
-  "version": "2.1.0",
+  "version": "2.1.1",
   "description": "Phosphor Icons for SolidJS — auto-generated from phosphor-icons/core",
   "license": "MIT",
   "type": "module",
