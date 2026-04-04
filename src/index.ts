@@ -1,3 +1,5 @@
+export type { PhIconProps } from "./createIcon.js";
+export { createIcon } from "./createIcon.js";
 export type { PhAcornBoldIconProps } from "./PhAcornBoldIcon.js";
 export type { PhAcornDuotoneIconProps } from "./PhAcornDuotoneIcon.js";
 export type { PhAcornFillIconProps } from "./PhAcornFillIcon.js";

@@ -1,0 +1,8 @@
+import { createIcon } from "./createIcon.js";
+
+export type { PhIconProps as PhFlagPennantIconProps } from "./createIcon.js";
+
+/**
+ * ![img](data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIyMCIgaGVpZ2h0PSIyMCIgdmlld0JveD0iMCAwIDI1NiAyNTYiIGZpbGw9IiMwMDAiPjxyZWN0IHdpZHRoPSIyNTYiIGhlaWdodD0iMjU2IiBmaWxsPSIjRkZGIiByeD0iNDAiIHJ5PSI0MCIvPjxwYXRoIGQ9Ik0yNDIuNjMsOTYuNDRsLTE4NC02NEE4LDgsMCwwLDAsNDgsNDBWMjE2YTgsOCwwLDAsMCwxNiwwVjE3My42OWwxNzguNjMtNjIuMTNhOCw4LDAsMCwwLDAtMTUuMTJaTTY0LDE1Ni43NVY1MS4yNUwyMTUuNjUsMTA0WiIvPjwvc3ZnPg==)
+ */
+export const PhFlagPennantIcon = createIcon(`<path d="M242.63,96.44l-184-64A8,8,0,0,0,48,40V216a8,8,0,0,0,16,0V173.69l178.63-62.13a8,8,0,0,0,0-15.12ZM64,156.75V51.25L215.65,104Z"/>`);

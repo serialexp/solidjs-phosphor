@@ -30,7 +30,12 @@ function generatePreview(svgRaw: string): string {
   return Buffer.from(preview).toString("base64");
 }
 
-/** Generate a SolidJS component for one icon+weight */
+/** Escape a string for use inside a JS template literal */
+function escapeForTemplateLiteral(s: string): string {
+  return s.replace(/\\/g, "\\\\").replace(/`/g, "\\`").replace(/\$/g, "\\$");
+}
+
+/** Generate a .ts icon file that uses the createIcon factory */
 function generateComponent(
   name: string,
   weight: Weight,
@@ -41,39 +46,18 @@ function generateComponent(
   const suffix = weight === "regular" ? "" : toPascalCase(weight);
   const componentName = `Ph${pascal}${suffix}`;
 
-  // For duotone, the inner SVG has multiple paths — keep as-is
-  // Escape backticks in SVG content just in case
-  const escapedInner = svgInner.replace(/`/g, "\\`");
-
   const iconName = `${componentName}Icon`;
   const preview = generatePreview(svgRaw);
+  const escapedInner = escapeForTemplateLiteral(svgInner);
 
-  const code = `import { JSX, splitProps, mergeProps } from "solid-js";
+  const code = `import { createIcon } from "./createIcon.js";
 
-export interface ${iconName}Props extends JSX.SvgSVGAttributes<SVGSVGElement> {
-  size?: number | string;
-  color?: string;
-}
+export type { PhIconProps as ${iconName}Props } from "./createIcon.js";
 
 /**
  * ![img](data:image/svg+xml;base64,${preview})
  */
-export function ${iconName}(props: ${iconName}Props) {
-  const merged = mergeProps({ size: "1em", color: "currentColor" }, props);
-  const [local, svgProps] = splitProps(merged, ["size", "color"]);
-  return (
-    <svg
-      xmlns="http://www.w3.org/2000/svg"
-      viewBox="0 0 256 256"
-      fill={local.color}
-      width={local.size}
-      height={local.size}
-      {...svgProps}
-    >
-      ${escapedInner}
-    </svg>
-  );
-}
+export const ${iconName} = createIcon(\`${escapedInner}\`);
 `;
 
   return { componentName: iconName, code };
@@ -83,6 +67,37 @@ async function main() {
   // Clean src/
   await rm(SRC_DIR, { recursive: true, force: true });
   await mkdir(SRC_DIR, { recursive: true });
+
+  // Write the shared createIcon factory (single .tsx file with all JSX)
+  await writeFile(
+    join(SRC_DIR, "createIcon.tsx"),
+    `import { splitProps, mergeProps, type JSX, type Component } from "solid-js";
+
+export interface PhIconProps extends JSX.SvgSVGAttributes<SVGSVGElement> {
+  size?: number | string;
+  color?: string;
+}
+
+export function createIcon(inner: string): Component<PhIconProps> {
+  return function Icon(props: PhIconProps): JSX.Element {
+    const merged = mergeProps({ size: "1em", color: "currentColor" }, props);
+    const [local, svgProps] = splitProps(merged, ["size", "color"]);
+    return (
+      <svg
+        xmlns="http://www.w3.org/2000/svg"
+        viewBox="0 0 256 256"
+        fill={local.color}
+        width={local.size}
+        height={local.size}
+        {...svgProps}
+        // biome-ignore lint: innerHTML is safe here — content is generated from trusted SVG source files
+        innerHTML={inner}
+      />
+    );
+  };
+}
+`
+  );
 
   const allExports: string[] = [];
   const componentCount = { total: 0, byWeight: {} as Record<string, number> };
@@ -114,7 +129,7 @@ async function main() {
       }
 
       const { componentName, code } = generateComponent(rawName, weight, inner, svg);
-      const outFile = join(SRC_DIR, `${componentName}.tsx`);
+      const outFile = join(SRC_DIR, `${componentName}.ts`);
       await writeFile(outFile, code);
 
       allExports.push(
@@ -130,6 +145,10 @@ async function main() {
 
   // Write barrel index
   allExports.sort();
+  allExports.unshift(
+    `export type { PhIconProps } from "./createIcon.js";`,
+    `export { createIcon } from "./createIcon.js";`
+  );
   await writeFile(join(SRC_DIR, "index.ts"), allExports.join("\n") + "\n");
 
   console.log(`Generated ${componentCount.total} components:`);

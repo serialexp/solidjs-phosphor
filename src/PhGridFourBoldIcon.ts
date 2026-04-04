@@ -1,0 +1,8 @@
+import { createIcon } from "./createIcon.js";
+
+export type { PhIconProps as PhGridFourBoldIconProps } from "./createIcon.js";
+
+/**
+ * ![img](data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIyMCIgaGVpZ2h0PSIyMCIgdmlld0JveD0iMCAwIDI1NiAyNTYiIGZpbGw9IiMwMDAiPjxyZWN0IHdpZHRoPSIyNTYiIGhlaWdodD0iMjU2IiBmaWxsPSIjRkZGIiByeD0iNDAiIHJ5PSI0MCIvPjxwYXRoIGQ9Ik0yMDAsMzZINTZBMjAsMjAsMCwwLDAsMzYsNTZWMjAwYTIwLDIwLDAsMCwwLDIwLDIwSDIwMGEyMCwyMCwwLDAsMCwyMC0yMFY1NkEyMCwyMCwwLDAsMCwyMDAsMzZabS00LDgwSDE0MFY2MGg1NlpNMTE2LDYwdjU2SDYwVjYwWk02MCwxNDBoNTZ2NTZINjBabTgwLDU2VjE0MGg1NnY1NloiLz48L3N2Zz4=)
+ */
+export const PhGridFourBoldIcon = createIcon(`<path d="M200,36H56A20,20,0,0,0,36,56V200a20,20,0,0,0,20,20H200a20,20,0,0,0,20-20V56A20,20,0,0,0,200,36Zm-4,80H140V60h56ZM116,60v56H60V60ZM60,140h56v56H60Zm80,56V140h56v56Z"/>`);

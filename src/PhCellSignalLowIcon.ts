@@ -1,0 +1,8 @@
+import { createIcon } from "./createIcon.js";
+
+export type { PhIconProps as PhCellSignalLowIconProps } from "./createIcon.js";
+
+/**
+ * ![img](data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIyMCIgaGVpZ2h0PSIyMCIgdmlld0JveD0iMCAwIDI1NiAyNTYiIGZpbGw9IiMwMDAiPjxyZWN0IHdpZHRoPSIyNTYiIGhlaWdodD0iMjU2IiBmaWxsPSIjRkZGIiByeD0iNDAiIHJ5PSI0MCIvPjxwYXRoIGQ9Ik04OCwxNTJ2NDhhOCw4LDAsMCwxLTE2LDBWMTUyYTgsOCwwLDAsMSwxNiwwWk00MCwxODRhOCw4LDAsMCwwLTgsOHY4YTgsOCwwLDAsMCwxNiwwdi04QTgsOCwwLDAsMCw0MCwxODRaIi8+PC9zdmc+)
+ */
+export const PhCellSignalLowIcon = createIcon(`<path d="M88,152v48a8,8,0,0,1-16,0V152a8,8,0,0,1,16,0ZM40,184a8,8,0,0,0-8,8v8a8,8,0,0,0,16,0v-8A8,8,0,0,0,40,184Z"/>`);

@@ -1,0 +1,8 @@
+import { createIcon } from "./createIcon.js";
+
+export type { PhIconProps as PhNumberSixIconProps } from "./createIcon.js";
+
+/**
+ * ![img](data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIyMCIgaGVpZ2h0PSIyMCIgdmlld0JveD0iMCAwIDI1NiAyNTYiIGZpbGw9IiMwMDAiPjxyZWN0IHdpZHRoPSIyNTYiIGhlaWdodD0iMjU2IiBmaWxsPSIjRkZGIiByeD0iNDAiIHJ5PSI0MCIvPjxwYXRoIGQ9Ik0xMjgsMTA0YTU2LDU2LDAsMCwwLTE1LjYyLDIuMjNMMTQzLDUxLjkzQTgsOCwwLDEsMCwxMjksNDQuMDhsLTQ5LjU1LDg4QTU2LDU2LDAsMSwwLDEyOCwxMDRabTAsOTZhNDAsNDAsMCwxLDEsNDAtNDBBNDAsNDAsMCwwLDEsMTI4LDIwMFoiLz48L3N2Zz4=)
+ */
+export const PhNumberSixIcon = createIcon(`<path d="M128,104a56,56,0,0,0-15.62,2.23L143,51.93A8,8,0,1,0,129,44.08l-49.55,88A56,56,0,1,0,128,104Zm0,96a40,40,0,1,1,40-40A40,40,0,0,1,128,200Z"/>`);
