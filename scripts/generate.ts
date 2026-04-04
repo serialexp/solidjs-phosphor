@@ -35,53 +35,32 @@ function escapeForTemplateLiteral(s: string): string {
   return s.replace(/\\/g, "\\\\").replace(/`/g, "\\`").replace(/\$/g, "\\$");
 }
 
-/** Generate a .ts icon file that uses the createIcon factory */
-function generateComponent(
-  name: string,
-  weight: Weight,
-  svgInner: string,
-  svgRaw: string
-): { componentName: string; code: string } {
-  const pascal = toPascalCase(name);
-  const suffix = weight === "regular" ? "" : toPascalCase(weight);
-  const componentName = `Ph${pascal}${suffix}`;
-
-  const iconName = `${componentName}Icon`;
-  const preview = generatePreview(svgRaw);
-  const escapedInner = escapeForTemplateLiteral(svgInner);
-
-  const code = `import { createIcon } from "./createIcon.js";
-
-export type { PhIconProps as ${iconName}Props } from "./createIcon.js";
-
-/**
- * ![img](data:image/svg+xml;base64,${preview})
- */
-export const ${iconName} = createIcon(\`${escapedInner}\`);
-`;
-
-  return { componentName: iconName, code };
-}
-
 async function main() {
   // Clean src/
   await rm(SRC_DIR, { recursive: true, force: true });
   await mkdir(SRC_DIR, { recursive: true });
 
-  // Write the shared createIcon factory (single .tsx file with all JSX)
+  // Write the shared createIcon factory
   await writeFile(
     join(SRC_DIR, "createIcon.tsx"),
     `import { splitProps, mergeProps, type JSX, type Component } from "solid-js";
 
+export type IconWeight = "thin" | "light" | "regular" | "bold" | "fill" | "duotone";
+
 export interface PhIconProps extends JSX.SvgSVGAttributes<SVGSVGElement> {
   size?: number | string;
   color?: string;
+  weight?: IconWeight;
+  mirrored?: boolean;
 }
 
-export function createIcon(inner: string): Component<PhIconProps> {
+export function createIcon(weights: Record<IconWeight, string>): Component<PhIconProps> {
   return function Icon(props: PhIconProps): JSX.Element {
-    const merged = mergeProps({ size: "1em", color: "currentColor" }, props);
-    const [local, svgProps] = splitProps(merged, ["size", "color"]);
+    const merged = mergeProps(
+      { size: "1em", color: "currentColor", weight: "regular" as IconWeight, mirrored: false },
+      props
+    );
+    const [local, svgProps] = splitProps(merged, ["size", "color", "weight", "mirrored"]);
     return (
       <svg
         xmlns="http://www.w3.org/2000/svg"
@@ -89,9 +68,10 @@ export function createIcon(inner: string): Component<PhIconProps> {
         fill={local.color}
         width={local.size}
         height={local.size}
+        style={local.mirrored ? { transform: "scale(-1, 1)" } : undefined}
         {...svgProps}
         // biome-ignore lint: innerHTML is safe here — content is generated from trusted SVG source files
-        innerHTML={inner}
+        innerHTML={weights[local.weight]}
       />
     );
   };
@@ -99,8 +79,8 @@ export function createIcon(inner: string): Component<PhIconProps> {
 `
   );
 
-  const allExports: string[] = [];
-  const componentCount = { total: 0, byWeight: {} as Record<string, number> };
+  // Collect all SVGs grouped by icon name
+  const iconMap = new Map<string, { weight: Weight; inner: string; raw: string }[]>();
 
   for (const weight of WEIGHTS) {
     const dir = join(CORE_DIR, weight);
@@ -112,10 +92,7 @@ export function createIcon(inner: string): Component<PhIconProps> {
       continue;
     }
 
-    componentCount.byWeight[weight] = 0;
-
     for (const file of files) {
-      // Strip weight suffix from filename: "gear-bold.svg" → "gear"
       const rawName = basename(file, ".svg").replace(
         new RegExp(`-${weight}$`),
         ""
@@ -128,33 +105,59 @@ export function createIcon(inner: string): Component<PhIconProps> {
         continue;
       }
 
-      const { componentName, code } = generateComponent(rawName, weight, inner, svg);
-      const outFile = join(SRC_DIR, `${componentName}.ts`);
-      await writeFile(outFile, code);
-
-      allExports.push(
-        `export { ${componentName} } from "./${componentName}.js";`
-      );
-      allExports.push(
-        `export type { ${componentName}Props } from "./${componentName}.js";`
-      );
-      componentCount.total++;
-      componentCount.byWeight[weight]++;
+      if (!iconMap.has(rawName)) {
+        iconMap.set(rawName, []);
+      }
+      iconMap.get(rawName)!.push({ weight, inner, raw: svg });
     }
+  }
+
+  const allExports: string[] = [];
+  let iconCount = 0;
+
+  for (const [rawName, variants] of iconMap) {
+    const pascal = toPascalCase(rawName);
+    const iconName = `Ph${pascal}Icon`;
+
+    // Build weight map entries
+    const weightEntries = WEIGHTS.map((w) => {
+      const variant = variants.find((v) => v.weight === w);
+      if (!variant) return null;
+      return `  ${w}: \`${escapeForTemplateLiteral(variant.inner)}\``;
+    }).filter(Boolean);
+
+    // Use the regular weight SVG for preview, fall back to first available
+    const previewVariant =
+      variants.find((v) => v.weight === "regular") ?? variants[0];
+    const preview = generatePreview(previewVariant.raw);
+
+    const code = `import { createIcon } from "./createIcon.js";
+
+export type { PhIconProps as ${iconName}Props } from "./createIcon.js";
+
+/**
+ * ![img](data:image/svg+xml;base64,${preview})
+ */
+export const ${iconName} = createIcon({
+${weightEntries.join(",\n")}
+});
+`;
+
+    await writeFile(join(SRC_DIR, `${iconName}.ts`), code);
+    allExports.push(`export { ${iconName} } from "./${iconName}.js";`);
+    allExports.push(`export type { ${iconName}Props } from "./${iconName}.js";`);
+    iconCount++;
   }
 
   // Write barrel index
   allExports.sort();
   allExports.unshift(
-    `export type { PhIconProps } from "./createIcon.js";`,
+    `export type { IconWeight, PhIconProps } from "./createIcon.js";`,
     `export { createIcon } from "./createIcon.js";`
   );
   await writeFile(join(SRC_DIR, "index.ts"), allExports.join("\n") + "\n");
 
-  console.log(`Generated ${componentCount.total} components:`);
-  for (const [weight, count] of Object.entries(componentCount.byWeight)) {
-    console.log(`  ${weight}: ${count}`);
-  }
+  console.log(`Generated ${iconCount} icon components (${WEIGHTS.length} weights each)`);
 }
 
 main().catch((err) => {

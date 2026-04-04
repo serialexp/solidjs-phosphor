@@ -1,8 +1,0 @@
-import { createIcon } from "./createIcon.js";
-
-export type { PhIconProps as PhGitCommitFillIconProps } from "./createIcon.js";
-
-/**
- * ![img](data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIyMCIgaGVpZ2h0PSIyMCIgdmlld0JveD0iMCAwIDI1NiAyNTYiIGZpbGw9IiMwMDAiPjxyZWN0IHdpZHRoPSIyNTYiIGhlaWdodD0iMjU2IiBmaWxsPSIjRkZGIiByeD0iNDAiIHJ5PSI0MCIvPjxwYXRoIGQ9Ik0yNTYsMTI4YTgsOCwwLDAsMS04LDhIMTgzLjQyYTU2LDU2LDAsMCwxLTExMC44NCwwSDhhOCw4LDAsMCwxLDAtMTZINzIuNThhNTYsNTYsMCwwLDEsMTEwLjg0LDBIMjQ4QTgsOCwwLDAsMSwyNTYsMTI4WiIvPjwvc3ZnPg==)
- */
-export const PhGitCommitFillIcon = createIcon(`<path d="M256,128a8,8,0,0,1-8,8H183.42a56,56,0,0,1-110.84,0H8a8,8,0,0,1,0-16H72.58a56,56,0,0,1,110.84,0H248A8,8,0,0,1,256,128Z"/>`);
