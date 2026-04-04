@@ -11,14 +11,15 @@ pnpm add solidjs-phosphor
 ## Usage
 
 ```tsx
-import { PhGearIcon, PhArrowClockwiseIcon, PhGearBoldIcon } from "solidjs-phosphor";
+import { PhGearIcon, PhArrowClockwiseIcon } from "solidjs-phosphor";
 
 function App() {
   return (
     <div>
       <PhGearIcon size={24} />
-      <PhArrowClockwiseIcon size={16} color="#569cd6" />
-      <PhGearBoldIcon size={32} class="my-icon" />
+      <PhGearIcon size={32} weight="bold" />
+      <PhGearIcon size={32} weight="duotone" color="#569cd6" />
+      <PhArrowClockwiseIcon size={16} mirrored />
     </div>
   );
 }
@@ -26,18 +27,7 @@ function App() {
 
 ## Naming
 
-Components follow the pattern `Ph{IconName}{Weight}Icon`:
-
-| Weight | Example | Notes |
-|--------|---------|-------|
-| Regular | `PhGearIcon` | Default — no weight in name |
-| Bold | `PhGearBoldIcon` | |
-| Light | `PhGearLightIcon` | |
-| Thin | `PhGearThinIcon` | |
-| Fill | `PhGearFillIcon` | |
-| Duotone | `PhGearDuotoneIcon` | |
-
-All 1512 Phosphor icons are available in all 6 weights (9072 components total).
+Components follow the pattern `Ph{IconName}Icon`. All 1512 Phosphor icons are available.
 
 ## Props
 
@@ -47,12 +37,14 @@ Each component accepts all standard SVG attributes plus:
 |------|------|---------|-------------|
 | `size` | `number \| string` | `"1em"` | Width and height |
 | `color` | `string` | `"currentColor"` | Fill color |
+| `weight` | `"thin" \| "light" \| "regular" \| "bold" \| "fill" \| "duotone"` | `"regular"` | Icon weight/style |
+| `mirrored` | `boolean` | `false` | Flip horizontally (useful for RTL) |
 
 ## How it works
 
 A GitHub Action runs weekly, clones [phosphor-icons/core](https://github.com/phosphor-icons/core), transforms SVGs into SolidJS components, and publishes a new version if anything changed.
 
-The package ships `.tsx` source files — your bundler (Vite + `vite-plugin-solid`) compiles them. This is the standard approach for SolidJS libraries and ensures tree-shaking works correctly.
+The package ships pre-compiled JS and type declarations. The `solid` export condition also provides raw `.ts`/`.tsx` source for Solid-native toolchains.
 
 ## License
 
