@@ -30,7 +30,7 @@
   },
   "scripts": {
     "generate": "tsx scripts/generate.ts",
-    "build": "vite build && tsc --emitDeclarationOnly",
+    "build": "vite build && tsgo --emitDeclarationOnly",
     "check": "tsgo --noEmit",
     "prepublishOnly": "pnpm run generate && pnpm run check && pnpm run build"
   },
