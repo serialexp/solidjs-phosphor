@@ -1,6 +1,6 @@
-import { createIcon } from "./createIcon.js";
+import { createIcon } from "#createIcon";
 
-export type { PhIconProps as PhCheckFatIconProps } from "./createIcon.js";
+export type { PhIconProps as PhCheckFatIconProps } from "#createIcon";
 
 /**
  * ![img](data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIyMCIgaGVpZ2h0PSIyMCIgdmlld0JveD0iMCAwIDI1NiAyNTYiIGZpbGw9IiMwMDAiPjxyZWN0IHdpZHRoPSIyNTYiIGhlaWdodD0iMjU2IiBmaWxsPSIjRkZGIiByeD0iNDAiIHJ5PSI0MCIvPjxwYXRoIGQ9Ik0yNDMuMjgsNjguMjRsLTI0LTIzLjU2YTE2LDE2LDAsMCwwLTIyLjU5LDBMMTA0LDEzNi4yM2wtMzYuNjktMzUuNmExNiwxNiwwLDAsMC0yMi41OC4wNWwtMjQsMjRhMTYsMTYsMCwwLDAsMCwyMi42MWw3MS42Miw3MmExNiwxNiwwLDAsMCwyMi42MywwTDI0My4zMyw5MC45MUExNiwxNiwwLDAsMCwyNDMuMjgsNjguMjRaTTEwMy42MiwyMDgsMzIsMTM2bDI0LTI0YS42LjYsMCwwLDEsLjA4LjA4bDQyLjM1LDQxLjA5YTgsOCwwLDAsMCwxMS4xOSwwTDIwOC4wNiw1NiwyMzIsNzkuNloiLz48L3N2Zz4=)

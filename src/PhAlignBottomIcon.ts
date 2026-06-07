@@ -1,6 +1,6 @@
-import { createIcon } from "./createIcon.js";
+import { createIcon } from "#createIcon";
 
-export type { PhIconProps as PhAlignBottomIconProps } from "./createIcon.js";
+export type { PhIconProps as PhAlignBottomIconProps } from "#createIcon";
 
 /**
  * ![img](data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIyMCIgaGVpZ2h0PSIyMCIgdmlld0JveD0iMCAwIDI1NiAyNTYiIGZpbGw9IiMwMDAiPjxyZWN0IHdpZHRoPSIyNTYiIGhlaWdodD0iMjU2IiBmaWxsPSIjRkZGIiByeD0iNDAiIHJ5PSI0MCIvPjxwYXRoIGQ9Ik0yMjQsMjE2YTgsOCwwLDAsMS04LDhINDBhOCw4LDAsMCwxLDAtMTZIMjE2QTgsOCwwLDAsMSwyMjQsMjE2Wm0tODgtNDBWODBhMTYsMTYsMCwwLDEsMTYtMTZoNDBhMTYsMTYsMCwwLDEsMTYsMTZ2OTZhMTYsMTYsMCwwLDEtMTYsMTZIMTUyQTE2LDE2LDAsMCwxLDEzNiwxNzZabTE2LDBoNDBWODBIMTUyWk00OCwxNzZWNDBBMTYsMTYsMCwwLDEsNjQsMjRoNDBhMTYsMTYsMCwwLDEsMTYsMTZWMTc2YTE2LDE2LDAsMCwxLTE2LDE2SDY0QTE2LDE2LDAsMCwxLDQ4LDE3NlptMTYsMGg0MFY0MEg2NFoiLz48L3N2Zz4=)

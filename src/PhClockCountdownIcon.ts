@@ -1,6 +1,6 @@
-import { createIcon } from "./createIcon.js";
+import { createIcon } from "#createIcon";
 
-export type { PhIconProps as PhClockCountdownIconProps } from "./createIcon.js";
+export type { PhIconProps as PhClockCountdownIconProps } from "#createIcon";
 
 /**
  * ![img](data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIyMCIgaGVpZ2h0PSIyMCIgdmlld0JveD0iMCAwIDI1NiAyNTYiIGZpbGw9IiMwMDAiPjxyZWN0IHdpZHRoPSIyNTYiIGhlaWdodD0iMjU2IiBmaWxsPSIjRkZGIiByeD0iNDAiIHJ5PSI0MCIvPjxwYXRoIGQ9Ik0yMzIsMTM2LjY2QTEwNC4xMiwxMDQuMTIsMCwxLDEsMTE5LjM0LDI0LDgsOCwwLDAsMSwxMjAuNjYsNDAsODguMTIsODguMTIsMCwxLDAsMjE2LDEzNS4zNCw4LDgsMCwwLDEsMjMyLDEzNi42NlpNMTIwLDcydjU2YTgsOCwwLDAsMCw4LDhoNTZhOCw4LDAsMCwwLDAtMTZIMTM2VjcyYTgsOCwwLDAsMC0xNiwwWm00MC0yNGExMiwxMiwwLDEsMC0xMi0xMkExMiwxMiwwLDAsMCwxNjAsNDhabTM2LDI0YTEyLDEyLDAsMSwwLTEyLTEyQTEyLDEyLDAsMCwwLDE5Niw3MlptMjQsMzZhMTIsMTIsMCwxLDAtMTItMTJBMTIsMTIsMCwwLDAsMjIwLDEwOFoiLz48L3N2Zz4=)

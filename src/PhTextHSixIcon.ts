@@ -1,6 +1,6 @@
-import { createIcon } from "./createIcon.js";
+import { createIcon } from "#createIcon";
 
-export type { PhIconProps as PhTextHSixIconProps } from "./createIcon.js";
+export type { PhIconProps as PhTextHSixIconProps } from "#createIcon";
 
 /**
  * ![img](data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIyMCIgaGVpZ2h0PSIyMCIgdmlld0JveD0iMCAwIDI1NiAyNTYiIGZpbGw9IiMwMDAiPjxyZWN0IHdpZHRoPSIyNTYiIGhlaWdodD0iMjU2IiBmaWxsPSIjRkZGIiByeD0iNDAiIHJ5PSI0MCIvPjxwYXRoIGQ9Ik0xNTIsNTZWMTc2YTgsOCwwLDAsMS0xNiwwVjEyNEg0OHY1MmE4LDgsMCwwLDEtMTYsMFY1NmE4LDgsMCwwLDEsMTYsMHY1Mmg4OFY1NmE4LDgsMCwwLDEsMTYsMFptOTYsMTI0YTM2LDM2LDAsMSwxLTY3LjM0LTE3LjY4Yy4wNy0uMTQuMTQtLjI4LjIyLS40MmwzMi4yNS01NGE4LDgsMCwwLDEsMTMuNzQsOC4ybC0xNi42OSwyOGMuNiwwLDEuMjEtLjA1LDEuODItLjA1QTM2LDM2LDAsMCwxLDI0OCwxODBabS0xNiwwYTIwLDIwLDAsMSwwLTIwLDIwQTIwLDIwLDAsMCwwLDIzMiwxODBaIi8+PC9zdmc+)

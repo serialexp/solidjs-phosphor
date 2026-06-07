@@ -1,6 +1,6 @@
-import { createIcon } from "./createIcon.js";
+import { createIcon } from "#createIcon";
 
-export type { PhIconProps as PhMicrophoneIconProps } from "./createIcon.js";
+export type { PhIconProps as PhMicrophoneIconProps } from "#createIcon";
 
 /**
  * ![img](data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIyMCIgaGVpZ2h0PSIyMCIgdmlld0JveD0iMCAwIDI1NiAyNTYiIGZpbGw9IiMwMDAiPjxyZWN0IHdpZHRoPSIyNTYiIGhlaWdodD0iMjU2IiBmaWxsPSIjRkZGIiByeD0iNDAiIHJ5PSI0MCIvPjxwYXRoIGQ9Ik0xMjgsMTc2YTQ4LjA1LDQ4LjA1LDAsMCwwLDQ4LTQ4VjY0YTQ4LDQ4LDAsMCwwLTk2LDB2NjRBNDguMDUsNDguMDUsMCwwLDAsMTI4LDE3NlpNOTYsNjRhMzIsMzIsMCwwLDEsNjQsMHY2NGEzMiwzMiwwLDAsMS02NCwwWm00MCwxNDMuNlYyNDBhOCw4LDAsMCwxLTE2LDBWMjA3LjZBODAuMTEsODAuMTEsMCwwLDEsNDgsMTI4YTgsOCwwLDAsMSwxNiwwLDY0LDY0LDAsMCwwLDEyOCwwLDgsOCwwLDAsMSwxNiwwQTgwLjExLDgwLjExLDAsMCwxLDEzNiwyMDcuNloiLz48L3N2Zz4=)

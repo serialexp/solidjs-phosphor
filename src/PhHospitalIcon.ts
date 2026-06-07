@@ -1,6 +1,6 @@
-import { createIcon } from "./createIcon.js";
+import { createIcon } from "#createIcon";
 
-export type { PhIconProps as PhHospitalIconProps } from "./createIcon.js";
+export type { PhIconProps as PhHospitalIconProps } from "#createIcon";
 
 /**
  * ![img](data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIyMCIgaGVpZ2h0PSIyMCIgdmlld0JveD0iMCAwIDI1NiAyNTYiIGZpbGw9IiMwMDAiPjxyZWN0IHdpZHRoPSIyNTYiIGhlaWdodD0iMjU2IiBmaWxsPSIjRkZGIiByeD0iNDAiIHJ5PSI0MCIvPjxwYXRoIGQ9Ik0yNDgsMjA4aC04VjEyOGExNiwxNiwwLDAsMC0xNi0xNkgxNjhWNDhhMTYsMTYsMCwwLDAtMTYtMTZINTZBMTYsMTYsMCwwLDAsNDAsNDhWMjA4SDMyYTgsOCwwLDAsMCwwLDE2SDI0OGE4LDgsMCwwLDAsMC0xNlptLTI0LTgwdjgwSDE2OFYxMjhaTTU2LDQ4aDk2VjIwOEgxMzZWMTYwYTgsOCwwLDAsMC04LThIODBhOCw4LDAsMCwwLTgsOHY0OEg1NlptNjQsMTYwSDg4VjE2OGgzMlpNNzIsOTZhOCw4LDAsMCwxLDgtOEg5NlY3MmE4LDgsMCwwLDEsMTYsMFY4OGgxNmE4LDgsMCwwLDEsMCwxNkgxMTJ2MTZhOCw4LDAsMCwxLTE2LDBWMTA0SDgwQTgsOCwwLDAsMSw3Miw5NloiLz48L3N2Zz4=)

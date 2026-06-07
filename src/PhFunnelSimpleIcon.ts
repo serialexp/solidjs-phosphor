@@ -1,6 +1,6 @@
-import { createIcon } from "./createIcon.js";
+import { createIcon } from "#createIcon";
 
-export type { PhIconProps as PhFunnelSimpleIconProps } from "./createIcon.js";
+export type { PhIconProps as PhFunnelSimpleIconProps } from "#createIcon";
 
 /**
  * ![img](data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIyMCIgaGVpZ2h0PSIyMCIgdmlld0JveD0iMCAwIDI1NiAyNTYiIGZpbGw9IiMwMDAiPjxyZWN0IHdpZHRoPSIyNTYiIGhlaWdodD0iMjU2IiBmaWxsPSIjRkZGIiByeD0iNDAiIHJ5PSI0MCIvPjxwYXRoIGQ9Ik0yMDAsMTM2YTgsOCwwLDAsMS04LDhINjRhOCw4LDAsMCwxLDAtMTZIMTkyQTgsOCwwLDAsMSwyMDAsMTM2Wm0zMi01NkgyNGE4LDgsMCwwLDAsMCwxNkgyMzJhOCw4LDAsMCwwLDAtMTZabS04MCw5NkgxMDRhOCw4LDAsMCwwLDAsMTZoNDhhOCw4LDAsMCwwLDAtMTZaIi8+PC9zdmc+)

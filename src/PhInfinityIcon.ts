@@ -1,6 +1,6 @@
-import { createIcon } from "./createIcon.js";
+import { createIcon } from "#createIcon";
 
-export type { PhIconProps as PhInfinityIconProps } from "./createIcon.js";
+export type { PhIconProps as PhInfinityIconProps } from "#createIcon";
 
 /**
  * ![img](data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIyMCIgaGVpZ2h0PSIyMCIgdmlld0JveD0iMCAwIDI1NiAyNTYiIGZpbGw9IiMwMDAiPjxyZWN0IHdpZHRoPSIyNTYiIGhlaWdodD0iMjU2IiBmaWxsPSIjRkZGIiByeD0iNDAiIHJ5PSI0MCIvPjxwYXRoIGQ9Ik0yNDgsMTI4YTU2LDU2LDAsMCwxLTk1LjYsMzkuNmwtLjMzLS4zNUw5Mi4xMiw5OS41NWE0MCw0MCwwLDEsMCwwLDU2LjlsOC41Mi05LjYyYTgsOCwwLDEsMSwxMiwxMC42MWwtOC42OSw5LjgxLS4zMy4zNWE1Niw1NiwwLDEsMSwwLTc5LjJsLjMzLjM1LDU5Ljk1LDY3LjdhNDAsNDAsMCwxLDAsMC01Ni45bC04LjUyLDkuNjJhOCw4LDAsMSwxLTEyLTEwLjYxbDguNjktOS44MS4zMy0uMzVBNTYsNTYsMCwwLDEsMjQ4LDEyOFoiLz48L3N2Zz4=)

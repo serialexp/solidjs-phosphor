@@ -79,6 +79,42 @@ export function createIcon(weights: Record<IconWeight, string>): Component<PhIco
 `
   );
 
+  // Write the typeless JSX twin of createIcon. This is what the `solid` export
+  // condition (via the `#createIcon` internal import) resolves to, so that a
+  // Solid-aware consumer (vite-plugin-solid / SolidStart) compiles it for THEIR
+  // target — DOM on the client, SSR on the server. Shipping pre-compiled DOM
+  // code here is exactly what breaks SSR/hydration, so this file must stay raw
+  // JSX. It is intentionally typeless: it is excluded from tsconfig (no .d.ts is
+  // emitted from it; types come from createIcon.tsx) and is copied verbatim into
+  // dist/ by scripts/copy-jsx.mjs after the Vite build.
+  await writeFile(
+    join(SRC_DIR, "createIcon.jsx"),
+    `import { splitProps, mergeProps } from "solid-js";
+
+export function createIcon(weights) {
+  return function Icon(props) {
+    const merged = mergeProps(
+      { size: "1em", color: "currentColor", weight: "regular", mirrored: false },
+      props
+    );
+    const [local, svgProps] = splitProps(merged, ["size", "color", "weight", "mirrored"]);
+    return (
+      <svg
+        xmlns="http://www.w3.org/2000/svg"
+        viewBox="0 0 256 256"
+        fill={local.color}
+        width={local.size}
+        height={local.size}
+        style={local.mirrored ? { transform: "scale(-1, 1)" } : undefined}
+        {...svgProps}
+        innerHTML={weights[local.weight]}
+      />
+    );
+  };
+}
+`
+  );
+
   // Collect all SVGs grouped by icon name
   const iconMap = new Map<string, { weight: Weight; inner: string; raw: string }[]>();
 
@@ -131,9 +167,9 @@ export function createIcon(weights: Record<IconWeight, string>): Component<PhIco
       variants.find((v) => v.weight === "regular") ?? variants[0];
     const preview = generatePreview(previewVariant.raw);
 
-    const code = `import { createIcon } from "./createIcon.js";
+    const code = `import { createIcon } from "#createIcon";
 
-export type { PhIconProps as ${iconName}Props } from "./createIcon.js";
+export type { PhIconProps as ${iconName}Props } from "#createIcon";
 
 /**
  * ![img](data:image/svg+xml;base64,${preview})
@@ -152,8 +188,8 @@ ${weightEntries.join(",\n")}
   // Write barrel index
   allExports.sort();
   allExports.unshift(
-    `export type { IconWeight, PhIconProps } from "./createIcon.js";`,
-    `export { createIcon } from "./createIcon.js";`
+    `export type { IconWeight, PhIconProps } from "#createIcon";`,
+    `export { createIcon } from "#createIcon";`
   );
   await writeFile(join(SRC_DIR, "index.ts"), allExports.join("\n") + "\n");
 

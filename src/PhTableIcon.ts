@@ -1,6 +1,6 @@
-import { createIcon } from "./createIcon.js";
+import { createIcon } from "#createIcon";
 
-export type { PhIconProps as PhTableIconProps } from "./createIcon.js";
+export type { PhIconProps as PhTableIconProps } from "#createIcon";
 
 /**
  * ![img](data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIyMCIgaGVpZ2h0PSIyMCIgdmlld0JveD0iMCAwIDI1NiAyNTYiIGZpbGw9IiMwMDAiPjxyZWN0IHdpZHRoPSIyNTYiIGhlaWdodD0iMjU2IiBmaWxsPSIjRkZGIiByeD0iNDAiIHJ5PSI0MCIvPjxwYXRoIGQ9Ik0yMjQsNDhIMzJhOCw4LDAsMCwwLTgsOFYxOTJhMTYsMTYsMCwwLDAsMTYsMTZIMjE2YTE2LDE2LDAsMCwwLDE2LTE2VjU2QTgsOCwwLDAsMCwyMjQsNDhaTTQwLDExMkg4MHYzMkg0MFptNTYsMEgyMTZ2MzJIOTZaTTIxNiw2NFY5Nkg0MFY2NFpNNDAsMTYwSDgwdjMySDQwWm0xNzYsMzJIOTZWMTYwSDIxNnYzMloiLz48L3N2Zz4=)

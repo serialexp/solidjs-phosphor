@@ -1,6 +1,6 @@
-import { createIcon } from "./createIcon.js";
+import { createIcon } from "#createIcon";
 
-export type { PhIconProps as PhAvocadoIconProps } from "./createIcon.js";
+export type { PhIconProps as PhAvocadoIconProps } from "#createIcon";
 
 /**
  * ![img](data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIyMCIgaGVpZ2h0PSIyMCIgdmlld0JveD0iMCAwIDI1NiAyNTYiIGZpbGw9IiMwMDAiPjxyZWN0IHdpZHRoPSIyNTYiIGhlaWdodD0iMjU2IiBmaWxsPSIjRkZGIiByeD0iNDAiIHJ5PSI0MCIvPjxwYXRoIGQ9Ik0xMjgsMTEyYTQ4LDQ4LDAsMSwwLDQ4LDQ4QTQ4LjA1LDQ4LjA1LDAsMCwwLDEyOCwxMTJabTAsODBhMzIsMzIsMCwxLDEsMzItMzJBMzIsMzIsMCwwLDEsMTI4LDE5MlptODMtNjEuMzRMMTgxLjIsNDYuNDdhNTYsNTYsMCwwLDAtMTA2LTEuMTRoMGwtMjkuNTEsODMuNUE4OCw4OCwwLDEsMCwyMTEsMTMwLjY2Wk0xMjgsMjMyYTcyLjA1LDcyLjA1LDAsMCwxLTY3LjMzLTk3LjU3LDEuMzQsMS4zNCwwLDAsMSwuMDctLjE4TDkwLjI4LDUwLjY2aDBhNDAsNDAsMCwwLDEsNzUuNzQuODhsLjA2LjE4TDE5NS45LDEzNkE3Mi4wNSw3Mi4wNSwwLDAsMSwxMjgsMjMyWiIvPjwvc3ZnPg==)

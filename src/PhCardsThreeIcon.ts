@@ -1,6 +1,6 @@
-import { createIcon } from "./createIcon.js";
+import { createIcon } from "#createIcon";
 
-export type { PhIconProps as PhCardsThreeIconProps } from "./createIcon.js";
+export type { PhIconProps as PhCardsThreeIconProps } from "#createIcon";
 
 /**
  * ![img](data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIyMCIgaGVpZ2h0PSIyMCIgdmlld0JveD0iMCAwIDI1NiAyNTYiIGZpbGw9IiMwMDAiPjxyZWN0IHdpZHRoPSIyNTYiIGhlaWdodD0iMjU2IiBmaWxsPSIjRkZGIiByeD0iNDAiIHJ5PSI0MCIvPjxwYXRoIGQ9Ik0yMDgsODhINDhhMTYsMTYsMCwwLDAtMTYsMTZ2OTZhMTYsMTYsMCwwLDAsMTYsMTZIMjA4YTE2LDE2LDAsMCwwLDE2LTE2VjEwNEExNiwxNiwwLDAsMCwyMDgsODhabTAsMTEySDQ4VjEwNEgyMDh2OTZaTTQ4LDY0YTgsOCwwLDAsMSw4LThIMjAwYTgsOCwwLDAsMSwwLDE2SDU2QTgsOCwwLDAsMSw0OCw2NFpNNjQsMzJhOCw4LDAsMCwxLDgtOEgxODRhOCw4LDAsMCwxLDAsMTZINzJBOCw4LDAsMCwxLDY0LDMyWiIvPjwvc3ZnPg==)

@@ -1,6 +1,6 @@
-import { createIcon } from "./createIcon.js";
+import { createIcon } from "#createIcon";
 
-export type { PhIconProps as PhIntersectSquareIconProps } from "./createIcon.js";
+export type { PhIconProps as PhIntersectSquareIconProps } from "#createIcon";
 
 /**
  * ![img](data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIyMCIgaGVpZ2h0PSIyMCIgdmlld0JveD0iMCAwIDI1NiAyNTYiIGZpbGw9IiMwMDAiPjxyZWN0IHdpZHRoPSIyNTYiIGhlaWdodD0iMjU2IiBmaWxsPSIjRkZGIiByeD0iNDAiIHJ5PSI0MCIvPjxwYXRoIGQ9Ik0yMTYsODhIMTY4VjQwYTgsOCwwLDAsMC04LThINDBhOCw4LDAsMCwwLTgsOFYxNjBhOCw4LDAsMCwwLDgsOEg4OHY0OGE4LDgsMCwwLDAsOCw4SDIxNmE4LDgsMCwwLDAsOC04Vjk2QTgsOCwwLDAsMCwyMTYsODhaTTQ4LDE1MlY0OEgxNTJWODhIOTZhOCw4LDAsMCwwLTgsOHY1NlptNTYtMzYuNjlMMTQwLjY5LDE1MkgxMDRabTQ4LDI1LjM4TDExNS4zMSwxMDRIMTUyWk0yMDgsMjA4SDEwNFYxNjhoNTZhOCw4LDAsMCwwLDgtOFYxMDRoNDBaIi8+PC9zdmc+)

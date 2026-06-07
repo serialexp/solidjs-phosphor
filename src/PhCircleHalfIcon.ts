@@ -1,6 +1,6 @@
-import { createIcon } from "./createIcon.js";
+import { createIcon } from "#createIcon";
 
-export type { PhIconProps as PhCircleHalfIconProps } from "./createIcon.js";
+export type { PhIconProps as PhCircleHalfIconProps } from "#createIcon";
 
 /**
  * ![img](data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIyMCIgaGVpZ2h0PSIyMCIgdmlld0JveD0iMCAwIDI1NiAyNTYiIGZpbGw9IiMwMDAiPjxyZWN0IHdpZHRoPSIyNTYiIGhlaWdodD0iMjU2IiBmaWxsPSIjRkZGIiByeD0iNDAiIHJ5PSI0MCIvPjxwYXRoIGQ9Ik0xMjgsMjRBMTA0LDEwNCwwLDEsMCwyMzIsMTI4LDEwNC4xMSwxMDQuMTEsMCwwLDAsMTI4LDI0Wm04LDE2LjM3YTg2LjQsODYuNCwwLDAsMSwxNiwzVjIxMi42N2E4Ni40LDg2LjQsMCwwLDEtMTYsM1ptMzIsOS4yNmE4Ny44MSw4Ny44MSwwLDAsMSwxNiwxMC41NFYxOTUuODNhODcuODEsODcuODEsMCwwLDEtMTYsMTAuNTRaTTQwLDEyOGE4OC4xMSw4OC4xMSwwLDAsMSw4MC04Ny42M1YyMTUuNjNBODguMTEsODguMTEsMCwwLDEsNDAsMTI4Wm0xNjAsNTAuNTRWNzcuNDZhODcuODIsODcuODIsMCwwLDEsMCwxMDEuMDhaIi8+PC9zdmc+)

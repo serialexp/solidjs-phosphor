@@ -1,6 +1,6 @@
-import { createIcon } from "./createIcon.js";
+import { createIcon } from "#createIcon";
 
-export type { PhIconProps as PhFilmStripIconProps } from "./createIcon.js";
+export type { PhIconProps as PhFilmStripIconProps } from "#createIcon";
 
 /**
  * ![img](data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIyMCIgaGVpZ2h0PSIyMCIgdmlld0JveD0iMCAwIDI1NiAyNTYiIGZpbGw9IiMwMDAiPjxyZWN0IHdpZHRoPSIyNTYiIGhlaWdodD0iMjU2IiBmaWxsPSIjRkZGIiByeD0iNDAiIHJ5PSI0MCIvPjxwYXRoIGQ9Ik0yMTYsNDBINDBBMTYsMTYsMCwwLDAsMjQsNTZWMjAwYTE2LDE2LDAsMCwwLDE2LDE2SDIxNmExNiwxNiwwLDAsMCwxNi0xNlY1NkExNiwxNiwwLDAsMCwyMTYsNDBaTTQwLDg4aDgwdjgwSDQwWm05Ni0xNlY1NmgzMlY3MlptLTE2LDBIODhWNTZoMzJabTAsMTEydjE2SDg4VjE4NFptMTYsMGgzMnYxNkgxMzZabTAtMTZWODhoODB2ODBabTgwLTk2SDE4NFY1NmgzMlpNNzIsNTZWNzJINDBWNTZaTTQwLDE4NEg3MnYxNkg0MFptMTc2LDE2SDE4NFYxODRoMzJ2MTZaIi8+PC9zdmc+)

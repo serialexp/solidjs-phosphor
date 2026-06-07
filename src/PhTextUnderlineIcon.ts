@@ -1,6 +1,6 @@
-import { createIcon } from "./createIcon.js";
+import { createIcon } from "#createIcon";
 
-export type { PhIconProps as PhTextUnderlineIconProps } from "./createIcon.js";
+export type { PhIconProps as PhTextUnderlineIconProps } from "#createIcon";
 
 /**
  * ![img](data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIyMCIgaGVpZ2h0PSIyMCIgdmlld0JveD0iMCAwIDI1NiAyNTYiIGZpbGw9IiMwMDAiPjxyZWN0IHdpZHRoPSIyNTYiIGhlaWdodD0iMjU2IiBmaWxsPSIjRkZGIiByeD0iNDAiIHJ5PSI0MCIvPjxwYXRoIGQ9Ik0yMDAsMjI0YTgsOCwwLDAsMS04LDhINjRhOCw4LDAsMCwxLDAtMTZIMTkyQTgsOCwwLDAsMSwyMDAsMjI0Wm0tNzItMjRhNjQuMDcsNjQuMDcsMCwwLDAsNjQtNjRWNTZhOCw4LDAsMCwwLTE2LDB2ODBhNDgsNDgsMCwwLDEtOTYsMFY1NmE4LDgsMCwwLDAtMTYsMHY4MEE2NC4wNyw2NC4wNywwLDAsMCwxMjgsMjAwWiIvPjwvc3ZnPg==)

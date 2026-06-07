@@ -1,6 +1,6 @@
-import { createIcon } from "./createIcon.js";
+import { createIcon } from "#createIcon";
 
-export type { PhIconProps as PhCaretLineRightIconProps } from "./createIcon.js";
+export type { PhIconProps as PhCaretLineRightIconProps } from "#createIcon";
 
 /**
  * ![img](data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIyMCIgaGVpZ2h0PSIyMCIgdmlld0JveD0iMCAwIDI1NiAyNTYiIGZpbGw9IiMwMDAiPjxyZWN0IHdpZHRoPSIyNTYiIGhlaWdodD0iMjU2IiBmaWxsPSIjRkZGIiByeD0iNDAiIHJ5PSI0MCIvPjxwYXRoIGQ9Ik0xNDkuNjYsMTIyLjM0YTgsOCwwLDAsMSwwLDExLjMybC04MCw4MGE4LDgsMCwwLDEtMTEuMzItMTEuMzJMMTMyLjY5LDEyOCw1OC4zNCw1My42NkE4LDgsMCwwLDEsNjkuNjYsNDIuMzRaTTE4NCw0MGE4LDgsMCwwLDAtOCw4VjIwOGE4LDgsMCwwLDAsMTYsMFY0OEE4LDgsMCwwLDAsMTg0LDQwWiIvPjwvc3ZnPg==)

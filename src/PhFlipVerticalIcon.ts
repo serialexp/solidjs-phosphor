@@ -1,6 +1,6 @@
-import { createIcon } from "./createIcon.js";
+import { createIcon } from "#createIcon";
 
-export type { PhIconProps as PhFlipVerticalIconProps } from "./createIcon.js";
+export type { PhIconProps as PhFlipVerticalIconProps } from "#createIcon";
 
 /**
  * ![img](data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIyMCIgaGVpZ2h0PSIyMCIgdmlld0JveD0iMCAwIDI1NiAyNTYiIGZpbGw9IiMwMDAiPjxyZWN0IHdpZHRoPSIyNTYiIGhlaWdodD0iMjU2IiBmaWxsPSIjRkZGIiByeD0iNDAiIHJ5PSI0MCIvPjxwYXRoIGQ9Ik01NiwxMjBIMjE2YTE2LDE2LDAsMCwwLDYuMjMtMzAuNzRsLS4xNC0uMDYtMTU5LjkzLTY0QTE2LDE2LDAsMCwwLDQwLDQwdjY0QTE2LDE2LDAsMCwwLDU2LDEyMFptMC04MCwuMTUuMDZMMjE2LDEwNEg1NmwwLTY0Wm0xNjAsOTZINTZhMTYsMTYsMCwwLDAtMTYsMTZ2NjRhMTYsMTYsMCwwLDAsMjIuMTUsMTQuNzhsMTU5LjkzLTY0LC4xNC0uMDZBMTYsMTYsMCwwLDAsMjE2LDEzNlpNNTYuMTUsMjE1LjkzLDU2LDIxNlYxNTJIMjE2WiIvPjwvc3ZnPg==)

@@ -1,6 +1,6 @@
-import { createIcon } from "./createIcon.js";
+import { createIcon } from "#createIcon";
 
-export type { PhIconProps as PhHandGrabbingIconProps } from "./createIcon.js";
+export type { PhIconProps as PhHandGrabbingIconProps } from "#createIcon";
 
 /**
  * ![img](data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIyMCIgaGVpZ2h0PSIyMCIgdmlld0JveD0iMCAwIDI1NiAyNTYiIGZpbGw9IiMwMDAiPjxyZWN0IHdpZHRoPSIyNTYiIGhlaWdodD0iMjU2IiBmaWxsPSIjRkZGIiByeD0iNDAiIHJ5PSI0MCIvPjxwYXRoIGQ9Ik0xODgsODBhMjcuNzksMjcuNzksMCwwLDAtMTMuMzYsMy40LDI4LDI4LDAsMCwwLTQ2LjY0LTExQTI4LDI4LDAsMCwwLDgwLDkydjIwSDY4YTI4LDI4LDAsMCwwLTI4LDI4djEyYTg4LDg4LDAsMCwwLDE3NiwwVjEwOEEyOCwyOCwwLDAsMCwxODgsODBabTEyLDcyYTcyLDcyLDAsMCwxLTE0NCwwVjE0MGExMiwxMiwwLDAsMSwxMi0xMkg4MHYyNGE4LDgsMCwwLDAsMTYsMFY5MmExMiwxMiwwLDAsMSwyNCwwdjI4YTgsOCwwLDAsMCwxNiwwVjkyYTEyLDEyLDAsMCwxLDI0LDB2MjhhOCw4LDAsMCwwLDE2LDBWMTA4YTEyLDEyLDAsMCwxLDI0LDBaIi8+PC9zdmc+)

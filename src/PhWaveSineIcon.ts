@@ -1,6 +1,6 @@
-import { createIcon } from "./createIcon.js";
+import { createIcon } from "#createIcon";
 
-export type { PhIconProps as PhWaveSineIconProps } from "./createIcon.js";
+export type { PhIconProps as PhWaveSineIconProps } from "#createIcon";
 
 /**
  * ![img](data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIyMCIgaGVpZ2h0PSIyMCIgdmlld0JveD0iMCAwIDI1NiAyNTYiIGZpbGw9IiMwMDAiPjxyZWN0IHdpZHRoPSIyNTYiIGhlaWdodD0iMjU2IiBmaWxsPSIjRkZGIiByeD0iNDAiIHJ5PSI0MCIvPjxwYXRoIGQ9Ik0yMzkuMjQsMTMxLjRjLTIyLDQ2LjgtNDEuNCw2OC42LTYxLjIsNjguNi0yNS4xLDAtNDAuNzMtMzMuMzItNTcuMjgtNjguNkMxMDcuNywxMDMuNTYsOTIuOSw3Miw3OCw3MmMtMTYuNCwwLTM2LjMxLDM3LjIxLTQ2LjcyLDU5LjRhOCw4LDAsMCwxLTE0LjQ4LTYuOEMzOC43MSw3Ny44LDU4LjE2LDU2LDc4LDU2YzI1LjEsMCw0MC43MywzMy4zMiw1Ny4yOCw2OC42QzE0OC4zLDE1Mi40NCwxNjMuMSwxODQsMTc4LDE4NGMxNi40LDAsMzYuMzEtMzcuMjEsNDYuNzItNTkuNGE4LDgsMCwwLDEsMTQuNDgsNi44WiIvPjwvc3ZnPg==)

@@ -1,6 +1,6 @@
-import { createIcon } from "./createIcon.js";
+import { createIcon } from "#createIcon";
 
-export type { PhIconProps as PhParallelogramIconProps } from "./createIcon.js";
+export type { PhIconProps as PhParallelogramIconProps } from "#createIcon";
 
 /**
  * ![img](data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIyMCIgaGVpZ2h0PSIyMCIgdmlld0JveD0iMCAwIDI1NiAyNTYiIGZpbGw9IiMwMDAiPjxyZWN0IHdpZHRoPSIyNTYiIGhlaWdodD0iMjU2IiBmaWxsPSIjRkZGIiByeD0iNDAiIHJ5PSI0MCIvPjxwYXRoIGQ9Ik0yNDUuNDMsNDcuMzFBMTUuOTQsMTUuOTQsMCwwLDAsMjMyLDQwSDg4LjgxYTE2LDE2LDAsMCwwLTE0LjU5LDkuNDNsLTY0LjgsMTQ0QTE2LDE2LDAsMCwwLDI0LDIxNkgxNjcuMTlhMTYsMTYsMCwwLDAsMTQuNTktOS40M2w2NC44LTE0NEExNiwxNiwwLDAsMCwyNDUuNDMsNDcuMzFaTTE2Ny4xOSwyMDBIMjRMODguODEsNTZIMjMyWiIvPjwvc3ZnPg==)

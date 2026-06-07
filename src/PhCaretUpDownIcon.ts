@@ -1,6 +1,6 @@
-import { createIcon } from "./createIcon.js";
+import { createIcon } from "#createIcon";
 
-export type { PhIconProps as PhCaretUpDownIconProps } from "./createIcon.js";
+export type { PhIconProps as PhCaretUpDownIconProps } from "#createIcon";
 
 /**
  * ![img](data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIyMCIgaGVpZ2h0PSIyMCIgdmlld0JveD0iMCAwIDI1NiAyNTYiIGZpbGw9IiMwMDAiPjxyZWN0IHdpZHRoPSIyNTYiIGhlaWdodD0iMjU2IiBmaWxsPSIjRkZGIiByeD0iNDAiIHJ5PSI0MCIvPjxwYXRoIGQ9Ik0xODEuNjYsMTcwLjM0YTgsOCwwLDAsMSwwLDExLjMybC00OCw0OGE4LDgsMCwwLDEtMTEuMzIsMGwtNDgtNDhhOCw4LDAsMCwxLDExLjMyLTExLjMyTDEyOCwyMTIuNjlsNDIuMzQtNDIuMzVBOCw4LDAsMCwxLDE4MS42NiwxNzAuMzRabS05Ni04NC42OEwxMjgsNDMuMzFsNDIuMzQsNDIuMzVhOCw4LDAsMCwwLDExLjMyLTExLjMybC00OC00OGE4LDgsMCwwLDAtMTEuMzIsMGwtNDgsNDhBOCw4LDAsMCwwLDg1LjY2LDg1LjY2WiIvPjwvc3ZnPg==)

@@ -1,6 +1,6 @@
-import { createIcon } from "./createIcon.js";
+import { createIcon } from "#createIcon";
 
-export type { PhIconProps as PhCellSignalMediumIconProps } from "./createIcon.js";
+export type { PhIconProps as PhCellSignalMediumIconProps } from "#createIcon";
 
 /**
  * ![img](data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIyMCIgaGVpZ2h0PSIyMCIgdmlld0JveD0iMCAwIDI1NiAyNTYiIGZpbGw9IiMwMDAiPjxyZWN0IHdpZHRoPSIyNTYiIGhlaWdodD0iMjU2IiBmaWxsPSIjRkZGIiByeD0iNDAiIHJ5PSI0MCIvPjxwYXRoIGQ9Ik0xMjgsMTEydjg4YTgsOCwwLDAsMS0xNiwwVjExMmE4LDgsMCwwLDEsMTYsMFpNODAsMTQ0YTgsOCwwLDAsMC04LDh2NDhhOCw4LDAsMCwwLDE2LDBWMTUyQTgsOCwwLDAsMCw4MCwxNDRaTTQwLDE4NGE4LDgsMCwwLDAtOCw4djhhOCw4LDAsMCwwLDE2LDB2LThBOCw4LDAsMCwwLDQwLDE4NFoiLz48L3N2Zz4=)

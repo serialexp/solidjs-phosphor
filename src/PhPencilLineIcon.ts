@@ -1,6 +1,6 @@
-import { createIcon } from "./createIcon.js";
+import { createIcon } from "#createIcon";
 
-export type { PhIconProps as PhPencilLineIconProps } from "./createIcon.js";
+export type { PhIconProps as PhPencilLineIconProps } from "#createIcon";
 
 /**
  * ![img](data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIyMCIgaGVpZ2h0PSIyMCIgdmlld0JveD0iMCAwIDI1NiAyNTYiIGZpbGw9IiMwMDAiPjxyZWN0IHdpZHRoPSIyNTYiIGhlaWdodD0iMjU2IiBmaWxsPSIjRkZGIiByeD0iNDAiIHJ5PSI0MCIvPjxwYXRoIGQ9Ik0yMjcuMzIsNzMuMzcsMTgyLjYzLDI4LjY5YTE2LDE2LDAsMCwwLTIyLjYzLDBMMzYuNjksMTUyQTE1Ljg2LDE1Ljg2LDAsMCwwLDMyLDE2My4zMVYyMDhhMTYsMTYsMCwwLDAsMTYsMTZIMjE2YTgsOCwwLDAsMCwwLTE2SDExNS4zMmwxMTItMTEyQTE2LDE2LDAsMCwwLDIyNy4zMiw3My4zN1pNMTM2LDc1LjMxLDE1Mi42OSw5Miw2OCwxNzYuNjksNTEuMzEsMTYwWk00OCwyMDhWMTc5LjMxTDc2LjY5LDIwOFptNDgtMy4zMUw3OS4zMiwxODgsMTY0LDEwMy4zMSwxODAuNjksMTIwWm05Ni05NkwxNDcuMzIsNjRsMjQtMjRMMjE2LDg0LjY5WiIvPjwvc3ZnPg==)

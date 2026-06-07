@@ -1,6 +1,6 @@
-import { createIcon } from "./createIcon.js";
+import { createIcon } from "#createIcon";
 
-export type { PhIconProps as PhArrowLineRightIconProps } from "./createIcon.js";
+export type { PhIconProps as PhArrowLineRightIconProps } from "#createIcon";
 
 /**
  * ![img](data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIyMCIgaGVpZ2h0PSIyMCIgdmlld0JveD0iMCAwIDI1NiAyNTYiIGZpbGw9IiMwMDAiPjxyZWN0IHdpZHRoPSIyNTYiIGhlaWdodD0iMjU2IiBmaWxsPSIjRkZGIiByeD0iNDAiIHJ5PSI0MCIvPjxwYXRoIGQ9Ik0xODkuNjYsMTIyLjM0YTgsOCwwLDAsMSwwLDExLjMybC03Miw3MmE4LDgsMCwwLDEtMTEuMzItMTEuMzJMMTY0LjY5LDEzNkgzMmE4LDgsMCwwLDEsMC0xNkgxNjQuNjlMMTA2LjM0LDYxLjY2YTgsOCwwLDAsMSwxMS4zMi0xMS4zMlpNMjE2LDMyYTgsOCwwLDAsMC04LDhWMjE2YTgsOCwwLDAsMCwxNiwwVjQwQTgsOCwwLDAsMCwyMTYsMzJaIi8+PC9zdmc+)

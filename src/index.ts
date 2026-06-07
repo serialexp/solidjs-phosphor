@@ -1,5 +1,5 @@
-export type { IconWeight, PhIconProps } from "./createIcon.js";
-export { createIcon } from "./createIcon.js";
+export type { IconWeight, PhIconProps } from "#createIcon";
+export { createIcon } from "#createIcon";
 export type { PhAcornIconProps } from "./PhAcornIcon.js";
 export type { PhAddressBookIconProps } from "./PhAddressBookIcon.js";
 export type { PhAddressBookTabsIconProps } from "./PhAddressBookTabsIcon.js";

@@ -1,6 +1,6 @@
-import { createIcon } from "./createIcon.js";
+import { createIcon } from "#createIcon";
 
-export type { PhIconProps as PhFlipHorizontalIconProps } from "./createIcon.js";
+export type { PhIconProps as PhFlipHorizontalIconProps } from "#createIcon";
 
 /**
  * ![img](data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIyMCIgaGVpZ2h0PSIyMCIgdmlld0JveD0iMCAwIDI1NiAyNTYiIGZpbGw9IiMwMDAiPjxyZWN0IHdpZHRoPSIyNTYiIGhlaWdodD0iMjU2IiBmaWxsPSIjRkZGIiByeD0iNDAiIHJ5PSI0MCIvPjxwYXRoIGQ9Ik0xMDcuMTgsMjQuMzNhMTUuODYsMTUuODYsMCwwLDAtMTcuOTIsOS40NWwtLjA2LjE0LTY0LDE1OS45M0ExNiwxNiwwLDAsMCw0MCwyMTZoNjRhMTYsMTYsMCwwLDAsMTYtMTZWNDBBMTUuODUsMTUuODUsMCwwLDAsMTA3LjE4LDI0LjMzWk0xMDQsMjAwSDQwbC4wNi0uMTVMMTA0LDQwWm0xMjYuNzctNi4xNS02NC0xNTkuOTMtLjA2LS4xNEExNiwxNiwwLDAsMCwxMzYsNDBWMjAwYTE2LDE2LDAsMCwwLDE2LDE2aDY0YTE2LDE2LDAsMCwwLDE0Ljc4LTIyLjE1Wk0xNTIsMjAwVjQwbDYzLjkzLDE1OS44NC4wNi4xNVoiLz48L3N2Zz4=)

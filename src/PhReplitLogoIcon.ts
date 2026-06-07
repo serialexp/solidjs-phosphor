@@ -1,6 +1,6 @@
-import { createIcon } from "./createIcon.js";
+import { createIcon } from "#createIcon";
 
-export type { PhIconProps as PhReplitLogoIconProps } from "./createIcon.js";
+export type { PhIconProps as PhReplitLogoIconProps } from "#createIcon";
 
 /**
  * ![img](data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIyMCIgaGVpZ2h0PSIyMCIgdmlld0JveD0iMCAwIDI1NiAyNTYiIGZpbGw9IiMwMDAiPjxyZWN0IHdpZHRoPSIyNTYiIGhlaWdodD0iMjU2IiBmaWxsPSIjRkZGIiByeD0iNDAiIHJ5PSI0MCIvPjxwYXRoIGQ9Ik0yMTYsODhIMTUyVjQwYTE2LDE2LDAsMCwwLTE2LTE2SDcyQTE2LDE2LDAsMCwwLDU2LDQwVjg4YTE2LDE2LDAsMCwwLDE2LDE2aDY0djQ4SDcyYTE2LDE2LDAsMCwwLTE2LDE2djQ4YTE2LDE2LDAsMCwwLDE2LDE2aDY0YTE2LDE2LDAsMCwwLDE2LTE2VjE2OGg2NGExNiwxNiwwLDAsMCwxNi0xNlYxMDRBMTYsMTYsMCwwLDAsMjE2LDg4Wk0xMzYsMjE2SDcyVjE2OGg2NFptMC0xNzZWODhINzJWNDBoNjRabTgwLDExMkgxNTJWMTA0aDY0WiIvPjwvc3ZnPg==)

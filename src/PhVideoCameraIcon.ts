@@ -1,6 +1,6 @@
-import { createIcon } from "./createIcon.js";
+import { createIcon } from "#createIcon";
 
-export type { PhIconProps as PhVideoCameraIconProps } from "./createIcon.js";
+export type { PhIconProps as PhVideoCameraIconProps } from "#createIcon";
 
 /**
  * ![img](data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIyMCIgaGVpZ2h0PSIyMCIgdmlld0JveD0iMCAwIDI1NiAyNTYiIGZpbGw9IiMwMDAiPjxyZWN0IHdpZHRoPSIyNTYiIGhlaWdodD0iMjU2IiBmaWxsPSIjRkZGIiByeD0iNDAiIHJ5PSI0MCIvPjxwYXRoIGQ9Ik0yNTEuNzcsNzNhOCw4LDAsMCwwLTguMjEuMzlMMjA4LDk3LjA1VjcyYTE2LDE2LDAsMCwwLTE2LTE2SDMyQTE2LDE2LDAsMCwwLDE2LDcyVjE4NGExNiwxNiwwLDAsMCwxNiwxNkgxOTJhMTYsMTYsMCwwLDAsMTYtMTZWMTU5bDM1LjU2LDIzLjcxQTgsOCwwLDAsMCwyNDgsMTg0YTgsOCwwLDAsMCw4LThWODBBOCw4LDAsMCwwLDI1MS43Nyw3M1pNMTkyLDE4NEgzMlY3MkgxOTJWMTg0Wm00OC0yMi45NS0zMi0yMS4zM1YxMTYuMjhMMjQwLDk1WiIvPjwvc3ZnPg==)

@@ -1,6 +1,6 @@
-import { createIcon } from "./createIcon.js";
+import { createIcon } from "#createIcon";
 
-export type { PhIconProps as PhGridNineIconProps } from "./createIcon.js";
+export type { PhIconProps as PhGridNineIconProps } from "#createIcon";
 
 /**
  * ![img](data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIyMCIgaGVpZ2h0PSIyMCIgdmlld0JveD0iMCAwIDI1NiAyNTYiIGZpbGw9IiMwMDAiPjxyZWN0IHdpZHRoPSIyNTYiIGhlaWdodD0iMjU2IiBmaWxsPSIjRkZGIiByeD0iNDAiIHJ5PSI0MCIvPjxwYXRoIGQ9Ik0yMTYsNDhINDBBMTYsMTYsMCwwLDAsMjQsNjRWMTkyYTE2LDE2LDAsMCwwLDE2LDE2SDIxNmExNiwxNiwwLDAsMCwxNi0xNlY2NEExNiwxNiwwLDAsMCwyMTYsNDhaTTEwNCwxNDRWMTEyaDQ4djMyWm00OCwxNnYzMkgxMDRWMTYwWk00MCwxMTJIODh2MzJINDBabTY0LTE2VjY0aDQ4Vjk2Wm02NCwxNmg0OHYzMkgxNjhabTQ4LTE2SDE2OFY2NGg0OFpNODgsNjRWOTZINDBWNjRaTTQwLDE2MEg4OHYzMkg0MFptMTc2LDMySDE2OFYxNjBoNDh2MzJaIi8+PC9zdmc+)

@@ -1,6 +1,6 @@
-import { createIcon } from "./createIcon.js";
+import { createIcon } from "#createIcon";
 
-export type { PhIconProps as PhStackSimpleIconProps } from "./createIcon.js";
+export type { PhIconProps as PhStackSimpleIconProps } from "#createIcon";
 
 /**
  * ![img](data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIyMCIgaGVpZ2h0PSIyMCIgdmlld0JveD0iMCAwIDI1NiAyNTYiIGZpbGw9IiMwMDAiPjxyZWN0IHdpZHRoPSIyNTYiIGhlaWdodD0iMjU2IiBmaWxsPSIjRkZGIiByeD0iNDAiIHJ5PSI0MCIvPjxwYXRoIGQ9Ik0xMiwxMTFsMTEyLDY0YTgsOCwwLDAsMCw3Ljk0LDBsMTEyLTY0YTgsOCwwLDAsMCwwLTEzLjlsLTExMi02NGE4LDgsMCwwLDAtNy45NCwwbC0xMTIsNjRBOCw4LDAsMCwwLDEyLDExMVpNMTI4LDQ5LjIxLDIyMy44NywxMDQsMTI4LDE1OC43OSwzMi4xMywxMDRaTTI0Ni45NCwxNDBBOCw4LDAsMCwxLDI0NCwxNTFMMTMyLDIxNWE4LDgsMCwwLDEtNy45NCwwTDEyLDE1MUE4LDgsMCwwLDEsMjAsMTM3LjA1bDEwOCw2MS43NCwxMDgtNjEuNzRBOCw4LDAsMCwxLDI0Ni45NCwxNDBaIi8+PC9zdmc+)

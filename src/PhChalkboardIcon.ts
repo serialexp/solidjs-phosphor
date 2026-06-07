@@ -1,6 +1,6 @@
-import { createIcon } from "./createIcon.js";
+import { createIcon } from "#createIcon";
 
-export type { PhIconProps as PhChalkboardIconProps } from "./createIcon.js";
+export type { PhIconProps as PhChalkboardIconProps } from "#createIcon";
 
 /**
  * ![img](data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIyMCIgaGVpZ2h0PSIyMCIgdmlld0JveD0iMCAwIDI1NiAyNTYiIGZpbGw9IiMwMDAiPjxyZWN0IHdpZHRoPSIyNTYiIGhlaWdodD0iMjU2IiBmaWxsPSIjRkZGIiByeD0iNDAiIHJ5PSI0MCIvPjxwYXRoIGQ9Ik0yNDAsMTkyaC04VjU2YTE2LDE2LDAsMCwwLTE2LTE2SDQwQTE2LDE2LDAsMCwwLDI0LDU2VjE5MkgxNmE4LDgsMCwwLDAsMCwxNkgyNDBhOCw4LDAsMCwwLDAtMTZaTTQwLDU2SDIxNlYxOTJIMjAwVjE2OGE4LDgsMCwwLDAtOC04SDEyMGE4LDgsMCwwLDAtOCw4djI0SDcyVjg4SDE4NHY0OGE4LDgsMCwwLDAsMTYsMFY4MGE4LDgsMCwwLDAtOC04SDY0YTgsOCwwLDAsMC04LDhWMTkySDQwWk0xODQsMTkySDEyOFYxNzZoNTZaIi8+PC9zdmc+)

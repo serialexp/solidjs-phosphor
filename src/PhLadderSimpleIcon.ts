@@ -1,6 +1,6 @@
-import { createIcon } from "./createIcon.js";
+import { createIcon } from "#createIcon";
 
-export type { PhIconProps as PhLadderSimpleIconProps } from "./createIcon.js";
+export type { PhIconProps as PhLadderSimpleIconProps } from "#createIcon";
 
 /**
  * ![img](data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIyMCIgaGVpZ2h0PSIyMCIgdmlld0JveD0iMCAwIDI1NiAyNTYiIGZpbGw9IiMwMDAiPjxyZWN0IHdpZHRoPSIyNTYiIGhlaWdodD0iMjU2IiBmaWxsPSIjRkZGIiByeD0iNDAiIHJ5PSI0MCIvPjxwYXRoIGQ9Ik0xOTIsMjRhOCw4LDAsMCwwLTgsOFY2NEg3MlYzMmE4LDgsMCwwLDAtMTYsMFYyMjRhOCw4LDAsMCwwLDE2LDBWMTkySDE4NHYzMmE4LDgsMCwwLDAsMTYsMFYzMkE4LDgsMCwwLDAsMTkyLDI0Wm0tOCw1NnY0MEg3MlY4MFpNNzIsMTc2VjEzNkgxODR2NDBaIi8+PC9zdmc+)

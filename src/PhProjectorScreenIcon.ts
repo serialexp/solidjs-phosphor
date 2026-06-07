@@ -1,6 +1,6 @@
-import { createIcon } from "./createIcon.js";
+import { createIcon } from "#createIcon";
 
-export type { PhIconProps as PhProjectorScreenIconProps } from "./createIcon.js";
+export type { PhIconProps as PhProjectorScreenIconProps } from "#createIcon";
 
 /**
  * ![img](data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIyMCIgaGVpZ2h0PSIyMCIgdmlld0JveD0iMCAwIDI1NiAyNTYiIGZpbGw9IiMwMDAiPjxyZWN0IHdpZHRoPSIyNTYiIGhlaWdodD0iMjU2IiBmaWxsPSIjRkZGIiByeD0iNDAiIHJ5PSI0MCIvPjxwYXRoIGQ9Ik0yMzIsNjRWNDhhMTYsMTYsMCwwLDAtMTYtMTZINDBBMTYsMTYsMCwwLDAsMjQsNDhWNjRBMTYsMTYsMCwwLDAsNDAsODB2OTZIMzJhOCw4LDAsMCwwLDAsMTZoODh2MTcuMzhhMjQsMjQsMCwxLDAsMTYsMFYxOTJoODhhOCw4LDAsMCwwLDAtMTZoLThWODBBMTYsMTYsMCwwLDAsMjMyLDY0Wk0xMjgsMjQwYTgsOCwwLDEsMSw4LThBOCw4LDAsMCwxLDEyOCwyNDBaTTQwLDQ4SDIxNlY2NEg0MFpNMjAwLDE3Nkg1NlY4MEgyMDBaIi8+PC9zdmc+)

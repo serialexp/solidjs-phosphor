@@ -22,7 +22,11 @@ export default defineConfig({
     },
     outDir: "dist",
     rollupOptions: {
-      external: ["solid-js", "solid-js/web", "solid-js/store"],
+      // Keep `#createIcon` external so the literal specifier survives into the
+      // published icon files; the consumer's resolver then picks the dom/ssr or
+      // pre-compiled variant via the `imports` map conditions. If Rollup resolved
+      // it here, the `solid` indirection would be baked away and SSR would break.
+      external: ["solid-js", "solid-js/web", "solid-js/store", "#createIcon"],
       output: {
         preserveModules: false,
         entryFileNames: "[name].js",

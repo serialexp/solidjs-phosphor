@@ -1,6 +1,6 @@
-import { createIcon } from "./createIcon.js";
+import { createIcon } from "#createIcon";
 
-export type { PhIconProps as PhChartBarHorizontalIconProps } from "./createIcon.js";
+export type { PhIconProps as PhChartBarHorizontalIconProps } from "#createIcon";
 
 /**
  * ![img](data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIyMCIgaGVpZ2h0PSIyMCIgdmlld0JveD0iMCAwIDI1NiAyNTYiIGZpbGw9IiMwMDAiPjxyZWN0IHdpZHRoPSIyNTYiIGhlaWdodD0iMjU2IiBmaWxsPSIjRkZGIiByeD0iNDAiIHJ5PSI0MCIvPjxwYXRoIGQ9Ik0yMjQsOTZIMTg0VjU2YTgsOCwwLDAsMC04LThINTZWNDBhOCw4LDAsMCwwLTE2LDBWMjE2YTgsOCwwLDAsMCwxNiwwdi04aDg4YTgsOCwwLDAsMCw4LThWMTYwaDcyYTgsOCwwLDAsMCw4LThWMTA0QTgsOCwwLDAsMCwyMjQsOTZaTTE2OCw2NFY5Nkg1NlY2NFpNMTM2LDE5Mkg1NlYxNjBoODBabTgwLTQ4SDU2VjExMkgyMTZaIi8+PC9zdmc+)

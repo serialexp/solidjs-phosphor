@@ -1,6 +1,6 @@
-import { createIcon } from "./createIcon.js";
+import { createIcon } from "#createIcon";
 
-export type { PhIconProps as PhPaperclipHorizontalIconProps } from "./createIcon.js";
+export type { PhIconProps as PhPaperclipHorizontalIconProps } from "#createIcon";
 
 /**
  * ![img](data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIyMCIgaGVpZ2h0PSIyMCIgdmlld0JveD0iMCAwIDI1NiAyNTYiIGZpbGw9IiMwMDAiPjxyZWN0IHdpZHRoPSIyNTYiIGhlaWdodD0iMjU2IiBmaWxsPSIjRkZGIiByeD0iNDAiIHJ5PSI0MCIvPjxwYXRoIGQ9Ik0yNDgsMTI4YTU2LjA2LDU2LjA2LDAsMCwxLTU2LDU2SDQ4YTQwLDQwLDAsMCwxLDAtODBIMTkyYTI0LDI0LDAsMCwxLDAsNDhIODBhOCw4LDAsMCwxLDAtMTZIMTkyYTgsOCwwLDAsMCwwLTE2SDQ4YTI0LDI0LDAsMCwwLDAsNDhIMTkyYTQwLDQwLDAsMCwwLDAtODBIODBhOCw4LDAsMCwxLDAtMTZIMTkyQTU2LjA2LDU2LjA2LDAsMCwxLDI0OCwxMjhaIi8+PC9zdmc+)

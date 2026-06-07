@@ -1,6 +1,6 @@
-import { createIcon } from "./createIcon.js";
+import { createIcon } from "#createIcon";
 
-export type { PhIconProps as PhArrowsHorizontalIconProps } from "./createIcon.js";
+export type { PhIconProps as PhArrowsHorizontalIconProps } from "#createIcon";
 
 /**
  * ![img](data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIyMCIgaGVpZ2h0PSIyMCIgdmlld0JveD0iMCAwIDI1NiAyNTYiIGZpbGw9IiMwMDAiPjxyZWN0IHdpZHRoPSIyNTYiIGhlaWdodD0iMjU2IiBmaWxsPSIjRkZGIiByeD0iNDAiIHJ5PSI0MCIvPjxwYXRoIGQ9Ik0yMzcuNjYsMTMzLjY2bC0zMiwzMmE4LDgsMCwwLDEtMTEuMzItMTEuMzJMMjEyLjY5LDEzNkg0My4zMWwxOC4zNSwxOC4zNGE4LDgsMCwwLDEtMTEuMzIsMTEuMzJsLTMyLTMyYTgsOCwwLDAsMSwwLTExLjMybDMyLTMyYTgsOCwwLDAsMSwxMS4zMiwxMS4zMkw0My4zMSwxMjBIMjEyLjY5bC0xOC4zNS0xOC4zNGE4LDgsMCwwLDEsMTEuMzItMTEuMzJsMzIsMzJBOCw4LDAsMCwxLDIzNy42NiwxMzMuNjZaIi8+PC9zdmc+)

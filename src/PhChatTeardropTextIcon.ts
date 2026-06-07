@@ -1,6 +1,6 @@
-import { createIcon } from "./createIcon.js";
+import { createIcon } from "#createIcon";
 
-export type { PhIconProps as PhChatTeardropTextIconProps } from "./createIcon.js";
+export type { PhIconProps as PhChatTeardropTextIconProps } from "#createIcon";
 
 /**
  * ![img](data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIyMCIgaGVpZ2h0PSIyMCIgdmlld0JveD0iMCAwIDI1NiAyNTYiIGZpbGw9IiMwMDAiPjxyZWN0IHdpZHRoPSIyNTYiIGhlaWdodD0iMjU2IiBmaWxsPSIjRkZGIiByeD0iNDAiIHJ5PSI0MCIvPjxwYXRoIGQ9Ik0xNzIsMTEyYTgsOCwwLDAsMS04LDhIOTZhOCw4LDAsMCwxLDAtMTZoNjhBOCw4LDAsMCwxLDE3MiwxMTJabS04LDI0SDk2YTgsOCwwLDAsMCwwLDE2aDY4YTgsOCwwLDAsMCwwLTE2Wm02OC0xMkExMDAuMTEsMTAwLjExLDAsMCwxLDEzMiwyMjRINDhhMTYsMTYsMCwwLDEtMTYtMTZWMTI0YTEwMCwxMDAsMCwwLDEsMjAwLDBabS0xNiwwYTg0LDg0LDAsMCwwLTE2OCwwdjg0aDg0QTg0LjA5LDg0LjA5LDAsMCwwLDIxNiwxMjRaIi8+PC9zdmc+)

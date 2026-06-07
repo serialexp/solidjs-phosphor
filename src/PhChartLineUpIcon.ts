@@ -1,6 +1,6 @@
-import { createIcon } from "./createIcon.js";
+import { createIcon } from "#createIcon";
 
-export type { PhIconProps as PhChartLineUpIconProps } from "./createIcon.js";
+export type { PhIconProps as PhChartLineUpIconProps } from "#createIcon";
 
 /**
  * ![img](data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIyMCIgaGVpZ2h0PSIyMCIgdmlld0JveD0iMCAwIDI1NiAyNTYiIGZpbGw9IiMwMDAiPjxyZWN0IHdpZHRoPSIyNTYiIGhlaWdodD0iMjU2IiBmaWxsPSIjRkZGIiByeD0iNDAiIHJ5PSI0MCIvPjxwYXRoIGQ9Ik0yMzIsMjA4YTgsOCwwLDAsMS04LDhIMzJhOCw4LDAsMCwxLTgtOFY0OGE4LDgsMCwwLDEsMTYsMFYxNTYuNjlsNTAuMzQtNTAuMzVhOCw4LDAsMCwxLDExLjMyLDBMMTI4LDEzMi42OSwxODAuNjksODBIMTYwYTgsOCwwLDAsMSwwLTE2aDQwYTgsOCwwLDAsMSw4LDh2NDBhOCw4LDAsMCwxLTE2LDBWOTEuMzFsLTU4LjM0LDU4LjM1YTgsOCwwLDAsMS0xMS4zMiwwTDk2LDEyMy4zMWwtNTYsNTZWMjAwSDIyNEE4LDgsMCwwLDEsMjMyLDIwOFoiLz48L3N2Zz4=)

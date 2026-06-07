@@ -1,6 +1,6 @@
-import { createIcon } from "./createIcon.js";
+import { createIcon } from "#createIcon";
 
-export type { PhIconProps as PhMagnifyingGlassPlusIconProps } from "./createIcon.js";
+export type { PhIconProps as PhMagnifyingGlassPlusIconProps } from "#createIcon";
 
 /**
  * ![img](data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIyMCIgaGVpZ2h0PSIyMCIgdmlld0JveD0iMCAwIDI1NiAyNTYiIGZpbGw9IiMwMDAiPjxyZWN0IHdpZHRoPSIyNTYiIGhlaWdodD0iMjU2IiBmaWxsPSIjRkZGIiByeD0iNDAiIHJ5PSI0MCIvPjxwYXRoIGQ9Ik0xNTIsMTEyYTgsOCwwLDAsMS04LDhIMTIwdjI0YTgsOCwwLDAsMS0xNiwwVjEyMEg4MGE4LDgsMCwwLDEsMC0xNmgyNFY4MGE4LDgsMCwwLDEsMTYsMHYyNGgyNEE4LDgsMCwwLDEsMTUyLDExMlptNzcuNjYsMTE3LjY2YTgsOCwwLDAsMS0xMS4zMiwwbC01MC4wNi01MC4wN2E4OC4xMSw4OC4xMSwwLDEsMSwxMS4zMS0xMS4zMWw1MC4wNyw1MC4wNkE4LDgsMCwwLDEsMjI5LjY2LDIyOS42NlpNMTEyLDE4NGE3Miw3MiwwLDEsMC03Mi03MkE3Mi4wOCw3Mi4wOCwwLDAsMCwxMTIsMTg0WiIvPjwvc3ZnPg==)

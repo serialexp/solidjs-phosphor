@@ -1,6 +1,6 @@
-import { createIcon } from "./createIcon.js";
+import { createIcon } from "#createIcon";
 
-export type { PhIconProps as PhSlidersHorizontalIconProps } from "./createIcon.js";
+export type { PhIconProps as PhSlidersHorizontalIconProps } from "#createIcon";
 
 /**
  * ![img](data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIyMCIgaGVpZ2h0PSIyMCIgdmlld0JveD0iMCAwIDI1NiAyNTYiIGZpbGw9IiMwMDAiPjxyZWN0IHdpZHRoPSIyNTYiIGhlaWdodD0iMjU2IiBmaWxsPSIjRkZGIiByeD0iNDAiIHJ5PSI0MCIvPjxwYXRoIGQ9Ik00MCw4OEg3M2EzMiwzMiwwLDAsMCw2MiwwaDgxYTgsOCwwLDAsMCwwLTE2SDEzNWEzMiwzMiwwLDAsMC02MiwwSDQwYTgsOCwwLDAsMCwwLDE2Wm02NC0yNEExNiwxNiwwLDEsMSw4OCw4MCwxNiwxNiwwLDAsMSwxMDQsNjRaTTIxNiwxNjhIMTk5YTMyLDMyLDAsMCwwLTYyLDBINDBhOCw4LDAsMCwwLDAsMTZoOTdhMzIsMzIsMCwwLDAsNjIsMGgxN2E4LDgsMCwwLDAsMC0xNlptLTQ4LDI0YTE2LDE2LDAsMSwxLDE2LTE2QTE2LDE2LDAsMCwxLDE2OCwxOTJaIi8+PC9zdmc+)

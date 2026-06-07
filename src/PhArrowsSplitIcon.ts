@@ -1,6 +1,6 @@
-import { createIcon } from "./createIcon.js";
+import { createIcon } from "#createIcon";
 
-export type { PhIconProps as PhArrowsSplitIconProps } from "./createIcon.js";
+export type { PhIconProps as PhArrowsSplitIconProps } from "#createIcon";
 
 /**
  * ![img](data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIyMCIgaGVpZ2h0PSIyMCIgdmlld0JveD0iMCAwIDI1NiAyNTYiIGZpbGw9IiMwMDAiPjxyZWN0IHdpZHRoPSIyNTYiIGhlaWdodD0iMjU2IiBmaWxsPSIjRkZGIiByeD0iNDAiIHJ5PSI0MCIvPjxwYXRoIGQ9Ik0yMjkuNjYsMTg5LjY2bC0zMiwzMmE4LDgsMCwwLDEtMTEuMzIsMGwtMzItMzJhOCw4LDAsMCwxLDExLjMyLTExLjMyTDE4NCwxOTYuNjlWMTM5LjMxbC01Ni01Ni01Niw1NnY1Ny4zOGwxOC4zNC0xOC4zNWE4LDgsMCwwLDEsMTEuMzIsMTEuMzJsLTMyLDMyYTgsOCwwLDAsMS0xMS4zMiwwbC0zMi0zMmE4LDgsMCwwLDEsMTEuMzItMTEuMzJMNTYsMTk2LjY5VjEzNmE4LDgsMCwwLDEsMi4zNC01LjY2TDEyMCw2OC42OVYyNGE4LDgsMCwwLDEsMTYsMFY2OC42OWw2MS42Niw2MS42NUE4LDgsMCwwLDEsMjAwLDEzNnY2MC42OWwxOC4zNC0xOC4zNWE4LDgsMCwwLDEsMTEuMzIsMTEuMzJaIi8+PC9zdmc+)

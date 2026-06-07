@@ -1,6 +1,6 @@
-import { createIcon } from "./createIcon.js";
+import { createIcon } from "#createIcon";
 
-export type { PhIconProps as PhDeskIconProps } from "./createIcon.js";
+export type { PhIconProps as PhDeskIconProps } from "#createIcon";
 
 /**
  * ![img](data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIyMCIgaGVpZ2h0PSIyMCIgdmlld0JveD0iMCAwIDI1NiAyNTYiIGZpbGw9IiMwMDAiPjxyZWN0IHdpZHRoPSIyNTYiIGhlaWdodD0iMjU2IiBmaWxsPSIjRkZGIiByeD0iNDAiIHJ5PSI0MCIvPjxwYXRoIGQ9Ik0yNDgsNjRIOEE4LDgsMCwwLDAsOCw4MGg4VjE5MmE4LDgsMCwwLDAsMTYsMFYxNDRIMjI0djQ4YTgsOCwwLDAsMCwxNiwwVjgwaDhhOCw4LDAsMCwwLDAtMTZaTTMyLDgwaDg4djQ4SDMyWm0xOTIsNDhIMTM2VjgwaDg4Wk05NiwxMDRhOCw4LDAsMCwxLTgsOEg2NGE4LDgsMCwwLDEsMC0xNkg4OEE4LDgsMCwwLDEsOTYsMTA0Wm02NCwwYTgsOCwwLDAsMSw4LThoMjRhOCw4LDAsMCwxLDAsMTZIMTY4QTgsOCwwLDAsMSwxNjAsMTA0WiIvPjwvc3ZnPg==)

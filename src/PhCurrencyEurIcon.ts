@@ -1,6 +1,6 @@
-import { createIcon } from "./createIcon.js";
+import { createIcon } from "#createIcon";
 
-export type { PhIconProps as PhCurrencyEurIconProps } from "./createIcon.js";
+export type { PhIconProps as PhCurrencyEurIconProps } from "#createIcon";
 
 /**
  * ![img](data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIyMCIgaGVpZ2h0PSIyMCIgdmlld0JveD0iMCAwIDI1NiAyNTYiIGZpbGw9IiMwMDAiPjxyZWN0IHdpZHRoPSIyNTYiIGhlaWdodD0iMjU2IiBmaWxsPSIjRkZGIiByeD0iNDAiIHJ5PSI0MCIvPjxwYXRoIGQ9Ik0xOTAsMTkyLjMzYTgsOCwwLDAsMS0uNjMsMTEuM0E4MCw4MCwwLDAsMSw1Ni40LDE1Mkg0MGE4LDgsMCwwLDEsMC0xNkg1NlYxMjBINDBhOCw4LDAsMCwxLDAtMTZINTYuNEE4MCw4MCwwLDAsMSwxODkuMzQsNTIuMzcsOCw4LDAsMCwxLDE3OC42Niw2NC4zLDY0LDY0LDAsMCwwLDcyLjUyLDEwNEgxMzZhOCw4LDAsMCwxLDAsMTZINzJ2MTZoNDhhOCw4LDAsMCwxLDAsMTZINzIuNTJhNjQsNjQsMCwwLDAsMTA2LjE0LDM5LjcxQTgsOCwwLDAsMSwxOTAsMTkyLjMzWiIvPjwvc3ZnPg==)

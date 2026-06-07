@@ -1,6 +1,6 @@
-import { createIcon } from "./createIcon.js";
+import { createIcon } from "#createIcon";
 
-export type { PhIconProps as PhCopyIconProps } from "./createIcon.js";
+export type { PhIconProps as PhCopyIconProps } from "#createIcon";
 
 /**
  * ![img](data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIyMCIgaGVpZ2h0PSIyMCIgdmlld0JveD0iMCAwIDI1NiAyNTYiIGZpbGw9IiMwMDAiPjxyZWN0IHdpZHRoPSIyNTYiIGhlaWdodD0iMjU2IiBmaWxsPSIjRkZGIiByeD0iNDAiIHJ5PSI0MCIvPjxwYXRoIGQ9Ik0yMTYsMzJIODhhOCw4LDAsMCwwLTgsOFY4MEg0MGE4LDgsMCwwLDAtOCw4VjIxNmE4LDgsMCwwLDAsOCw4SDE2OGE4LDgsMCwwLDAsOC04VjE3Nmg0MGE4LDgsMCwwLDAsOC04VjQwQTgsOCwwLDAsMCwyMTYsMzJaTTE2MCwyMDhINDhWOTZIMTYwWm00OC00OEgxNzZWODhhOCw4LDAsMCwwLTgtOEg5NlY0OEgyMDhaIi8+PC9zdmc+)

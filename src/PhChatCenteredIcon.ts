@@ -1,6 +1,6 @@
-import { createIcon } from "./createIcon.js";
+import { createIcon } from "#createIcon";
 
-export type { PhIconProps as PhChatCenteredIconProps } from "./createIcon.js";
+export type { PhIconProps as PhChatCenteredIconProps } from "#createIcon";
 
 /**
  * ![img](data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIyMCIgaGVpZ2h0PSIyMCIgdmlld0JveD0iMCAwIDI1NiAyNTYiIGZpbGw9IiMwMDAiPjxyZWN0IHdpZHRoPSIyNTYiIGhlaWdodD0iMjU2IiBmaWxsPSIjRkZGIiByeD0iNDAiIHJ5PSI0MCIvPjxwYXRoIGQ9Ik0yMTYsNDBINDBBMTYsMTYsMCwwLDAsMjQsNTZWMTg0YTE2LDE2LDAsMCwwLDE2LDE2aDYwLjQzbDEzLjY4LDIzLjk0YTE2LDE2LDAsMCwwLDI3Ljc4LDBMMTU1LjU3LDIwMEgyMTZhMTYsMTYsMCwwLDAsMTYtMTZWNTZBMTYsMTYsMCwwLDAsMjE2LDQwWm0wLDE0NEgxNTAuOTNhOCw4LDAsMCwwLTcsNGwtMTYsMjgtMTYtMjhhOCw4LDAsMCwwLTctNEg0MFY1NkgyMTZaIi8+PC9zdmc+)

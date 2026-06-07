@@ -1,6 +1,6 @@
-import { createIcon } from "./createIcon.js";
+import { createIcon } from "#createIcon";
 
-export type { PhIconProps as PhCornersOutIconProps } from "./createIcon.js";
+export type { PhIconProps as PhCornersOutIconProps } from "#createIcon";
 
 /**
  * ![img](data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIyMCIgaGVpZ2h0PSIyMCIgdmlld0JveD0iMCAwIDI1NiAyNTYiIGZpbGw9IiMwMDAiPjxyZWN0IHdpZHRoPSIyNTYiIGhlaWdodD0iMjU2IiBmaWxsPSIjRkZGIiByeD0iNDAiIHJ5PSI0MCIvPjxwYXRoIGQ9Ik0yMTYsNDhWODhhOCw4LDAsMCwxLTE2LDBWNTZIMTY4YTgsOCwwLDAsMSwwLTE2aDQwQTgsOCwwLDAsMSwyMTYsNDhaTTg4LDIwMEg1NlYxNjhhOCw4LDAsMCwwLTE2LDB2NDBhOCw4LDAsMCwwLDgsOEg4OGE4LDgsMCwwLDAsMC0xNlptMTIwLTQwYTgsOCwwLDAsMC04LDh2MzJIMTY4YTgsOCwwLDAsMCwwLDE2aDQwYTgsOCwwLDAsMCw4LThWMTY4QTgsOCwwLDAsMCwyMDgsMTYwWk04OCw0MEg0OGE4LDgsMCwwLDAtOCw4Vjg4YTgsOCwwLDAsMCwxNiwwVjU2SDg4YTgsOCwwLDAsMCwwLTE2WiIvPjwvc3ZnPg==)

@@ -1,6 +1,6 @@
-import { createIcon } from "./createIcon.js";
+import { createIcon } from "#createIcon";
 
-export type { PhIconProps as PhShieldIconProps } from "./createIcon.js";
+export type { PhIconProps as PhShieldIconProps } from "#createIcon";
 
 /**
  * ![img](data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIyMCIgaGVpZ2h0PSIyMCIgdmlld0JveD0iMCAwIDI1NiAyNTYiIGZpbGw9IiMwMDAiPjxyZWN0IHdpZHRoPSIyNTYiIGhlaWdodD0iMjU2IiBmaWxsPSIjRkZGIiByeD0iNDAiIHJ5PSI0MCIvPjxwYXRoIGQ9Ik0yMDgsNDBINDhBMTYsMTYsMCwwLDAsMzIsNTZ2NTZjMCw1Mi43MiwyNS41Miw4NC42Nyw0Ni45MywxMDIuMTksMjMuMDYsMTguODYsNDYsMjUuMjcsNDcsMjUuNTNhOCw4LDAsMCwwLDQuMiwwYzEtLjI2LDIzLjkxLTYuNjcsNDctMjUuNTNDMTk4LjQ4LDE5Ni42NywyMjQsMTY0LjcyLDIyNCwxMTJWNTZBMTYsMTYsMCwwLDAsMjA4LDQwWm0wLDcyYzAsMzcuMDctMTMuNjYsNjcuMTYtNDAuNiw4OS40MkExMjkuMywxMjkuMywwLDAsMSwxMjgsMjIzLjYyYTEyOC4yNSwxMjguMjUsMCwwLDEtMzguOTItMjEuODFDNjEuODIsMTc5LjUxLDQ4LDE0OS4zLDQ4LDExMmwwLTU2LDE2MCwwWiIvPjwvc3ZnPg==)

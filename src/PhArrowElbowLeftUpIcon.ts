@@ -1,6 +1,6 @@
-import { createIcon } from "./createIcon.js";
+import { createIcon } from "#createIcon";
 
-export type { PhIconProps as PhArrowElbowLeftUpIconProps } from "./createIcon.js";
+export type { PhIconProps as PhArrowElbowLeftUpIconProps } from "#createIcon";
 
 /**
  * ![img](data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIyMCIgaGVpZ2h0PSIyMCIgdmlld0JveD0iMCAwIDI1NiAyNTYiIGZpbGw9IiMwMDAiPjxyZWN0IHdpZHRoPSIyNTYiIGhlaWdodD0iMjU2IiBmaWxsPSIjRkZGIiByeD0iNDAiIHJ5PSI0MCIvPjxwYXRoIGQ9Ik0yNDAsMTkyYTgsOCwwLDAsMS04LDhIODhhOCw4LDAsMCwxLTgtOFY2Ny4zMUw0NS42NiwxMDEuNjZBOCw4LDAsMCwxLDM0LjM0LDkwLjM0bDQ4LTQ4YTgsOCwwLDAsMSwxMS4zMiwwbDQ4LDQ4YTgsOCwwLDAsMS0xMS4zMiwxMS4zMkw5Niw2Ny4zMVYxODRIMjMyQTgsOCwwLDAsMSwyNDAsMTkyWiIvPjwvc3ZnPg==)

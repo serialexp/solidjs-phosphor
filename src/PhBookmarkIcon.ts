@@ -1,6 +1,6 @@
-import { createIcon } from "./createIcon.js";
+import { createIcon } from "#createIcon";
 
-export type { PhIconProps as PhBookmarkIconProps } from "./createIcon.js";
+export type { PhIconProps as PhBookmarkIconProps } from "#createIcon";
 
 /**
  * ![img](data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIyMCIgaGVpZ2h0PSIyMCIgdmlld0JveD0iMCAwIDI1NiAyNTYiIGZpbGw9IiMwMDAiPjxyZWN0IHdpZHRoPSIyNTYiIGhlaWdodD0iMjU2IiBmaWxsPSIjRkZGIiByeD0iNDAiIHJ5PSI0MCIvPjxwYXRoIGQ9Ik0xODQsMzJINzJBMTYsMTYsMCwwLDAsNTYsNDhWMjI0YTgsOCwwLDAsMCwxMi4yNCw2Ljc4TDEyOCwxOTMuNDNsNTkuNzcsMzcuMzVBOCw4LDAsMCwwLDIwMCwyMjRWNDhBMTYsMTYsMCwwLDAsMTg0LDMyWm0wLDE2VjE2MS41N2wtNTEuNzctMzIuMzVhOCw4LDAsMCwwLTguNDgsMEw3MiwxNjEuNTZWNDhaTTEzMi4yMywxNzcuMjJhOCw4LDAsMCwwLTguNDgsMEw3MiwyMDkuNTdWMTgwLjQzbDU2LTM1LDU2LDM1djI5LjE0WiIvPjwvc3ZnPg==)

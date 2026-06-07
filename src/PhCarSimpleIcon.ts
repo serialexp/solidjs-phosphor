@@ -1,6 +1,6 @@
-import { createIcon } from "./createIcon.js";
+import { createIcon } from "#createIcon";
 
-export type { PhIconProps as PhCarSimpleIconProps } from "./createIcon.js";
+export type { PhIconProps as PhCarSimpleIconProps } from "#createIcon";
 
 /**
  * ![img](data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIyMCIgaGVpZ2h0PSIyMCIgdmlld0JveD0iMCAwIDI1NiAyNTYiIGZpbGw9IiMwMDAiPjxyZWN0IHdpZHRoPSIyNTYiIGhlaWdodD0iMjU2IiBmaWxsPSIjRkZGIiByeD0iNDAiIHJ5PSI0MCIvPjxwYXRoIGQ9Ik0yNDAsMTA0SDIyOS4yTDIwMS40Miw0MS41QTE2LDE2LDAsMCwwLDE4Ni44LDMySDY5LjJhMTYsMTYsMCwwLDAtMTQuNjIsOS41TDI2LjgsMTA0SDE2YTgsOCwwLDAsMCwwLDE2aDh2ODBhMTYsMTYsMCwwLDAsMTYsMTZINjRhMTYsMTYsMCwwLDAsMTYtMTZWMTg0aDk2djE2YTE2LDE2LDAsMCwwLDE2LDE2aDI0YTE2LDE2LDAsMCwwLDE2LTE2VjEyMGg4YTgsOCwwLDAsMCwwLTE2Wk02OS4yLDQ4SDE4Ni44bDI0Ljg5LDU2SDQ0LjMxWk0yMTYsMjAwSDE5MlYxNzZhOCw4LDAsMCwwLTgtOEg3MmE4LDgsMCwwLDAtOCw4djI0SDQwVjEyMEgyMTZaIi8+PC9zdmc+)

@@ -1,6 +1,6 @@
-import { createIcon } from "./createIcon.js";
+import { createIcon } from "#createIcon";
 
-export type { PhIconProps as PhArrowFatLinesRightIconProps } from "./createIcon.js";
+export type { PhIconProps as PhArrowFatLinesRightIconProps } from "#createIcon";
 
 /**
  * ![img](data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIyMCIgaGVpZ2h0PSIyMCIgdmlld0JveD0iMCAwIDI1NiAyNTYiIGZpbGw9IiMwMDAiPjxyZWN0IHdpZHRoPSIyNTYiIGhlaWdodD0iMjU2IiBmaWxsPSIjRkZGIiByeD0iNDAiIHJ5PSI0MCIvPjxwYXRoIGQ9Ik0yMzcuNjYsMTIyLjM0bC05Ni05NkE4LDgsMCwwLDAsMTI4LDMyVjcySDEwNGE4LDgsMCwwLDAtOCw4djk2YTgsOCwwLDAsMCw4LDhoMjR2NDBhOCw4LDAsMCwwLDEzLjY2LDUuNjZsOTYtOTZBOCw4LDAsMCwwLDIzNy42NiwxMjIuMzRaTTE0NCwyMDQuNjlWMTc2YTgsOCwwLDAsMC04LThIMTEyVjg4aDI0YTgsOCwwLDAsMCw4LThWNTEuMzFMMjIwLjY5LDEyOFpNNDgsODB2OTZhOCw4LDAsMCwxLTE2LDBWODBhOCw4LDAsMCwxLDE2LDBabTMyLDB2OTZhOCw4LDAsMCwxLTE2LDBWODBhOCw4LDAsMCwxLDE2LDBaIi8+PC9zdmc+)

@@ -1,6 +1,6 @@
-import { createIcon } from "./createIcon.js";
+import { createIcon } from "#createIcon";
 
-export type { PhIconProps as PhArrowBendRightUpIconProps } from "./createIcon.js";
+export type { PhIconProps as PhArrowBendRightUpIconProps } from "#createIcon";
 
 /**
  * ![img](data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIyMCIgaGVpZ2h0PSIyMCIgdmlld0JveD0iMCAwIDI1NiAyNTYiIGZpbGw9IiMwMDAiPjxyZWN0IHdpZHRoPSIyNTYiIGhlaWdodD0iMjU2IiBmaWxsPSIjRkZGIiByeD0iNDAiIHJ5PSI0MCIvPjxwYXRoIGQ9Ik0yMDUuNjYsODUuNjZhOCw4LDAsMCwxLTExLjMyLDBMMTYwLDUxLjMxVjEyOEExMDQuMTEsMTA0LjExLDAsMCwxLDU2LDIzMmE4LDgsMCwwLDEsMC0xNiw4OC4xLDg4LjEsMCwwLDAsODgtODhWNTEuMzFMMTA5LjY2LDg1LjY2QTgsOCwwLDAsMSw5OC4zNCw3NC4zNGw0OC00OGE4LDgsMCwwLDEsMTEuMzIsMGw0OCw0OEE4LDgsMCwwLDEsMjA1LjY2LDg1LjY2WiIvPjwvc3ZnPg==)

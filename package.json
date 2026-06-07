@@ -1,6 +1,6 @@
 {
   "name": "solidjs-phosphor",
-  "version": "2.1.5",
+  "version": "2.1.6",
   "description": "Phosphor Icons for SolidJS — auto-generated from phosphor-icons/core",
   "license": "MIT",
   "type": "module",
@@ -9,8 +9,16 @@
   "types": "./dist/index.d.ts",
   "exports": {
     ".": {
-      "import": "./dist/index.js",
-      "types": "./dist/index.d.ts"
+      "solid": "./dist/index.js",
+      "types": "./dist/index.d.ts",
+      "import": "./dist/index.js"
+    }
+  },
+  "imports": {
+    "#createIcon": {
+      "solid": "./dist/createIcon.jsx",
+      "types": "./dist/createIcon.d.ts",
+      "default": "./dist/createIcon.js"
     }
   },
   "files": [
@@ -30,7 +38,7 @@
   },
   "scripts": {
     "generate": "tsx scripts/generate.ts",
-    "build": "vite build && tsgo --emitDeclarationOnly",
+    "build": "vite build && tsgo --emitDeclarationOnly && node scripts/copy-jsx.mjs",
     "check": "tsgo --noEmit",
     "prepublishOnly": "pnpm run generate && pnpm run check && pnpm run build"
   },

@@ -1,6 +1,6 @@
-import { createIcon } from "./createIcon.js";
+import { createIcon } from "#createIcon";
 
-export type { PhIconProps as PhCreditCardIconProps } from "./createIcon.js";
+export type { PhIconProps as PhCreditCardIconProps } from "#createIcon";
 
 /**
  * ![img](data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIyMCIgaGVpZ2h0PSIyMCIgdmlld0JveD0iMCAwIDI1NiAyNTYiIGZpbGw9IiMwMDAiPjxyZWN0IHdpZHRoPSIyNTYiIGhlaWdodD0iMjU2IiBmaWxsPSIjRkZGIiByeD0iNDAiIHJ5PSI0MCIvPjxwYXRoIGQ9Ik0yMjQsNDhIMzJBMTYsMTYsMCwwLDAsMTYsNjRWMTkyYTE2LDE2LDAsMCwwLDE2LDE2SDIyNGExNiwxNiwwLDAsMCwxNi0xNlY2NEExNiwxNiwwLDAsMCwyMjQsNDhabTAsMTZWODhIMzJWNjRabTAsMTI4SDMyVjEwNEgyMjR2ODhabS0xNi0yNGE4LDgsMCwwLDEtOCw4SDE2OGE4LDgsMCwwLDEsMC0xNmgzMkE4LDgsMCwwLDEsMjA4LDE2OFptLTY0LDBhOCw4LDAsMCwxLTgsOEgxMjBhOCw4LDAsMCwxLDAtMTZoMTZBOCw4LDAsMCwxLDE0NCwxNjhaIi8+PC9zdmc+)

@@ -1,6 +1,6 @@
-import { createIcon } from "./createIcon.js";
+import { createIcon } from "#createIcon";
 
-export type { PhIconProps as PhArrowFatLineLeftIconProps } from "./createIcon.js";
+export type { PhIconProps as PhArrowFatLineLeftIconProps } from "#createIcon";
 
 /**
  * ![img](data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIyMCIgaGVpZ2h0PSIyMCIgdmlld0JveD0iMCAwIDI1NiAyNTYiIGZpbGw9IiMwMDAiPjxyZWN0IHdpZHRoPSIyNTYiIGhlaWdodD0iMjU2IiBmaWxsPSIjRkZGIiByeD0iNDAiIHJ5PSI0MCIvPjxwYXRoIGQ9Ik0xODQsNzJIMTI4VjMyYTgsOCwwLDAsMC0xMy42Ni01LjY2bC05Niw5NmE4LDgsMCwwLDAsMCwxMS4zMmw5Niw5NkE4LDgsMCwwLDAsMTI4LDIyNFYxODRoNTZhOCw4LDAsMCwwLDgtOFY4MEE4LDgsMCwwLDAsMTg0LDcyWm0tOCw5NkgxMjBhOCw4LDAsMCwwLTgsOHYyOC42OUwzNS4zMSwxMjgsMTEyLDUxLjMxVjgwYTgsOCwwLDAsMCw4LDhoNTZabTQ4LTg4djk2YTgsOCwwLDAsMS0xNiwwVjgwYTgsOCwwLDAsMSwxNiwwWiIvPjwvc3ZnPg==)

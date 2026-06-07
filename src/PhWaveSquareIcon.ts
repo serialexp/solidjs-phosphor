@@ -1,6 +1,6 @@
-import { createIcon } from "./createIcon.js";
+import { createIcon } from "#createIcon";
 
-export type { PhIconProps as PhWaveSquareIconProps } from "./createIcon.js";
+export type { PhIconProps as PhWaveSquareIconProps } from "#createIcon";
 
 /**
  * ![img](data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIyMCIgaGVpZ2h0PSIyMCIgdmlld0JveD0iMCAwIDI1NiAyNTYiIGZpbGw9IiMwMDAiPjxyZWN0IHdpZHRoPSIyNTYiIGhlaWdodD0iMjU2IiBmaWxsPSIjRkZGIiByeD0iNDAiIHJ5PSI0MCIvPjxwYXRoIGQ9Ik0yNDAsMTI4djU2YTgsOCwwLDAsMS04LDhIMTI4YTgsOCwwLDAsMS04LThWODBIMzJ2NDhhOCw4LDAsMCwxLTE2LDBWNzJhOCw4LDAsMCwxLDgtOEgxMjhhOCw4LDAsMCwxLDgsOFYxNzZoODhWMTI4YTgsOCwwLDAsMSwxNiwwWiIvPjwvc3ZnPg==)

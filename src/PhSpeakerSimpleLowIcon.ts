@@ -1,6 +1,6 @@
-import { createIcon } from "./createIcon.js";
+import { createIcon } from "#createIcon";
 
-export type { PhIconProps as PhSpeakerSimpleLowIconProps } from "./createIcon.js";
+export type { PhIconProps as PhSpeakerSimpleLowIconProps } from "#createIcon";
 
 /**
  * ![img](data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIyMCIgaGVpZ2h0PSIyMCIgdmlld0JveD0iMCAwIDI1NiAyNTYiIGZpbGw9IiMwMDAiPjxyZWN0IHdpZHRoPSIyNTYiIGhlaWdodD0iMjU2IiBmaWxsPSIjRkZGIiByeD0iNDAiIHJ5PSI0MCIvPjxwYXRoIGQ9Ik0xNjMuNTEsMjQuODFhOCw4LDAsMCwwLTguNDIuODhMODUuMjUsODBINDBBMTYsMTYsMCwwLDAsMjQsOTZ2NjRhMTYsMTYsMCwwLDAsMTYsMTZIODUuMjVsNjkuODQsNTQuMzFBOCw4LDAsMCwwLDE2OCwyMjRWMzJBOCw4LDAsMCwwLDE2My41MSwyNC44MVpNMTUyLDIwNy42NCw5Mi45MSwxNjEuNjlBNy45NCw3Ljk0LDAsMCwwLDg4LDE2MEg0MFY5Nkg4OGE3Ljk0LDcuOTQsMCwwLDAsNC45MS0xLjY5TDE1Miw0OC4zNlpNMjA4LDEwNHY0OGE4LDgsMCwwLDEtMTYsMFYxMDRhOCw4LDAsMCwxLDE2LDBaIi8+PC9zdmc+)

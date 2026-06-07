@@ -1,6 +1,6 @@
-import { createIcon } from "./createIcon.js";
+import { createIcon } from "#createIcon";
 
-export type { PhIconProps as PhPicnicTableIconProps } from "./createIcon.js";
+export type { PhIconProps as PhPicnicTableIconProps } from "#createIcon";
 
 /**
  * ![img](data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIyMCIgaGVpZ2h0PSIyMCIgdmlld0JveD0iMCAwIDI1NiAyNTYiIGZpbGw9IiMwMDAiPjxyZWN0IHdpZHRoPSIyNTYiIGhlaWdodD0iMjU2IiBmaWxsPSIjRkZGIiByeD0iNDAiIHJ5PSI0MCIvPjxwYXRoIGQ9Ik0yNDgsMTI4SDIwMC45NGwtMjgtNTZIMTkyYTgsOCwwLDAsMCwwLTE2SDY0YTgsOCwwLDAsMCwwLDE2SDgzLjA2bC0yOCw1Nkg4YTgsOCwwLDAsMCwwLDE2SDQ3LjA2TDI0Ljg0LDE4OC40MmE4LDgsMCwwLDAsMy41OCwxMC43M0E3LjksNy45LDAsMCwwLDMyLDIwMGE4LDgsMCwwLDAsNy4xNy00LjQyTDY0Ljk0LDE0NEgxOTEuMDZsMjUuNzgsNTEuNThBOCw4LDAsMCwwLDIyNCwyMDBhNy45LDcuOSwwLDAsMCwzLjU3LS44NSw4LDgsMCwwLDAsMy41OC0xMC43M0wyMDguOTQsMTQ0SDI0OGE4LDgsMCwwLDAsMC0xNlpNNzIuOTQsMTI4bDI4LTU2aDU0LjEybDI4LDU2WiIvPjwvc3ZnPg==)

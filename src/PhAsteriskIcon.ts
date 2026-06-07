@@ -1,6 +1,6 @@
-import { createIcon } from "./createIcon.js";
+import { createIcon } from "#createIcon";
 
-export type { PhIconProps as PhAsteriskIconProps } from "./createIcon.js";
+export type { PhIconProps as PhAsteriskIconProps } from "#createIcon";
 
 /**
  * ![img](data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIyMCIgaGVpZ2h0PSIyMCIgdmlld0JveD0iMCAwIDI1NiAyNTYiIGZpbGw9IiMwMDAiPjxyZWN0IHdpZHRoPSIyNTYiIGhlaWdodD0iMjU2IiBmaWxsPSIjRkZGIiByeD0iNDAiIHJ5PSI0MCIvPjxwYXRoIGQ9Ik0yMTQuODYsMTgwLjEyYTgsOCwwLDAsMS0xMSwyLjc0TDEzNiwxNDIuMTNWMjE2YTgsOCwwLDAsMS0xNiwwVjE0Mi4xM0w1Mi4xMiwxODIuODZhOCw4LDAsMSwxLTguMjMtMTMuNzJMMTEyLjQ1LDEyOCw0My44OSw4Ni44NmE4LDgsMCwxLDEsOC4yMy0xMy43MkwxMjAsMTEzLjg3VjQwYTgsOCwwLDAsMSwxNiwwdjczLjg3bDY3Ljg4LTQwLjczYTgsOCwwLDEsMSw4LjIzLDEzLjcyTDE0My41NSwxMjhsNjguNTYsNDEuMTRBOCw4LDAsMCwxLDIxNC44NiwxODAuMTJaIi8+PC9zdmc+)

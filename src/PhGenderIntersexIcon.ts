@@ -1,6 +1,6 @@
-import { createIcon } from "./createIcon.js";
+import { createIcon } from "#createIcon";
 
-export type { PhIconProps as PhGenderIntersexIconProps } from "./createIcon.js";
+export type { PhIconProps as PhGenderIntersexIconProps } from "#createIcon";
 
 /**
  * ![img](data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIyMCIgaGVpZ2h0PSIyMCIgdmlld0JveD0iMCAwIDI1NiAyNTYiIGZpbGw9IiMwMDAiPjxyZWN0IHdpZHRoPSIyNTYiIGhlaWdodD0iMjU2IiBmaWxsPSIjRkZGIiByeD0iNDAiIHJ5PSI0MCIvPjxwYXRoIGQ9Ik0yMDgsMjRIMTY4YTgsOCwwLDAsMCwwLDE2aDIwLjY5TDE2My41NCw2NS4xNUE2NCw2NCwwLDEsMCwxMTIsMTc1LjQ4VjE5Mkg4OGE4LDgsMCwwLDAsMCwxNmgyNHYyNGE4LDgsMCwwLDAsMTYsMFYyMDhoMjRhOCw4LDAsMCwwLDAtMTZIMTI4VjE3NS40OGE2My45Miw2My45MiwwLDAsMCw0NS44NC05OEwyMDAsNTEuMzFWNzJhOCw4LDAsMCwwLDE2LDBWMzJBOCw4LDAsMCwwLDIwOCwyNFpNMTIwLDE2MGE0OCw0OCwwLDEsMSw0OC00OEE0OC4wNSw0OC4wNSwwLDAsMSwxMjAsMTYwWiIvPjwvc3ZnPg==)

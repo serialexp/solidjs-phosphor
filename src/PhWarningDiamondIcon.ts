@@ -1,6 +1,6 @@
-import { createIcon } from "./createIcon.js";
+import { createIcon } from "#createIcon";
 
-export type { PhIconProps as PhWarningDiamondIconProps } from "./createIcon.js";
+export type { PhIconProps as PhWarningDiamondIconProps } from "#createIcon";
 
 /**
  * ![img](data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIyMCIgaGVpZ2h0PSIyMCIgdmlld0JveD0iMCAwIDI1NiAyNTYiIGZpbGw9IiMwMDAiPjxyZWN0IHdpZHRoPSIyNTYiIGhlaWdodD0iMjU2IiBmaWxsPSIjRkZGIiByeD0iNDAiIHJ5PSI0MCIvPjxwYXRoIGQ9Ik0xMjgsNzJhOCw4LDAsMCwxLDgsOHY1NmE4LDgsMCwwLDEtMTYsMFY4MEE4LDgsMCwwLDEsMTI4LDcyWk0xMTYsMTcyYTEyLDEyLDAsMSwwLDEyLTEyQTEyLDEyLDAsMCwwLDExNiwxNzJabTEyNC00NGExNS44NSwxNS44NSwwLDAsMS00LjY3LDExLjI4bC05Ni4wNSw5Ni4wNmExNiwxNiwwLDAsMS0yMi41NiwwaDBsLTk2LTk2LjA2YTE2LDE2LDAsMCwxLDAtMjIuNTZsOTYuMDUtOTYuMDZhMTYsMTYsMCwwLDEsMjIuNTYsMGw5Ni4wNSw5Ni4wNkExNS44NSwxNS44NSwwLDAsMSwyNDAsMTI4Wm0tMTYsMEwxMjgsMzIsMzIsMTI4LDEyOCwyMjRoMFoiLz48L3N2Zz4=)

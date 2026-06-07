@@ -1,6 +1,6 @@
-import { createIcon } from "./createIcon.js";
+import { createIcon } from "#createIcon";
 
-export type { PhIconProps as PhArrowSquareUpRightIconProps } from "./createIcon.js";
+export type { PhIconProps as PhArrowSquareUpRightIconProps } from "#createIcon";
 
 /**
  * ![img](data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIyMCIgaGVpZ2h0PSIyMCIgdmlld0JveD0iMCAwIDI1NiAyNTYiIGZpbGw9IiMwMDAiPjxyZWN0IHdpZHRoPSIyNTYiIGhlaWdodD0iMjU2IiBmaWxsPSIjRkZGIiByeD0iNDAiIHJ5PSI0MCIvPjxwYXRoIGQ9Ik0yMDgsMzJINDhBMTYsMTYsMCwwLDAsMzIsNDhWMjA4YTE2LDE2LDAsMCwwLDE2LDE2SDIwOGExNiwxNiwwLDAsMCwxNi0xNlY0OEExNiwxNiwwLDAsMCwyMDgsMzJabTAsMTc2SDQ4VjQ4SDIwOFpNOTAuMzQsMTY1LjY2YTgsOCwwLDAsMSwwLTExLjMyTDE0MC42OSwxMDRIMTEyYTgsOCwwLDAsMSwwLTE2aDQ4YTgsOCwwLDAsMSw4LDh2NDhhOCw4LDAsMCwxLTE2LDBWMTE1LjMxbC01MC4zNCw1MC4zNWE4LDgsMCwwLDEtMTEuMzIsMFoiLz48L3N2Zz4=)

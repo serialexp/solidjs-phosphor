@@ -1,6 +1,6 @@
-import { createIcon } from "./createIcon.js";
+import { createIcon } from "#createIcon";
 
-export type { PhIconProps as PhPianoKeysIconProps } from "./createIcon.js";
+export type { PhIconProps as PhPianoKeysIconProps } from "#createIcon";
 
 /**
  * ![img](data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIyMCIgaGVpZ2h0PSIyMCIgdmlld0JveD0iMCAwIDI1NiAyNTYiIGZpbGw9IiMwMDAiPjxyZWN0IHdpZHRoPSIyNTYiIGhlaWdodD0iMjU2IiBmaWxsPSIjRkZGIiByeD0iNDAiIHJ5PSI0MCIvPjxwYXRoIGQ9Ik0yMDgsMzJINDhBMTYsMTYsMCwwLDAsMzIsNDhWMjA4YTE2LDE2LDAsMCwwLDE2LDE2SDIwOGExNiwxNiwwLDAsMCwxNi0xNlY0OEExNiwxNiwwLDAsMCwyMDgsMzJaTTgwLDQ4aDI0djg4SDgwWm0zMiwxMDRhOCw4LDAsMCwwLDgtOFY0OGgxNnY5NmE4LDgsMCwwLDAsOCw4aDh2NTZIMTA0VjE1MlptNDAtMTZWNDhoMjR2ODhaTTQ4LDQ4SDY0djk2YTgsOCwwLDAsMCw4LDhIODh2NTZINDhaTTIwOCwyMDhIMTY4VjE1MmgxNmE4LDgsMCwwLDAsOC04VjQ4aDE2VjIwOFoiLz48L3N2Zz4=)

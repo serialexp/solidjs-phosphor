@@ -1,6 +1,6 @@
-import { createIcon } from "./createIcon.js";
+import { createIcon } from "#createIcon";
 
-export type { PhIconProps as PhMusicNotesIconProps } from "./createIcon.js";
+export type { PhIconProps as PhMusicNotesIconProps } from "#createIcon";
 
 /**
  * ![img](data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIyMCIgaGVpZ2h0PSIyMCIgdmlld0JveD0iMCAwIDI1NiAyNTYiIGZpbGw9IiMwMDAiPjxyZWN0IHdpZHRoPSIyNTYiIGhlaWdodD0iMjU2IiBmaWxsPSIjRkZGIiByeD0iNDAiIHJ5PSI0MCIvPjxwYXRoIGQ9Ik0yMTIuOTIsMTcuNjlhOCw4LDAsMCwwLTYuODYtMS40NWwtMTI4LDMyQTgsOCwwLDAsMCw3Miw1NlYxNjYuMDhBMzYsMzYsMCwxLDAsODgsMTk2VjExMC4yNWwxMTItMjh2NTEuODNBMzYsMzYsMCwxLDAsMjE2LDE2NFYyNEE4LDgsMCwwLDAsMjEyLjkyLDE3LjY5Wk01MiwyMTZhMjAsMjAsMCwxLDEsMjAtMjBBMjAsMjAsMCwwLDEsNTIsMjE2Wk04OCw5My43NVY2Mi4yNWwxMTItMjh2MzEuNVpNMTgwLDE4NGEyMCwyMCwwLDEsMSwyMC0yMEEyMCwyMCwwLDAsMSwxODAsMTg0WiIvPjwvc3ZnPg==)

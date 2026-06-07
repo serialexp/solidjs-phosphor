@@ -1,6 +1,6 @@
-import { createIcon } from "./createIcon.js";
+import { createIcon } from "#createIcon";
 
-export type { PhIconProps as PhNumberSquareSevenIconProps } from "./createIcon.js";
+export type { PhIconProps as PhNumberSquareSevenIconProps } from "#createIcon";
 
 /**
  * ![img](data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIyMCIgaGVpZ2h0PSIyMCIgdmlld0JveD0iMCAwIDI1NiAyNTYiIGZpbGw9IiMwMDAiPjxyZWN0IHdpZHRoPSIyNTYiIGhlaWdodD0iMjU2IiBmaWxsPSIjRkZGIiByeD0iNDAiIHJ5PSI0MCIvPjxwYXRoIGQ9Ik0yMDgsMzJINDhBMTYsMTYsMCwwLDAsMzIsNDhWMjA4YTE2LDE2LDAsMCwwLDE2LDE2SDIwOGExNiwxNiwwLDAsMCwxNi0xNlY0OEExNiwxNiwwLDAsMCwyMDgsMzJabTAsMTc2SDQ4VjQ4SDIwOFYyMDhaTTE1OC41NSw4My40MWE4LDgsMCwwLDEsMSw3LjMybC0zMiw4OEE4LDgsMCwwLDEsMTIwLDE4NGE3LjksNy45LDAsMCwxLTIuNzMtLjQ4LDgsOCwwLDAsMS00Ljc5LTEwLjI1TDE0MC41OCw5NkgxMDRhOCw4LDAsMCwxLDAtMTZoNDhBOCw4LDAsMCwxLDE1OC41NSw4My40MVoiLz48L3N2Zz4=)

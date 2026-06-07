@@ -1,6 +1,6 @@
-import { createIcon } from "./createIcon.js";
+import { createIcon } from "#createIcon";
 
-export type { PhIconProps as PhCourtBasketballIconProps } from "./createIcon.js";
+export type { PhIconProps as PhCourtBasketballIconProps } from "#createIcon";
 
 /**
  * ![img](data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIyMCIgaGVpZ2h0PSIyMCIgdmlld0JveD0iMCAwIDI1NiAyNTYiIGZpbGw9IiMwMDAiPjxyZWN0IHdpZHRoPSIyNTYiIGhlaWdodD0iMjU2IiBmaWxsPSIjRkZGIiByeD0iNDAiIHJ5PSI0MCIvPjxwYXRoIGQ9Ik0yMjQsNDhIMzJBMTYsMTYsMCwwLDAsMTYsNjRWMTkyYTE2LDE2LDAsMCwwLDE2LDE2SDIyNGExNiwxNiwwLDAsMCwxNi0xNlY2NEExNiwxNiwwLDAsMCwyMjQsNDhabTAsMTEyaC04YTMyLDMyLDAsMCwxLDAtNjRoOFpNMzIsOTZoOGEzMiwzMiwwLDAsMSwwLDY0SDMyWm0wLDgwaDhhNDgsNDgsMCwwLDAsMC05NkgzMlY2NGg4OFYxOTJIMzJabTE5MiwxNkgxMzZWNjRoODhWODBoLThhNDgsNDgsMCwwLDAsMCw5Nmg4djE2WiIvPjwvc3ZnPg==)

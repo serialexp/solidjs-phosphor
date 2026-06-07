@@ -1,6 +1,6 @@
-import { createIcon } from "./createIcon.js";
+import { createIcon } from "#createIcon";
 
-export type { PhIconProps as PhCaretDoubleDownIconProps } from "./createIcon.js";
+export type { PhIconProps as PhCaretDoubleDownIconProps } from "#createIcon";
 
 /**
  * ![img](data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIyMCIgaGVpZ2h0PSIyMCIgdmlld0JveD0iMCAwIDI1NiAyNTYiIGZpbGw9IiMwMDAiPjxyZWN0IHdpZHRoPSIyNTYiIGhlaWdodD0iMjU2IiBmaWxsPSIjRkZGIiByeD0iNDAiIHJ5PSI0MCIvPjxwYXRoIGQ9Ik0yMTMuNjYsMTMwLjM0YTgsOCwwLDAsMSwwLDExLjMybC04MCw4MGE4LDgsMCwwLDEtMTEuMzIsMGwtODAtODBhOCw4LDAsMCwxLDExLjMyLTExLjMyTDEyOCwyMDQuNjlsNzQuMzQtNzQuMzVBOCw4LDAsMCwxLDIxMy42NiwxMzAuMzRabS05MS4zMiwxMS4zMmE4LDgsMCwwLDAsMTEuMzIsMGw4MC04MGE4LDgsMCwwLDAtMTEuMzItMTEuMzJMMTI4LDEyNC42OSw1My42Niw1MC4zNEE4LDgsMCwwLDAsNDIuMzQsNjEuNjZaIi8+PC9zdmc+)

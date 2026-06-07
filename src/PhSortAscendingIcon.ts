@@ -1,6 +1,6 @@
-import { createIcon } from "./createIcon.js";
+import { createIcon } from "#createIcon";
 
-export type { PhIconProps as PhSortAscendingIconProps } from "./createIcon.js";
+export type { PhIconProps as PhSortAscendingIconProps } from "#createIcon";
 
 /**
  * ![img](data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIyMCIgaGVpZ2h0PSIyMCIgdmlld0JveD0iMCAwIDI1NiAyNTYiIGZpbGw9IiMwMDAiPjxyZWN0IHdpZHRoPSIyNTYiIGhlaWdodD0iMjU2IiBmaWxsPSIjRkZGIiByeD0iNDAiIHJ5PSI0MCIvPjxwYXRoIGQ9Ik0xMjgsMTI4YTgsOCwwLDAsMS04LDhINDhhOCw4LDAsMCwxLDAtMTZoNzJBOCw4LDAsMCwxLDEyOCwxMjhaTTQ4LDcySDE4NGE4LDgsMCwwLDAsMC0xNkg0OGE4LDgsMCwwLDAsMCwxNlptNTYsMTEySDQ4YTgsOCwwLDAsMCwwLDE2aDU2YTgsOCwwLDAsMCwwLTE2Wm0xMjUuNjYtMjEuNjZhOCw4LDAsMCwwLTExLjMyLDBMMTkyLDE4OC42OVYxMTJhOCw4LDAsMCwwLTE2LDB2NzYuNjlsLTI2LjM0LTI2LjM1YTgsOCwwLDAsMC0xMS4zMiwxMS4zMmw0MCw0MGE4LDgsMCwwLDAsMTEuMzIsMGw0MC00MEE4LDgsMCwwLDAsMjI5LjY2LDE2Mi4zNFoiLz48L3N2Zz4=)

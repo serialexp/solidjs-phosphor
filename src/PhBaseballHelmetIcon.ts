@@ -1,6 +1,6 @@
-import { createIcon } from "./createIcon.js";
+import { createIcon } from "#createIcon";
 
-export type { PhIconProps as PhBaseballHelmetIconProps } from "./createIcon.js";
+export type { PhIconProps as PhBaseballHelmetIconProps } from "#createIcon";
 
 /**
  * ![img](data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIyMCIgaGVpZ2h0PSIyMCIgdmlld0JveD0iMCAwIDI1NiAyNTYiIGZpbGw9IiMwMDAiPjxyZWN0IHdpZHRoPSIyNTYiIGhlaWdodD0iMjU2IiBmaWxsPSIjRkZGIiByeD0iNDAiIHJ5PSI0MCIvPjxwYXRoIGQ9Ik04OCwxMjhhMjgsMjgsMCwxLDAsMjgsMjhBMjgsMjgsMCwwLDAsODgsMTI4Wm0wLDQwYTEyLDEyLDAsMSwxLDEyLTEyQTEyLDEyLDAsMCwxLDg4LDE2OFptMTYwLTQ4SDIyMy43QTEwNCwxMDQsMCwwLDAsMTYsMTI4djI0YTcyLjA4LDcyLjA4LDAsMCwwLDcyLDcyaDQwYTcyLjA4LDcyLjA4LDAsMCwwLDcyLTcyVjEzNmg0OGE4LDgsMCwwLDAsMC0xNlptLTY0LDMyYTU2LjA2LDU2LjA2LDAsMCwxLTUwLjQ2LDU1LjcyQTcxLjg3LDcxLjg3LDAsMCwwLDE2MCwxNTJWMTM2aDI0Wm0tMzItMzJhOCw4LDAsMCwwLTgsOHYyNGE1Niw1NiwwLDAsMS0xMTIsMFYxMjhhODgsODgsMCwwLDEsMTc1LjY0LThaIi8+PC9zdmc+)

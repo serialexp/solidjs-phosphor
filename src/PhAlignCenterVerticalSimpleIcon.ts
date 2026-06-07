@@ -1,6 +1,6 @@
-import { createIcon } from "./createIcon.js";
+import { createIcon } from "#createIcon";
 
-export type { PhIconProps as PhAlignCenterVerticalSimpleIconProps } from "./createIcon.js";
+export type { PhIconProps as PhAlignCenterVerticalSimpleIconProps } from "#createIcon";
 
 /**
  * ![img](data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIyMCIgaGVpZ2h0PSIyMCIgdmlld0JveD0iMCAwIDI1NiAyNTYiIGZpbGw9IiMwMDAiPjxyZWN0IHdpZHRoPSIyNTYiIGhlaWdodD0iMjU2IiBmaWxsPSIjRkZGIiByeD0iNDAiIHJ5PSI0MCIvPjxwYXRoIGQ9Ik0yMDgsMTIwSDE3NlY0OGExNiwxNiwwLDAsMC0xNi0xNkg5NkExNiwxNiwwLDAsMCw4MCw0OHY3Mkg0OGE4LDgsMCwwLDAsMCwxNkg4MHY3MmExNiwxNiwwLDAsMCwxNiwxNmg2NGExNiwxNiwwLDAsMCwxNi0xNlYxMzZoMzJhOCw4LDAsMCwwLDAtMTZabS00OCw4OEg5NlY0OGg2NFoiLz48L3N2Zz4=)

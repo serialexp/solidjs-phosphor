@@ -1,6 +1,6 @@
-import { createIcon } from "./createIcon.js";
+import { createIcon } from "#createIcon";
 
-export type { PhIconProps as PhPlayPauseIconProps } from "./createIcon.js";
+export type { PhIconProps as PhPlayPauseIconProps } from "#createIcon";
 
 /**
  * ![img](data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIyMCIgaGVpZ2h0PSIyMCIgdmlld0JveD0iMCAwIDI1NiAyNTYiIGZpbGw9IiMwMDAiPjxyZWN0IHdpZHRoPSIyNTYiIGhlaWdodD0iMjU2IiBmaWxsPSIjRkZGIiByeD0iNDAiIHJ5PSI0MCIvPjxwYXRoIGQ9Ik0xODQsNjRWMTkyYTgsOCwwLDAsMS0xNiwwVjY0YTgsOCwwLDAsMSwxNiwwWm00MC04YTgsOCwwLDAsMC04LDhWMTkyYTgsOCwwLDAsMCwxNiwwVjY0QTgsOCwwLDAsMCwyMjQsNTZabS04MCw3MmExNS43NiwxNS43NiwwLDAsMS03LjMzLDEzLjM0TDQ4LjQ4LDE5Ny40OUExNS45MSwxNS45MSwwLDAsMSwyNCwxODQuMTVWNzEuODVBMTUuOTEsMTUuOTEsMCwwLDEsNDguNDgsNTguNTFsODguMTksNTYuMTVBMTUuNzYsMTUuNzYsMCwwLDEsMTQ0LDEyOFptLTE2LjE4LDBMNDAsNzIuMDhWMTgzLjkzWiIvPjwvc3ZnPg==)

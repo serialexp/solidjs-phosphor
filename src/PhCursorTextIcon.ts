@@ -1,6 +1,6 @@
-import { createIcon } from "./createIcon.js";
+import { createIcon } from "#createIcon";
 
-export type { PhIconProps as PhCursorTextIconProps } from "./createIcon.js";
+export type { PhIconProps as PhCursorTextIconProps } from "#createIcon";
 
 /**
  * ![img](data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIyMCIgaGVpZ2h0PSIyMCIgdmlld0JveD0iMCAwIDI1NiAyNTYiIGZpbGw9IiMwMDAiPjxyZWN0IHdpZHRoPSIyNTYiIGhlaWdodD0iMjU2IiBmaWxsPSIjRkZGIiByeD0iNDAiIHJ5PSI0MCIvPjxwYXRoIGQ9Ik0xODQsMjA4YTgsOCwwLDAsMS04LDhIMTYwYTQwLDQwLDAsMCwxLTMyLTE2LDQwLDQwLDAsMCwxLTMyLDE2SDgwYTgsOCwwLDAsMSwwLTE2SDk2YTI0LDI0LDAsMCwwLDI0LTI0VjEzNkgxMDRhOCw4LDAsMCwxLDAtMTZoMTZWODBBMjQsMjQsMCwwLDAsOTYsNTZIODBhOCw4LDAsMCwxLDAtMTZIOTZhNDAsNDAsMCwwLDEsMzIsMTYsNDAsNDAsMCwwLDEsMzItMTZoMTZhOCw4LDAsMCwxLDAsMTZIMTYwYTI0LDI0LDAsMCwwLTI0LDI0djQwaDE2YTgsOCwwLDAsMSwwLDE2SDEzNnY0MGEyNCwyNCwwLDAsMCwyNCwyNGgxNkE4LDgsMCwwLDEsMTg0LDIwOFoiLz48L3N2Zz4=)

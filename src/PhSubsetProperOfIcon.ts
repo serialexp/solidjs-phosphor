@@ -1,6 +1,6 @@
-import { createIcon } from "./createIcon.js";
+import { createIcon } from "#createIcon";
 
-export type { PhIconProps as PhSubsetProperOfIconProps } from "./createIcon.js";
+export type { PhIconProps as PhSubsetProperOfIconProps } from "#createIcon";
 
 /**
  * ![img](data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIyMCIgaGVpZ2h0PSIyMCIgdmlld0JveD0iMCAwIDI1NiAyNTYiIGZpbGw9IiMwMDAiPjxyZWN0IHdpZHRoPSIyNTYiIGhlaWdodD0iMjU2IiBmaWxsPSIjRkZGIiByeD0iNDAiIHJ5PSI0MCIvPjxwYXRoIGQ9Ik0yMDgsMjA4YTgsOCwwLDAsMS04LDhIMTI4YTg4LDg4LDAsMCwxLDAtMTc2aDcyYTgsOCwwLDAsMSwwLDE2SDEyOGE3Miw3MiwwLDAsMCwwLDE0NGg3MkE4LDgsMCwwLDEsMjA4LDIwOFoiLz48L3N2Zz4=)

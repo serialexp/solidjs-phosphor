@@ -1,6 +1,6 @@
-import { createIcon } from "./createIcon.js";
+import { createIcon } from "#createIcon";
 
-export type { PhIconProps as PhHouseLineIconProps } from "./createIcon.js";
+export type { PhIconProps as PhHouseLineIconProps } from "#createIcon";
 
 /**
  * ![img](data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIyMCIgaGVpZ2h0PSIyMCIgdmlld0JveD0iMCAwIDI1NiAyNTYiIGZpbGw9IiMwMDAiPjxyZWN0IHdpZHRoPSIyNTYiIGhlaWdodD0iMjU2IiBmaWxsPSIjRkZGIiByeD0iNDAiIHJ5PSI0MCIvPjxwYXRoIGQ9Ik0yNDAsMjA4SDIyNFYxMzZsMi4zNCwyLjM0QTgsOCwwLDAsMCwyMzcuNjYsMTI3TDEzOS4zMSwyOC42OGExNiwxNiwwLDAsMC0yMi42MiwwTDE4LjM0LDEyN2E4LDgsMCwwLDAsMTEuMzIsMTEuMzFMMzIsMTM2djcySDE2YTgsOCwwLDAsMCwwLDE2SDI0MGE4LDgsMCwwLDAsMC0xNlpNNDgsMTIwbDgwLTgwLDgwLDgwdjg4SDE2MFYxNTJhOCw4LDAsMCwwLTgtOEgxMDRhOCw4LDAsMCwwLTgsOHY1Nkg0OFptOTYsODhIMTEyVjE2MGgzMloiLz48L3N2Zz4=)
