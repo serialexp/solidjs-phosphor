@@ -75,11 +75,13 @@ itself. The weekly job regenerates against the same upstream, sees no `src/`
 diff, and **skips publishing**, so these sit unreleased indefinitely. (Committed
 generator output does not count: CI regenerates it and finds no diff.)
 
-CI can only publish once it has an npm credential: an `NPM_TOKEN` repository
-secret, or npm trusted publishing configured for this workflow. As of
-2026-10-13 it has neither (a forced run got npm's unauthenticated
-`404 Not Found - PUT`), so until that is set up, use the local release below.
-With a credential in place, push the commits, then dispatch with `force`:
+CI publishes with the `serialexp` organisation secret `NPM_TOKEN`. On
+2026-10-13 a forced run received it but npm rejected the publish with
+`404 Not Found - PUT`, which npm returns when the token may not publish this
+package (expired or revoked, read-only, or a granular token not scoped to
+`solidjs-phosphor`). Until the token is replaced or trusted publishing is
+configured, use the local release below. With a working credential, push the
+commits, then dispatch with `force`:
 
 ```sh
 git push
