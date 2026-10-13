@@ -44,7 +44,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/aeolun/phosphor-solid"
+    "url": "git+https://github.com/serialexp/solidjs-phosphor.git"
   },
   "keywords": [
     "phosphor",
