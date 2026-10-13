@@ -25,10 +25,16 @@ jobs:
         with:
           version: 10
 
+      # Trusted publishing (OIDC via `id-token: write`) needs npm >= 11.5.1.
+      # npm@latest keeps raising its Node floor, so track the latest LTS.
+      # See https://docs.npmjs.com/trusted-publishers
       - uses: actions/setup-node@v4
         with:
-          node-version: 22
+          node-version: 'lts/*'
           registry-url: https://registry.npmjs.org
+
+      - name: Upgrade npm (trusted publishing support)
+        run: npm install -g npm@latest
 
       - run: pnpm install --frozen-lockfile
 
@@ -52,8 +58,7 @@ jobs:
 
       - name: Bump version and publish
         if: steps.diff.outputs.changed == 'true' || inputs.force
-        env:
-          NODE_AUTH_TOKEN: ${{ secrets.NPM_TOKEN }}
+        # No token: npm authenticates through trusted publishing (OIDC).
         run: |
           # Match upstream major.minor, auto-increment patch
           UPSTREAM_VERSION=$(jq -r .version phosphor-core/package.json)
@@ -73,7 +78,9 @@ jobs:
           NEW_VERSION=$(jq -r .version package.json)
           echo "Publishing v${NEW_VERSION}"
 
-          pnpm publish --access public --no-git-checks --provenance
+          # npm itself, not pnpm, so the OIDC exchange is done by an npm CLI
+          # known to support it. prepublishOnly still runs generate/check/build.
+          npm publish --access public --provenance
 
           # Commit and tag
           git config user.name "github-actions[bot]"

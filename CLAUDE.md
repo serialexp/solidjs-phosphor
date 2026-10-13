@@ -75,12 +75,12 @@ itself. The weekly job regenerates against the same upstream, sees no `src/`
 diff, and **skips publishing**, so these sit unreleased indefinitely. (Committed
 generator output does not count: CI regenerates it and finds no diff.)
 
-CI publishes with the `serialexp` organisation secret `NPM_TOKEN`. On
-2026-10-13 a forced run received it but npm rejected the publish with
-`404 Not Found - PUT`, which npm returns when the token may not publish this
-package (expired or revoked, read-only, or a granular token not scoped to
-`solidjs-phosphor`). Until the token is replaced or trusted publishing is
-configured, use the local release below. With a working credential, push the
+CI publishes through npm trusted publishing: `id-token: write` plus
+`npm publish` from npm@latest (>= 11.5.1 is required) on the latest Node LTS. No
+token is involved, so don't re-add `NODE_AUTH_TOKEN`. The serialexp org's
+`NPM_TOKEN` was rejected for this package (`404 Not Found - PUT`) on 2026-10-13.
+This only works while `serialexp/solidjs-phosphor` + `update-and-publish.yml` is
+configured as a trusted publisher in the package's npm settings. Push the
 commits, then dispatch with `force`:
 
 ```sh
