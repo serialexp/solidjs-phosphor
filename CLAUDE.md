@@ -75,8 +75,11 @@ itself. The weekly job regenerates against the same upstream, sees no `src/`
 diff, and **skips publishing**, so these sit unreleased indefinitely. (Committed
 generator output does not count: CI regenerates it and finds no diff.)
 
-Force a release through CI, which holds the npm token and publishes with
-provenance. Push the commits, then dispatch with `force`:
+CI can only publish once it has an npm credential: an `NPM_TOKEN` repository
+secret, or npm trusted publishing configured for this workflow. As of
+2026-10-13 it has neither (a forced run got npm's unauthenticated
+`404 Not Found - PUT`), so until that is set up, use the local release below.
+With a credential in place, push the commits, then dispatch with `force`:
 
 ```sh
 git push
@@ -86,7 +89,7 @@ gh workflow run update-and-publish.yml -f force=true
 The job bumps the patch, publishes, commits `chore: release vX.Y.Z`, tags and
 pushes. Pull afterwards.
 
-Local manual release, only when you are logged in to npm (mirrors the CI
+Local manual release, which needs `npm login` as `aeolun` (mirrors the CI
 convention; keep `major.minor` aligned with phosphor-core, only `patch` is ours):
 
 ```sh
