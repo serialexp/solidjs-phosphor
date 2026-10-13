@@ -67,18 +67,27 @@ build), so `dist/` is always fresh.
 **Auto-publish is enough when:** the change is *upstream icon content* (new or
 changed icons). The weekly job ships it with a patch bump — nothing to do.
 
-**You MUST manually bump + publish when:** the change does NOT alter generated
+**You MUST force a release when:** the change does NOT alter generated
 `src/` icon output but should still be released — e.g. build/packaging
 (`package.json` exports/imports, `vite.config.ts`, `tsconfig.json`), the
 `createIcon` implementation, generator logic, SSR/hydration fixes, README, or CI
 itself. The weekly job regenerates against the same upstream, sees no `src/`
-diff, and **skips publishing**, so these sit unreleased indefinitely.
+diff, and **skips publishing**, so these sit unreleased indefinitely. (Committed
+generator output does not count: CI regenerates it and finds no diff.)
 
-> Note: triggering `workflow_dispatch` does NOT help here — it still gates on the
-> `src/` diff, so you can't use the button to force-release a packaging fix.
+Force a release through CI, which holds the npm token and publishes with
+provenance. Push the commits, then dispatch with `force`:
 
-Manual release (mirrors the CI convention; keep `major.minor` aligned with
-phosphor-core, only `patch` is ours):
+```sh
+git push
+gh workflow run update-and-publish.yml -f force=true
+```
+
+The job bumps the patch, publishes, commits `chore: release vX.Y.Z`, tags and
+pushes. Pull afterwards.
+
+Local manual release, only when you are logged in to npm (mirrors the CI
+convention; keep `major.minor` aligned with phosphor-core, only `patch` is ours):
 
 ```sh
 pnpm run check

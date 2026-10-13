@@ -5,6 +5,11 @@ on:
     # Weekly on Monday at 06:00 UTC
     - cron: '0 6 * * 1'
   workflow_dispatch: # Allow manual trigger
+    inputs:
+      force:
+        description: Publish even when upstream icons are unchanged (factory, types or packaging changes)
+        type: boolean
+        default: false
 
 permissions:
   contents: write
@@ -46,7 +51,7 @@ jobs:
           fi
 
       - name: Bump version and publish
-        if: steps.diff.outputs.changed == 'true'
+        if: steps.diff.outputs.changed == 'true' || inputs.force
         env:
           NODE_AUTH_TOKEN: ${{ secrets.NPM_TOKEN }}
         run: |
@@ -74,7 +79,11 @@ jobs:
           git config user.name "github-actions[bot]"
           git config user.email "github-actions[bot]@users.noreply.github.com"
           git add src/ package.json
-          git commit -m "chore: update icons to v${NEW_VERSION}"
+          if [ "${{ steps.diff.outputs.changed }}" = "true" ]; then
+            git commit -m "chore: update icons to v${NEW_VERSION}"
+          else
+            git commit -m "chore: release v${NEW_VERSION}"
+          fi
           git tag "v${NEW_VERSION}"
           git push
           git push --tags
