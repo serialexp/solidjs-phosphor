@@ -43,39 +43,87 @@ async function main() {
   // Write the shared createIcon factory
   await writeFile(
     join(SRC_DIR, "createIcon.tsx"),
-    `import { splitProps, mergeProps, type JSX, type Component } from "solid-js";
+    `import type { Component } from "solid-js";
+import type { SvgAttributes } from "./svgAttributes";
+
+export type { SvgAttributes };
 
 export type IconWeight = "thin" | "light" | "regular" | "bold" | "fill" | "duotone";
 
-export interface PhIconProps extends JSX.SvgSVGAttributes<SVGSVGElement> {
+export type PhIconProps = SvgAttributes & {
   size?: number | string;
   color?: string;
   weight?: IconWeight;
   mirrored?: boolean;
+};
+
+const ICON_PROPS: ReadonlySet<PropertyKey> = new Set(["size", "color", "weight", "mirrored"]);
+
+/**
+ * A live view of \`props\` without the icon's own props, to spread onto the
+ * \`<svg>\`. Every read goes through to \`props\`, so the spread stays reactive.
+ * It stands in for \`splitProps\` (Solid 1.x) and \`omit\` (Solid 2.x), neither
+ * of which exists in both majors. The proxy target is an empty object so the
+ * traps can never contradict the target's own property invariants.
+ */
+function svgAttributes(props: PhIconProps): SvgAttributes {
+  const passes = (key: PropertyKey) =>
+    !ICON_PROPS.has(key) && Reflect.getOwnPropertyDescriptor(props, key) !== undefined;
+  return new Proxy({} as SvgAttributes, {
+    get: (_, key) => (ICON_PROPS.has(key) ? undefined : Reflect.get(props, key)),
+    has: (_, key) => !ICON_PROPS.has(key) && Reflect.has(props, key),
+    ownKeys: () => Reflect.ownKeys(props).filter((key) => !ICON_PROPS.has(key)),
+    getOwnPropertyDescriptor: (_, key) =>
+      passes(key)
+        ? { configurable: true, enumerable: true, get: () => Reflect.get(props, key) }
+        : undefined,
+  });
 }
 
 export function createIcon(weights: Record<IconWeight, string>): Component<PhIconProps> {
-  return function Icon(props: PhIconProps): JSX.Element {
-    const merged = mergeProps(
-      { size: "1em", color: "currentColor", weight: "regular" as IconWeight, mirrored: false },
-      props
-    );
-    const [local, svgProps] = splitProps(merged, ["size", "color", "weight", "mirrored"]);
+  return function Icon(props: PhIconProps) {
+    const attributes = svgAttributes(props);
     return (
       <svg
         xmlns="http://www.w3.org/2000/svg"
         viewBox="0 0 256 256"
-        fill={local.color}
-        width={local.size}
-        height={local.size}
-        style={local.mirrored ? { transform: "scale(-1, 1)" } : undefined}
-        {...svgProps}
+        fill={props.color ?? "currentColor"}
+        width={props.size ?? "1em"}
+        height={props.size ?? "1em"}
+        style={props.mirrored ? { transform: "scale(-1, 1)" } : undefined}
+        {...attributes}
         // biome-ignore lint: innerHTML is safe here — content is generated from trusted SVG source files
-        innerHTML={weights[local.weight]}
+        innerHTML={weights[props.weight ?? "regular"]}
       />
     );
   };
 }
+`
+  );
+
+  // Write the SVG attribute types. Solid 1.x keeps the JSX namespace in
+  // `solid-js`; Solid 2.x moved it to `@solidjs/web`, and each major lacks the
+  // other's. This is a hand-written .d.ts rather than part of createIcon.tsx
+  // because declaration emit drops the `@ts-ignore` comments that make one
+  // failing import harmless. tsgo does not emit .d.ts inputs, so
+  // scripts/copy-jsx.mjs copies it into dist/ next to createIcon.d.ts.
+  await writeFile(
+    join(SRC_DIR, "svgAttributes.d.ts"),
+    `// Exactly one of these imports resolves. The other is an unresolved type,
+// which IsUnresolved detects (\`unknown extends T\` holds only for any/unknown,
+// and a real JSX.Element is neither).
+// @ts-ignore -- Solid 1.x only: \`solid-js\` owns the JSX namespace.
+import type { JSX as SolidOneJSX } from "solid-js";
+// @ts-ignore -- Solid 2.x only: the web renderer owns the JSX namespace.
+import type { JSX as SolidTwoJSX } from "@solidjs/web";
+
+type IsUnresolved<T> = unknown extends T ? true : false;
+
+/** \`<svg>\` attributes from whichever Solid major is installed. */
+export type SvgAttributes =
+  IsUnresolved<SolidTwoJSX.Element> extends true
+    ? SolidOneJSX.SvgSVGAttributes<SVGSVGElement>
+    : SolidTwoJSX.SvgSVGAttributes<SVGSVGElement>;
 `
   );
 
@@ -89,25 +137,37 @@ export function createIcon(weights: Record<IconWeight, string>): Component<PhIco
   // dist/ by scripts/copy-jsx.mjs after the Vite build.
   await writeFile(
     join(SRC_DIR, "createIcon.jsx"),
-    `import { splitProps, mergeProps } from "solid-js";
+    `// No solid-js imports: this file must compile and run under Solid 1.x and 2.x.
+// See createIcon.tsx for why svgAttributes replaces splitProps / omit.
+const ICON_PROPS = new Set(["size", "color", "weight", "mirrored"]);
+
+function svgAttributes(props) {
+  const passes = (key) =>
+    !ICON_PROPS.has(key) && Reflect.getOwnPropertyDescriptor(props, key) !== undefined;
+  return new Proxy({}, {
+    get: (_, key) => (ICON_PROPS.has(key) ? undefined : Reflect.get(props, key)),
+    has: (_, key) => !ICON_PROPS.has(key) && Reflect.has(props, key),
+    ownKeys: () => Reflect.ownKeys(props).filter((key) => !ICON_PROPS.has(key)),
+    getOwnPropertyDescriptor: (_, key) =>
+      passes(key)
+        ? { configurable: true, enumerable: true, get: () => Reflect.get(props, key) }
+        : undefined,
+  });
+}
 
 export function createIcon(weights) {
   return function Icon(props) {
-    const merged = mergeProps(
-      { size: "1em", color: "currentColor", weight: "regular", mirrored: false },
-      props
-    );
-    const [local, svgProps] = splitProps(merged, ["size", "color", "weight", "mirrored"]);
+    const attributes = svgAttributes(props);
     return (
       <svg
         xmlns="http://www.w3.org/2000/svg"
         viewBox="0 0 256 256"
-        fill={local.color}
-        width={local.size}
-        height={local.size}
-        style={local.mirrored ? { transform: "scale(-1, 1)" } : undefined}
-        {...svgProps}
-        innerHTML={weights[local.weight]}
+        fill={props.color ?? "currentColor"}
+        width={props.size ?? "1em"}
+        height={props.size ?? "1em"}
+        style={props.mirrored ? { transform: "scale(-1, 1)" } : undefined}
+        {...attributes}
+        innerHTML={weights[props.weight ?? "regular"]}
       />
     );
   };

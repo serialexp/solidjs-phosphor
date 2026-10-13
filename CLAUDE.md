@@ -28,6 +28,32 @@ Do not go back to shipping a single pre-compiled DOM build as the only entry —
 that is what caused hydration mismatches (compiled `template()`/`spread()` throws
 "Client-only API called on the server side").
 
+## Solid 1.x and 2.x from one release
+
+One release serves both majors. Keep it that way:
+
+- **Runtime:** `createIcon` imports nothing from `solid-js`. Solid 1.x has
+  `splitProps`/`mergeProps`, Solid 2.x has `omit`/`merge`, and neither pair
+  exists in both. Defaults are applied inline with `??`, and the attributes to
+  spread come from a local `svgAttributes` proxy that reads through to `props`.
+  On Solid 2.x the `solid` condition (raw JSX) is the only working path. The
+  pre-compiled `default` build imports the Solid 1.x runtime (`solid-js/web`).
+- **Types:** Solid 1.x keeps the JSX namespace in `solid-js` and 2.x keeps it in
+  `@solidjs/web`. `src/svgAttributes.d.ts` imports both under `@ts-ignore` and
+  picks whichever resolved. It is a hand-written `.d.ts` because declaration
+  emit strips the `@ts-ignore` comments. `scripts/copy-jsx.mjs` copies it into
+  `dist/`, and `vite.config.ts` skips `.d.ts` files as entries. Do not declare
+  `@solidjs/web` as an (optional) peer dependency: pnpm then auto-installs it
+  into this repo, and our own type check flips to the Solid 2.x branch.
+- **Verify on both majors before releasing a `createIcon` change.** Set up one
+  consumer project on Solid 1.9 and one on Solid 2 (`@solidjs/web` plus
+  `@solidjs/vite-plugin`), both installing the `pnpm pack` tarball. In each,
+  run a strict type check (`skipLibCheck: false`, with `@ts-expect-error` cases
+  for a bad weight and an unknown attribute), an SSR render, and a client
+  render that updates `size`, `class`, `weight` and `mirrored` reactively.
+  Build the SSR side with `solid({ ssr: true })`, or the factory compiles for
+  the DOM.
+
 ## Publishing
 
 CI: `.github/workflows/update-and-publish.yml` (weekly Mon 06:00 UTC + manual

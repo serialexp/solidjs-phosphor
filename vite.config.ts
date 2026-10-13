@@ -3,10 +3,12 @@ import solid from "vite-plugin-solid";
 import { resolve } from "node:path";
 import { readdirSync } from "node:fs";
 
-// Build entry points: index + createIcon + every icon file
+// Build entry points: index + createIcon + every icon file. Declaration files
+// (svgAttributes.d.ts) have no runtime and are copied by scripts/copy-jsx.mjs.
 const srcDir = resolve(__dirname, "src");
 const entries: Record<string, string> = {};
 for (const file of readdirSync(srcDir)) {
+  if (file.endsWith(".d.ts")) continue;
   if (file.endsWith(".ts") || file.endsWith(".tsx")) {
     const name = file.replace(/\.tsx?$/, "");
     entries[name] = resolve(srcDir, file);

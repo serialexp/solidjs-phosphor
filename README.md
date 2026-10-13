@@ -44,7 +44,16 @@ Each component accepts all standard SVG attributes plus:
 
 A GitHub Action runs weekly, clones [phosphor-icons/core](https://github.com/phosphor-icons/core), transforms SVGs into SolidJS components, and publishes a new version if anything changed.
 
-The package ships pre-compiled JS and type declarations. The `solid` export condition also provides raw `.ts`/`.tsx` source for Solid-native toolchains.
+The package ships pre-compiled JS and type declarations. The `solid` export condition also provides the raw JSX icon factory, so Solid-aware toolchains compile it for their own target (DOM on the client, SSR on the server).
+
+## Solid 1.x and 2.x
+
+The same release works with Solid 1.x and Solid 2.x:
+
+- The icon factory imports nothing from `solid-js`, so it compiles and runs under either major.
+- The prop types pick up `<svg>` attributes from whichever major is installed (`solid-js` for 1.x, `@solidjs/web` for 2.x).
+
+On Solid 2.x, the toolchain has to resolve the `solid` export condition, which `@solidjs/vite-plugin` does. The pre-compiled fallback targets the Solid 1.x runtime.
 
 ## License
 
